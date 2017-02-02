@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quiz da Bíblia</string>
+    <string name="package_name">quizbiblico.com.claudinei.quizbiblico</string>
+
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_up">Cadastro</string>
+    <string name="action_reset">Recuperar acesso</string>
+    <string name="action_keep_connected">Manter Conectado</string>
+
+</resources>

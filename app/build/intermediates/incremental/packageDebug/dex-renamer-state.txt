@@ -1,0 +1,7 @@
+#Thu Feb 02 18:58:16 BRST 2017
+base.0=C\:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_de9464d3e64c385dbedfde229751b9193ae59356
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_23f78ada9d09b18111a479b1c48e1aca2bbfd2c7\\classes.dex
+base.1=C\:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_23f78ada9d09b18111a479b1c48e1aca2bbfd2c7
+file.0=C\:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_de9464d3e64c385dbedfde229751b9193ae59356\\classes.dex

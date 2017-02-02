@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "739186926536",
+    "firebase_url": "https://quizbiblico-b3eec.firebaseio.com",
+    "project_id": "quizbiblico-b3eec",
+    "storage_bucket": "quizbiblico-b3eec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739186926536:android:1752a7aaea2bda33",
+        "android_client_info": {
+          "package_name": "quizbiblico.com.claudinei.quizbiblico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739186926536-g9ubr21vnak2htg0toiffco24dcs61un.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "quizbiblico.com.claudinei.quizbiblico",
+            "certificate_hash": "A4B4A3B97B96443EF180664C5A61195CCAC957BD"
+          }
+        },
+        {
+          "client_id": "739186926536-mrql8aqvu3g48ve87k3ku1g9eb65fq90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsrnTeZ7ha-6RX7wi_03ErJSavR4hf8aM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739186926536-mrql8aqvu3g48ve87k3ku1g9eb65fq90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
