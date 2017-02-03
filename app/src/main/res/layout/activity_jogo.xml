@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jogo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="quizbiblico.com.claudinei.quizbiblico.Login"
+    android:weightSum="1"
+    android:background="@drawable/degrade_linear_lightblue"
+    app:layout_collapseParallaxMultiplier="0.0">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento"
+            android:layout_width="match_parent"
+            android:id="@+id/txtPergunta"
+            android:textColor="@color/myWhite"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="374dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:layout_height="80dp">
+
+                    </GridView>
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

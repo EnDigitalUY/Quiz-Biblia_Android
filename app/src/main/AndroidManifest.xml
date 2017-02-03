@@ -18,10 +18,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".menuPrincipal" />
-
         <activity android:name=".Login">
-            <intent-filter><action android:name="android.intent.action.MAIN" /></intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
+        <activity android:name=".Jogo"></activity>
     </application>
 
 </manifest>

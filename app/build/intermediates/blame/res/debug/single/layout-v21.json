@@ -1,34 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
     }
 ]

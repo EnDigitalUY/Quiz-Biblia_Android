@@ -1,10 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
-        "source": "C:\\Users\\Claudinei\\Google Drive\\Outros\\Projetos\\Android\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
-    },
-    {
-        "merged": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
-        "source": "C:\\Users\\Claudinei\\Downloads\\QuizBiblico-20170202T215511Z\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
     }
 ]

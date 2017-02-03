@@ -14,5 +14,7 @@
 
     <color name="myWhite">#efefef</color>
     <color name="myLightGray">#d3d3d3</color>
+    <color name="myMediumGray">#b8b8b8</color>
+    <color name="myDarkGray">#4d4d4d</color>
 
 </resources>

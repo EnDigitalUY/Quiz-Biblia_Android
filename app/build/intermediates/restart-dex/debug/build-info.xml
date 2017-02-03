@@ -5,32 +5,32 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="328825018760"
-    token="-7926663925825327016"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="14892908177907"
+    token="3962989544713649709"
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="3659" />
+        duration="2865" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1845" />
+        duration="591" />
     <task
         name="verifier"
-        duration="300" />
+        duration="45" />
 
     <artifact
-        location="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\outputs\apk\app-debug.apk"
+        location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="328825018760"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="14892908177907"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
-            location="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\outputs\apk\app-debug.apk"
+            location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 
