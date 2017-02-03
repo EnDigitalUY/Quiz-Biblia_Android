@@ -20,6 +20,7 @@ android {
     sourceSets {
         main {
             java.srcDirs = ['src/main/java', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/classes', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/forms']
+            aidl.srcDirs = ['src/main/aidl', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/teste']
         }
     }
 }

@@ -1,4 +1,4 @@
-#Thu Feb 02 23:00:02 BRST 2017
+#Fri Feb 03 19:31:55 BRST 2017
 base.0=D\:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_8e691c61b2e2f15d1ac0edc2a8403647e3996647
 renamed.1=classes.dex
 renamed.0=classes2.dex

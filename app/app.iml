@@ -63,6 +63,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/quizbiblico/com/claudinei/quizbiblico/teste" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/quizbiblico/com/claudinei/quizbiblico/classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/quizbiblico/com/claudinei/quizbiblico/forms" isTestSource="false" />

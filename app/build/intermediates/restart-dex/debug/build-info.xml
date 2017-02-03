@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="25"
-    density="420dpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="14892908177907"
+    timestamp="1563384227611"
     token="3962989544713649709"
-    verifier="MANIFEST_FILE_CHANGE" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2865" />
+        duration="464" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="38" />
     <task
         name="instant-run-transform"
-        duration="591" />
+        duration="83" />
     <task
         name="verifier"
-        duration="45" />
+        duration="17" />
 
     <artifact
-        location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="14892908177907"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="1476556137121"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="4665964100713"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

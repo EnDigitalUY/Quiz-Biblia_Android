@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_fef817850a7c083482dd6678fb4e773c74226c1a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,30 +30,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_4293814d4324d19e54433edfb511b2c70c7c1afe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
         <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.0.2_9acd7bb2e7150b5d420117d0cdf64c3ed9ba5b6b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_5e18ba6bfe65d5b156b0de923592ed385f60504b\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,33 +57,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.2_4ffa744c7d61a88448683f7f3c952323dc1a8a50\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_6e89af3ad937b0af1eba91cdbc327b048ad77e4c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_4f7d94f52379fcf553e2301d27cc60193f6f9156\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,66 +66,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_5a077954daefb8d4e2e22ce4016c77b421a10bef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
         <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_738b7ad3abc4d2a53009156235eac9f5b7af19d4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_1e453780f7d728f8a70afd867f368b5e137f7671\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_8edf9def65ecf642d43488fb793ad6816815b375\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_d03361a3eebdd2f41b23e20b8b32b81cae27fea0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="060a7157438a0b1b0706b99c430fb3ecbc5a79a4">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.0.2_ea68e4e79f0b536236f3147e3da91bf98d642abc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_e04c1cc35a0fcc5bcc6a08e0d17945adf5aa3781\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,39 +93,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_73108544d0374122113f84a662e2484fb7ad9393\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_502df420a45f6ca0d545b450ff09a39dfd0c4354\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="94d9cedd04b124aed044ac71c451a292856d854c">
         <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_f2937a13e8b213f632b84f4c9dffd07acdb4c607\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="058a5b37eedc04dc0ea26350cad4237a51b4acc5">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_23f78ada9d09b18111a479b1c48e1aca2bbfd2c7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,33 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_246caa3c0717a6c2ddad880fa85472079234a81b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_73491332e96a09b48b84a3269668b7481862b415\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_0bfa0e12275c7bbacdf94f31eb9f4a848af9cd19\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -300,75 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_60760cff6781063775e531ea5611217f6d2bf643\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_4b0b9c1c8cf4931226e3fb40b84dd10180b79522\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
         <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_371f9eb9dbb76ca9d8f36bec0c9bf876d9a23cda\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_efbed30be848c0a22cdb37dd7f8e3935f59ea741\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_0b8c7dcda07fdcfb6b0164d724a404b731b1e594\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_4c1aed7b1a4517fabad6d5da14c814164e2628f4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bd47643efe39c9e1af8d4c905f0aa064808937fd">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b787b5db32ed87f29026f6cf996c5368b49434fc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="681d7c33d8c33d8453c405448b180546b4e073da">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_30017de08e741982fc753b56c73a7674f28cbe82\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -444,24 +219,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b0607ca060c4e7a86c88e673cf9f428ef0d1f2fc">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8e691c61b2e2f15d1ac0edc2a8403647e3996647\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.0.2_7137c57b4f5dae1e107c6bf38ff7e9e5201baeba\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -471,30 +228,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_154702bf45699bd331ffd85d19f93595f9b5546c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
         <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_be1924525aa6100462e736ecdac290bb6d81790d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_84206e94b9e6d6aa84eee308399d931ead39d72c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -513,42 +252,6 @@
         revision="25.0.2"
         sha1="829c6e46cb221c2102801221c648b77113743e81">
         <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.0.2_9487e1bdc1e9c207e22bdbc19649fc50f992f799\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.0.2_4c958c27952f3d830b40f3a656ee9d4cb8b7e30b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_077c0ce20047f0c51d76099fe62dfe509e8d6b77\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_c0e6c62b0752a959bb3c0bc396ea398f33f9a7dd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_6bc58dc3df72a000b4cf342f2fdef5874bc4dca3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -588,15 +291,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_6717f3d8d9311c5b0c3ba486ac58dc008cd83f46\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -606,21 +300,381 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5b1aa0ea082fe9f2394d3d542149152663c5e281">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6b9de5aa73309406de32f48e2cc3be782143db1e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_ae7e2c58eaea317d1178a4cb1c3d4d44d6002ead\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_407c521856ca684fc0ee17494a3bd7ee0bfcbb3c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_2f30656cf44e8a1342f015401eef193db0f26d8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_ee9ee9f3a4484fd10ce9069ddf229e218dbb5327\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f0936a2ae8079e2ed17858b20bcad06af7f67ce">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_de9464d3e64c385dbedfde229751b9193ae59356\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.0.2_8cdcac40b70922acbacb1f8077d91ce7b68f716e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_195c8c465d85c401a84afcf95ba21d324eccdbbf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_fef817850a7c083482dd6678fb4e773c74226c1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_4293814d4324d19e54433edfb511b2c70c7c1afe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_5e18ba6bfe65d5b156b0de923592ed385f60504b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.2_4ffa744c7d61a88448683f7f3c952323dc1a8a50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_6e89af3ad937b0af1eba91cdbc327b048ad77e4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_4f7d94f52379fcf553e2301d27cc60193f6f9156\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_5a077954daefb8d4e2e22ce4016c77b421a10bef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_1e453780f7d728f8a70afd867f368b5e137f7671\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_8edf9def65ecf642d43488fb793ad6816815b375\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_d03361a3eebdd2f41b23e20b8b32b81cae27fea0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="060a7157438a0b1b0706b99c430fb3ecbc5a79a4">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.0.2_ea68e4e79f0b536236f3147e3da91bf98d642abc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_e04c1cc35a0fcc5bcc6a08e0d17945adf5aa3781\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_73108544d0374122113f84a662e2484fb7ad9393\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_502df420a45f6ca0d545b450ff09a39dfd0c4354\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="058a5b37eedc04dc0ea26350cad4237a51b4acc5">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_23f78ada9d09b18111a479b1c48e1aca2bbfd2c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_246caa3c0717a6c2ddad880fa85472079234a81b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_73491332e96a09b48b84a3269668b7481862b415\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_0bfa0e12275c7bbacdf94f31eb9f4a848af9cd19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_60760cff6781063775e531ea5611217f6d2bf643\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_4b0b9c1c8cf4931226e3fb40b84dd10180b79522\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_efbed30be848c0a22cdb37dd7f8e3935f59ea741\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.0.2_0b8c7dcda07fdcfb6b0164d724a404b731b1e594\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_4c1aed7b1a4517fabad6d5da14c814164e2628f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd47643efe39c9e1af8d4c905f0aa064808937fd">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b787b5db32ed87f29026f6cf996c5368b49434fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="681d7c33d8c33d8453c405448b180546b4e073da">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_30017de08e741982fc753b56c73a7674f28cbe82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756df370d56200a0d0ccc1eacb8e394ef4fd00a7">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8e691c61b2e2f15d1ac0edc2a8403647e3996647\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.0.2_7137c57b4f5dae1e107c6bf38ff7e9e5201baeba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.0.2_154702bf45699bd331ffd85d19f93595f9b5546c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_84206e94b9e6d6aa84eee308399d931ead39d72c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.0.2_4c958c27952f3d830b40f3a656ee9d4cb8b7e30b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_077c0ce20047f0c51d76099fe62dfe509e8d6b77\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_c0e6c62b0752a959bb3c0bc396ea398f33f9a7dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_6bc58dc3df72a000b4cf342f2fdef5874bc4dca3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_6717f3d8d9311c5b0c3ba486ac58dc008cd83f46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9426a54224a99a2efd5750740722a1cbf5446859">
+        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6b9de5aa73309406de32f48e2cc3be782143db1e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -642,39 +696,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_407c521856ca684fc0ee17494a3bd7ee0bfcbb3c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_c5c1cf05be07f3c8b7b66075ae3a5dc6dabd5b97\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_2f30656cf44e8a1342f015401eef193db0f26d8b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_ee9ee9f3a4484fd10ce9069ddf229e218dbb5327\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -705,39 +732,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f0936a2ae8079e2ed17858b20bcad06af7f67ce">
-        <dex dex="C:\Users\Claudinei\Google Drive\Outros\Projetos\Android\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_de9464d3e64c385dbedfde229751b9193ae59356\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
-        <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.0.2_8cdcac40b70922acbacb1f8077d91ce7b68f716e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
         <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.0.2_46bdf96fef23d492e0d5e43d32b438fd6b2d2b35\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
-        <dex dex="C:\Users\Claudinei\Documents\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_195c8c465d85c401a84afcf95ba21d324eccdbbf\classes.dex" />
     </item>
 
 </items>
