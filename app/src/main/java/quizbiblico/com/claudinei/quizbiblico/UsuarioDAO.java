@@ -3,9 +3,10 @@ package quizbiblico.com.claudinei.quizbiblico;
 import com.google.firebase.database.DatabaseReference;
 import java.util.ArrayList;
 
-public final class UsuarioDAO {
+public class UsuarioDAO {
 
-    private static DatabaseReference usuarioReferencia = FirebaseDB.getFirebaseReference();
+    /*private FirebaseDB firebaseDB = new FirebaseDB();
+    private DatabaseReference usuarioReferencia = firebaseDB.getFirebaseReference();
     private ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
     public void addUsuario(Usuario usuario){
@@ -14,8 +15,5 @@ public final class UsuarioDAO {
     public ArrayList<Usuario> getUsuarioDB(){
         return null;
     }
-
-
-
-
+    */
 }

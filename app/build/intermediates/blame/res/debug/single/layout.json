@@ -32,12 +32,12 @@
         "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
         "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
         "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
@@ -156,12 +156,12 @@
         "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "D:\\Claudinei BJr\\Estudo\\AndroidStudioProjects\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",

@@ -10,13 +10,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class Login extends AppCompatActivity {
 
@@ -47,11 +55,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.login);
 
         //Disponibilidade da base de dados offline
-        try {
+        /*try {
             FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         } catch (Exception e) {
-            Snackbar.make(findViewById(R.id.activity_main), "FirebaseDatabase error\n\n" + e.getMessage().toString(), Snackbar.LENGTH_SHORT).show();
-        }
+            Toast.makeText(getApplicationContext(), "FirebaseDatabase error\n\n" + e.getMessage().toString(), Toast.LENGTH_LONG).show();
+        }*/
 
         //Instanciando a autenticação
         authentication = FirebaseAuth.getInstance();
@@ -106,6 +114,21 @@ public class Login extends AppCompatActivity {
                 firebaseRegister(email.getText().toString(), password.getText().toString());
             }
         });
+
+        Button btn = (Button) findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                QuestionDAO questionDAO = new QuestionDAO();
+                ArrayList<Question> questions = questionDAO.getQuestion();
+                try {
+                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_LONG).show();
+                } catch (Exception e){
+                    Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
     }
 
     // No início da aplicação, seta o Listener para acompanhar as mudanças na autenticação
@@ -113,6 +136,9 @@ public class Login extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         authentication.addAuthStateListener(authenticationListener);
+
+        QuestionDAO questionDAO = new QuestionDAO();
+        questionDAO.getQuestionReference().addValueEventListener(questionDAO.getQuestionListener());
     }
 
     // No término da aplicação, remove o Listener que acompanha as mudanças na autenticação

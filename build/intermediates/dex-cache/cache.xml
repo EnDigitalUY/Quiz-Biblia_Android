@@ -592,7 +592,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="756df370d56200a0d0ccc1eacb8e394ef4fd00a7">
+        sha1="3b1748db70da76624ea289c4b05f149519f161f9">
         <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8e691c61b2e2f15d1ac0edc2a8403647e3996647\classes.dex" />
     </item>
     <item
@@ -673,7 +673,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9426a54224a99a2efd5750740722a1cbf5446859">
+        sha1="f3ac8b0a0d775032aef419ba981e11460eae60bc">
         <dex dex="D:\Claudinei BJr\Estudo\AndroidStudioProjects\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6b9de5aa73309406de32f48e2cc3be782143db1e\classes.dex" />
     </item>
     <item

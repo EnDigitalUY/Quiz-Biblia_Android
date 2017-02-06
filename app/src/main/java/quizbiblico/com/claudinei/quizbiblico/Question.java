@@ -9,7 +9,11 @@ public class Question {
     private String textBiblical;
     private int levelQuestion;
 
-    public Question(String question, String answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, String levelQuestion) {
+    public Question(){
+
+    }
+
+    public Question(String question, String answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, int levelQuestion) {
         this.question = question;
         this.answer = answer;
         this.alternative_A = alternative_A;
@@ -17,7 +21,7 @@ public class Question {
         this.alternative_C = alternative_C;
         this.alternative_D = alternative_D;
         this.textBiblical = textBiblical;
-        this.levelQuestion = Integer.parseInt(levelQuestion);
+        this.levelQuestion = levelQuestion;
     }
 
     public int getIdQuestion() {

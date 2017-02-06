@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Usuario implements Serializable {
 
@@ -12,9 +13,18 @@ public class Usuario implements Serializable {
     private String senha;
     private String uid;
     private boolean keepConnected;
+    private ArrayList<Integer> answered = new ArrayList<Integer>();
 
     public Usuario(){
 
+    }
+
+    public ArrayList<Integer> getAnswered() {
+        return answered;
+    }
+
+    public void setAnswered(ArrayList<Integer> answered) {
+        this.answered = answered;
     }
 
     public Usuario(String email, String nome, String senha, String uid, boolean keepConnected) {
