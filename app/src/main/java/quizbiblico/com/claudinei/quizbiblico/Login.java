@@ -14,15 +14,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -53,13 +47,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-        //Disponibilidade da base de dados offline
-        /*try {
-            FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(), "FirebaseDatabase error\n\n" + e.getMessage().toString(), Toast.LENGTH_LONG).show();
-        }*/
 
         //Instanciando a autenticação
         authentication = FirebaseAuth.getInstance();
@@ -116,16 +103,39 @@ public class Login extends AppCompatActivity {
         });
 
         Button btn = (Button) findViewById(R.id.button);
+
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                QuestionDAO questionDAO = new QuestionDAO();
-                ArrayList<Question> questions = questionDAO.getQuestion();
+
+                // Como recuperar uma questão aleatória
+                /*
+                ArrayList<Integer> answered = new ArrayList<>(); answered.add(1);answered.add(2);answered.add(3);answered.add(4);answered.add(5);answered.add(6);answered.add(7);answered.add(8);answered.add(9);answered.add(10);answered.add(11);answered.add(12);answered.add(13);answered.add(14);answered.add(15);answered.add(16);answered.add(17);answered.add(18);
+                Question question = QuestionDAO.getAleatoryQuestion(answered);
                 try {
-                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_LONG).show();
+                    Log.d("Random", "Questão: " + String.valueOf(question.getIdQuestion()));
                 } catch (Exception e){
-                    Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_LONG).show();
+                    if (question == null)
+                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
                 }
+                */
+
+                // Como recuperar todas as questões
+                /*
+                ArrayList<Question> questions = QuestionDAO.getQuestions();
+
+                try {
+                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_SHORT).show();
+                } catch (Exception e){
+                    if (questions == null)
+                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                }*/
             }
         });
 
@@ -136,9 +146,6 @@ public class Login extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         authentication.addAuthStateListener(authenticationListener);
-
-        QuestionDAO questionDAO = new QuestionDAO();
-        questionDAO.getQuestionReference().addValueEventListener(questionDAO.getQuestionListener());
     }
 
     // No término da aplicação, remove o Listener que acompanha as mudanças na autenticação
