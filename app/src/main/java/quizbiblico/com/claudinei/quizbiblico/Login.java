@@ -101,44 +101,6 @@ public class Login extends AppCompatActivity {
                 firebaseRegister(email.getText().toString(), password.getText().toString());
             }
         });
-
-        Button btn = (Button) findViewById(R.id.button);
-
-
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // Como recuperar uma questão aleatória
-                /*
-                ArrayList<Integer> answered = new ArrayList<>(); answered.add(1);answered.add(2);answered.add(3);answered.add(4);answered.add(5);answered.add(6);answered.add(7);answered.add(8);answered.add(9);answered.add(10);answered.add(11);answered.add(12);answered.add(13);answered.add(14);answered.add(15);answered.add(16);answered.add(17);answered.add(18);
-                Question question = QuestionDAO.getAleatoryQuestion(answered);
-                try {
-                    Log.d("Random", "Questão: " + String.valueOf(question.getIdQuestion()));
-                } catch (Exception e){
-                    if (question == null)
-                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-                }
-                */
-
-                // Como recuperar todas as questões
-                /*
-                ArrayList<Question> questions = QuestionDAO.getQuestions();
-
-                try {
-                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_SHORT).show();
-                } catch (Exception e){
-                    if (questions == null)
-                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-                }*/
-            }
-        });
-
     }
 
     // No início da aplicação, seta o Listener para acompanhar as mudanças na autenticação
