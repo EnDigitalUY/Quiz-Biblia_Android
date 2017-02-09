@@ -5,40 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="69654640234991"
+    timestamp="3224899393178"
     token="-6648928763270010415"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="220" />
+        duration="1137" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="40" />
+        duration="200" />
     <task
         name="verifier"
-        duration="1" />
+        duration="3" />
 
     <artifact
-        location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
+        location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="68747535415312"
+        timestamp="3224899393178"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="69654640234991"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

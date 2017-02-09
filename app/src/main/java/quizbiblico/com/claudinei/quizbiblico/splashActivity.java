@@ -30,7 +30,7 @@ public class splashActivity extends AppCompatActivity implements Runnable {
     }
     @Override
     public void run() {
-        // DEBUG | startActivity(new Intent(this, Login.class));
+        //startActivity(new Intent(this, Login.class));
         startActivity(new Intent(this, Jogo.class));
         finish();
     }

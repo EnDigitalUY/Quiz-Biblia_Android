@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="quizbiblico.com.claudinei.quizbiblico.Login"
     android:weightSum="1"
-    android:background="@drawable/degrade_linear_lightblue"
+    android:background="@drawable/degrade_linear_darkblue"
     app:layout_collapseParallaxMultiplier="0.0">
 
 
@@ -24,18 +24,20 @@
             android:textAlignment="center"
             android:fontFamily="sans-serif"
             android:textSize="20sp"
-            android:layout_height="150dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="374dp" />
+            android:layout_marginBottom="350dp"
+            android:layout_height="180dp" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-
-            android:layout_height="340dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
@@ -43,35 +45,39 @@
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
                 android:id="@+id/btnA"
                 android:layout_below="@+id/linearLayout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="6dp" />
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="82dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
                 android:id="@+id/btnB"
                 android:layout_below="@+id/linearLayout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="6dp" />
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="82dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
                 android:id="@+id/btnC"
                 android:layout_below="@+id/linearLayout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="6dp" />
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="82dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
                 android:id="@+id/btnD"
                 android:layout_below="@+id/linearLayout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="6dp" />
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="82dp" />
 
         </LinearLayout>
 

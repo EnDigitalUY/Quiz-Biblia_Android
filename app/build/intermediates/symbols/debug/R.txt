@@ -709,7 +709,7 @@ int drawable common_plus_signin_btn_text_light_focused 0x7f02007a
 int drawable common_plus_signin_btn_text_light_normal 0x7f02007b
 int drawable common_plus_signin_btn_text_light_pressed 0x7f02007c
 int drawable degrade_linear_blue 0x7f02007d
-int drawable degrade_linear_lightblue 0x7f02007e
+int drawable degrade_linear_darkblue 0x7f02007e
 int drawable design_fab_background 0x7f02007f
 int drawable design_snackbar_background 0x7f020080
 int drawable icon 0x7f020081

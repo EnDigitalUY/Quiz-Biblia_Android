@@ -63,7 +63,15 @@ public class Jogo extends AppCompatActivity {
 
         // Recebendo a questão aleatória
         //question = QuestionDAO.getAleatoryQuestion(usuario.getAnswered());
-        question = new Question("Jesus me ama?", 0, "Sim", "Não", "Jamais", "Porquê?", "João 3:16", 1);
+        question = new Question(
+            "Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento",
+                0,
+                "39 no velho e 26 no novo, totalizando 66",
+                "59 no velho e 36 no novo, totalizando 96",
+                "29 no velho e 16 no novo, totalizando 46",
+                "26 no velho e 39 no novo, totalizando 46",
+                "João 3:16",
+                1);
 
         // Preechimento do nome da questão
         txtPergunta.setText(question.getQuestion());
@@ -82,12 +90,12 @@ public class Jogo extends AppCompatActivity {
         // Colocando os textos nos botões
         Random random = new Random();
         int alternativaAleatoria;
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i <= 3; i++){
             alternativaAleatoria = random.nextInt(alternativas.size());
 
-            if (i == question.getAnswer() && trocou == false){
+            if (alternativaAleatoria == question.getAnswer() && trocou == false){
                 trocou = true;
-                question.setAnswer(alternativaAleatoria);
+                question.setAnswer(i);
                 Log.d("Jogo", "Chegou aqui sim.\n\n" + String.valueOf(i) + "\n" + String.valueOf(alternativaAleatoria) + "\n" + String.valueOf(question.getAnswer()));
             }
 

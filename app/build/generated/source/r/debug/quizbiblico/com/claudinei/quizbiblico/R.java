@@ -2616,7 +2616,7 @@ containing a value of this type.
         public static final int common_plus_signin_btn_text_light_normal=0x7f02007b;
         public static final int common_plus_signin_btn_text_light_pressed=0x7f02007c;
         public static final int degrade_linear_blue=0x7f02007d;
-        public static final int degrade_linear_lightblue=0x7f02007e;
+        public static final int degrade_linear_darkblue=0x7f02007e;
         public static final int design_fab_background=0x7f02007f;
         public static final int design_snackbar_background=0x7f020080;
         public static final int icon=0x7f020081;
