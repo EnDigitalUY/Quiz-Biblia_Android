@@ -101,6 +101,25 @@ public class Login extends AppCompatActivity {
                 firebaseRegister(email.getText().toString(), password.getText().toString());
             }
         });
+
+        Button btnTeste = (Button) findViewById(R.id.btnTeste);
+        btnTeste.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayList<Question> questions = QuestionDAO.getQuestions();
+
+                try {
+                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_SHORT).show();
+                } catch (Exception e){
+                    if (questions == null)
+                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
     }
 
     // No início da aplicação, seta o Listener para acompanhar as mudanças na autenticação

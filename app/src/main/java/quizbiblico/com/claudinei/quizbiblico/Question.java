@@ -4,7 +4,7 @@ public class Question {
 
     private int idQuestion;
     private String question;
-    private String answer;
+    private int answer; /*0 - Alternativa A | 1 - Alternativa B | 2 - Alternativa C | 3 - Alternativa D*/
     private String alternative_A, alternative_B, alternative_C, alternative_D;
     private String textBiblical;
     private int levelQuestion;
@@ -13,7 +13,7 @@ public class Question {
 
     }
 
-    public Question(String question, String answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, int levelQuestion) {
+    public Question(String question, int answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, int levelQuestion) {
         this.question = question;
         this.answer = answer;
         this.alternative_A = alternative_A;
@@ -40,11 +40,11 @@ public class Question {
         this.question = question;
     }
 
-    public String getAnswer() {
+    public int getAnswer() {
         return answer;
     }
 
-    public void setAnswer(String answer) {
+    public void setAnswer(int answer) {
         this.answer = answer;
     }
 

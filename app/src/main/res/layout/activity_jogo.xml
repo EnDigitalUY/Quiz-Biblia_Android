@@ -31,18 +31,49 @@
             android:layout_marginBottom="374dp" />
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="340dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:text="Button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="170dp">
+                android:layout_height="68dp"
+                android:id="@+id/btnA"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:id="@+id/btnB"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:id="@+id/btnC"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:id="@+id/btnD"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
 
-                <GridView
-                    android:layout_width="match_parent"
-                    android:padding="8dp"
-                    android:layout_height="80dp">
-
-                    </GridView>
-            </LinearLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 

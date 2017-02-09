@@ -13,6 +13,8 @@ public class Usuario implements Serializable {
     private String senha;
     private String uid;
     private boolean keepConnected;
+    private int bonusTime;
+    private int bonusQuestion;
     private ArrayList<Integer> answered = new ArrayList<Integer>();
 
     public Usuario(){
@@ -33,6 +35,10 @@ public class Usuario implements Serializable {
         this.nome = nome;
         this.senha = senha;
         this.keepConnected = keepConnected;
+
+        this.bonusTime = 5;
+        this.bonusQuestion = 5;
+
     }
 
     public boolean getKeepConnected() {
@@ -70,4 +76,6 @@ public class Usuario implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+
 }

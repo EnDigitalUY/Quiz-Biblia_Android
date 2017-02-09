@@ -1,8 +1,5 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
-import com.google.firebase.database.DatabaseReference;
-import java.util.ArrayList;
-
 public class UsuarioDAO {
 
     /*private FirebaseDB firebaseDB = new FirebaseDB();

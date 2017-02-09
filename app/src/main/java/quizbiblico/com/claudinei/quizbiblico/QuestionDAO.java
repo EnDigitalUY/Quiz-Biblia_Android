@@ -8,7 +8,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Random;
 
-public final class QuestionDAO {
+import quizbiblico.com.claudinei.quizbiblico.FirebaseDB;
+import quizbiblico.com.claudinei.quizbiblico.Parameter;
+import quizbiblico.com.claudinei.quizbiblico.Question;
+
+public final class QuestionDAO  {
     // Referência para o banco de dados Firebase apontando para o nó de questões
     private static DatabaseReference questionReference = FirebaseDB.getDatabaseReference().child("question");
 

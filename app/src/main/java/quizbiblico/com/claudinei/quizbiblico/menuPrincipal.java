@@ -8,6 +8,9 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import quizbiblico.com.claudinei.quizbiblico.R;
+import quizbiblico.com.claudinei.quizbiblico.Usuario;
+
 public class menuPrincipal extends AppCompatActivity {
 
     //Botões

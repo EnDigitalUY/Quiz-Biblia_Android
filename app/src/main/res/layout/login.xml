@@ -11,6 +11,15 @@
     app:layout_collapseParallaxMultiplier="0.0">
 
 
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:id="@+id/btnTeste" />
+
     <ImageView
         android:layout_width="match_parent"
         app:srcCompat="@drawable/initialimage"
