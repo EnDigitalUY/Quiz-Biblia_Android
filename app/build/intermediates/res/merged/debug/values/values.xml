@@ -28,7 +28,7 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#1669BB</color>
+    <color name="colorPrimary">#1669bb</color>
     <color name="colorPrimaryDark">#0E142E</color>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
@@ -335,6 +335,12 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">32dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="big1_size_alternative">18dp</dimen>
+    <dimen name="big1_size_question">22dp</dimen>
+    <dimen name="big2_size_alternative">20dp</dimen>
+    <dimen name="big2_size_question">24dp</dimen>
+    <dimen name="default_size_alternative">16dp</dimen>
+    <dimen name="default_size_question">20dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
     <dimen name="design_bottom_sheet_modal_peek_height">256dp</dimen>
@@ -376,6 +382,10 @@
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="little1_size_alternative">12dp</dimen>
+    <dimen name="little1_size_question">16dp</dimen>
+    <dimen name="little2_size_alternative">14dp</dimen>
+    <dimen name="little2_size_question">18dp</dimen>
     <dimen name="notification_action_icon_size">32dp</dimen>
     <dimen name="notification_action_text_size">13sp</dimen>
     <dimen name="notification_big_circle_margin">12dp</dimen>
@@ -445,10 +455,11 @@
     <string name="action_keep_connected">Manter Conectado</string>
     <string name="action_reset">Recuperar acesso</string>
     <string name="action_sign_in">Entrar</string>
-    <string name="action_sign_up">Cadastro</string>
+    <string name="action_sign_up">Cadastrar</string>
     <string name="app_name">Quiz da Bíblia</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="campos_obrigatorios_usuario_senha">Por favor, digite o usuário e a senha</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="common_google_play_services_api_unavailable_text"><ns1:g id="app_name">%1$s</ns1:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>

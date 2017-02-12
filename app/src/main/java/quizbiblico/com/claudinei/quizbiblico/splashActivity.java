@@ -1,5 +1,6 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -26,12 +27,10 @@ public class splashActivity extends AppCompatActivity implements Runnable {
 
         Handler handler = new Handler();
         handler.postDelayed(this, 3000);
-
     }
     @Override
     public void run() {
-        //startActivity(new Intent(this, Login.class));
-        startActivity(new Intent(this, Jogo.class));
+        startActivity(new Intent(this, Login.class));
         finish();
     }
 }

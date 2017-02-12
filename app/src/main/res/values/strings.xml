@@ -7,8 +7,10 @@
     <string name="prompt_password">Senha</string>
 
     <string name="action_sign_in">Entrar</string>
-    <string name="action_sign_up">Cadastro</string>
+    <string name="action_sign_up">Cadastrar</string>
     <string name="action_reset">Recuperar acesso</string>
     <string name="action_keep_connected">Manter Conectado</string>
+
+    <string name="campos_obrigatorios_usuario_senha">Por favor, digite o usuário e a senha</string>
 
 </resources>

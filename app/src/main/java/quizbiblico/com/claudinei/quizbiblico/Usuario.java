@@ -1,8 +1,5 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -10,47 +7,25 @@ public class Usuario implements Serializable {
 
     private String email;
     private String nome;
-    private String senha;
     private String uid;
-    private boolean keepConnected;
-    private int bonusTime;
-    private int bonusQuestion;
-    private ArrayList<Integer> answered = new ArrayList<Integer>();
+    private boolean manterConectado;
+    private int bonusTempo = 5;
+    private int bonusQuestao = 5;
+    private ArrayList<Integer> respondidas = new ArrayList<Integer>();
+
+    public void addAnswered(Integer questionAnswered){
+        respondidas.add(questionAnswered);
+    }
 
     public Usuario(){
 
     }
 
-    public ArrayList<Integer> getAnswered() {
-        return answered;
-    }
-
-    public void setAnswered(ArrayList<Integer> answered) {
-        this.answered = answered;
-    }
-
-    public Usuario(String email, String nome, String senha, String uid, boolean keepConnected) {
-        this.uid = uid;
+    public Usuario(String email, String nome, String uid, boolean manterConectado) {
         this.email = email;
         this.nome = nome;
-        this.senha = senha;
-        this.keepConnected = keepConnected;
-
-        this.bonusTime = 5;
-        this.bonusQuestion = 5;
-
-    }
-
-    public boolean getKeepConnected() {
-        return keepConnected;
-    }
-
-    public void setKeepConnected(boolean keepConnected) {
-        this.keepConnected = keepConnected;
-    }
-
-    public String getUid() {
-        return uid;
+        this.uid = uid;
+        this.manterConectado = manterConectado;
     }
 
     public String getEmail() {
@@ -69,13 +44,56 @@ public class Usuario implements Serializable {
         this.nome = nome;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getUid() {
+        return uid;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
+    public boolean isManterConectado() {
+        return manterConectado;
+    }
 
+    public void setManterConectado(boolean manterConectado) {
+        this.manterConectado = manterConectado;
+    }
+
+    public int getBonusTempo() {
+        return bonusTempo;
+    }
+
+    public void setBonusTempo(int bonusTempo) {
+        this.bonusTempo = bonusTempo;
+    }
+
+    public int getBonusQuestao() {
+        return bonusQuestao;
+    }
+
+    public void setBonusQuestao(int bonusQuestao) {
+        this.bonusQuestao = bonusQuestao;
+    }
+
+    public ArrayList<Integer> getRespondidas() {
+        return respondidas;
+    }
+
+    public void setRespondidas(ArrayList<Integer> respondidas) {
+        this.respondidas = respondidas;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "email='" + email + '\'' +
+                ", nome='" + nome + '\'' +
+                ", uid='" + uid + '\'' +
+                ", manterConectado=" + manterConectado +
+                ", bonusTempo=" + bonusTempo +
+                ", bonusQuestao=" + bonusQuestao +
+                ", respondidas=" + respondidas +
+                '}';
+    }
 }

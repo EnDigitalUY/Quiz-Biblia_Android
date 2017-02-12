@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e77e63a4c595d0d9b463d0b5fd04d4389494126e">
+        sha1="10d1b50ba7dc6bfdfdd174ef115a208609530ebd">
         <dex dex="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_eb782eb161a5b927fbb7af45370ce8bd5eab57d0\classes.dex" />
     </item>
     <item
@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fad22b1abaf84eb36da7aca63a12c98a3f113bdb">
+        sha1="980ed882e84d239ca39413701686f2af17d1fcf8">
         <dex dex="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5d2410a0673f82995a8e2a1403570e71ed6ee6af\classes.dex" />
     </item>
 

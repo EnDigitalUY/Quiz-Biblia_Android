@@ -43,10 +43,14 @@ public class Login extends AppCompatActivity {
     //User
     private Usuario userLogged = null;
 
+    private boolean usuarioCadastrado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+
+        usuarioCadastrado = false;
 
         //Instanciando a autenticação
         authentication = FirebaseAuth.getInstance();
@@ -57,21 +61,21 @@ public class Login extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = authentication.getCurrentUser();
 
-                    if (user != null){
-                        // User is signed in
-                        Log.d("Login.java", "onAuthStateChanged:signed_in:" + user.getUid());
+                if (user != null){
+                    userLogged = new Usuario(user.getEmail(), user.getDisplayName(), user.getUid().toString(), swKeepConnected.isChecked());
 
-                        userLogged = new Usuario(user.getEmail(), user.getDisplayName(), password.getText().toString(), user.getUid().toString(), swKeepConnected.isChecked());
+                    if (usuarioCadastrado)
+                        FirebaseDB.getUsuarioReferencia().child(userLogged.getUid()).setValue(userLogged);
 
-                        //Indo para a próxima tela
-                        Intent intent = new Intent(Login.this, menuPrincipal.class);
-                        intent.putExtra("userLogged", userLogged);
-                        startActivity(intent);
+                    //Indo para a próxima tela
+                    Intent intent = new Intent(Login.this, menuPrincipal.class);
+                    intent.putExtra("userLogged", userLogged);
+                    startActivity(intent);
 
-                    }else{
-                        // User is signed out
-                        Log.d("Login.java", "onAuthStateChanged:signed_out");
-                    }
+                }else{
+                    // User is signed out
+                    Log.d("Login.java", "onAuthStateChanged:signed_out");
+                }
             }
         };
 
@@ -102,23 +106,6 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        Button btnTeste = (Button) findViewById(R.id.btnTeste);
-        btnTeste.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ArrayList<Question> questions = QuestionDAO.getQuestions();
-
-                try {
-                    Toast.makeText(getApplicationContext(), "Existem " + questions.size() + " questões", Toast.LENGTH_SHORT).show();
-                } catch (Exception e){
-                    if (questions == null)
-                        Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
 
     }
 
@@ -135,7 +122,7 @@ public class Login extends AppCompatActivity {
         super.onStop();
 
         if (userLogged != null){
-            if (!userLogged.getKeepConnected())
+            if (!userLogged.isManterConectado())
                 FirebaseAuth.getInstance().signOut();
         }
 
@@ -146,6 +133,8 @@ public class Login extends AppCompatActivity {
 
     // Função responsável por criar o usuário e após isso, realizar o login do mesmo
     private void firebaseRegister(String email, String pass){
+        usuarioCadastrado = true;
+
         authentication.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -154,9 +143,8 @@ public class Login extends AppCompatActivity {
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
-                        if (!task.isSuccessful()) {
+                        if (!task.isSuccessful())
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível criar o usuário", Snackbar.LENGTH_SHORT).show();
-                        }
                     }
                 });
     }

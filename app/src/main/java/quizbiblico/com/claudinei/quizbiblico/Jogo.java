@@ -2,7 +2,6 @@ package quizbiblico.com.claudinei.quizbiblico;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,12 +21,15 @@ public class Jogo extends AppCompatActivity {
             2 - Alternativa C
             3 - Alternativa D   */
     private ArrayList<Button> botoes = new ArrayList<Button>();
+    private Button btnAjuda;
 
     // TextView do nome da pergunta
     private TextView txtPergunta;
 
     // Objeto que receberá o usuário
     private Usuario usuario = null;
+
+    private int alternativasEliminadas = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,29 +42,57 @@ public class Jogo extends AppCompatActivity {
             usuario = (Usuario) extra.getSerializable("usuario");
         }
 
-        // Instanciando os botões das Alternativas
+        QuestionDAO.getQuestions_aux(usuario.getRespondidas());
+
+        // Instanciando os botões
         botoes.add((Button) findViewById(R.id.btnA));
         botoes.add((Button) findViewById(R.id.btnB));
         botoes.add((Button) findViewById(R.id.btnC));
         botoes.add((Button) findViewById(R.id.btnD));
+        btnAjuda = (Button) findViewById(R.id.btnAjuda);
 
         // Instanciando o click dos botões
         botoes.get(0).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(0);}});
         botoes.get(1).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(1);}});
         botoes.get(2).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(2);}});
         botoes.get(3).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(3);}});
+        btnAjuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ajuda();
+            }
+        });
+
 
         // Instanciando o TextView da questão
         txtPergunta = (TextView) findViewById(R.id.txtPergunta);
 
         // Chamada para função que irá preencher os textos na tela
         preencheTela();
+
     }
 
-    private void preencheTela(){
+    private void ajuda(){
+
+        if (alternativasEliminadas < 3) {
+
+            Random random = new Random();
+            int alternativaEliminada = random.nextInt(4);
+
+            while (alternativaEliminada == question.getAnswer() || botoes.get(alternativaEliminada).getVisibility() == View.INVISIBLE) {
+                alternativaEliminada = random.nextInt(4);
+            }
+
+            botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
+            alternativasEliminadas++;
+
+        }
+    }
+
+    private void preencheTela(){ // preencheTela - Função responsável por preencher a tela do usuário com as perguntas
 
         // Recebendo a questão aleatória
-        //question = QuestionDAO.getAleatoryQuestion(usuario.getAnswered());
+        //question = QuestionDAO.getAleatoryQuestion(usuario.getRespondidas()); //// TODO: 09/02/2017
         question = new Question(
             "Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento Quantos livros tem a Bíblia no Velho Testamento e no Novo Testamento",
                 0,
@@ -96,7 +126,6 @@ public class Jogo extends AppCompatActivity {
             if (alternativaAleatoria == question.getAnswer() && trocou == false){
                 trocou = true;
                 question.setAnswer(i);
-                Log.d("Jogo", "Chegou aqui sim.\n\n" + String.valueOf(i) + "\n" + String.valueOf(alternativaAleatoria) + "\n" + String.valueOf(question.getAnswer()));
             }
 
             botoes.get(i).setText(alternativas.get(alternativaAleatoria));
@@ -104,8 +133,9 @@ public class Jogo extends AppCompatActivity {
         }
     }
 
-    private void tentativa(int alternativaUsuario){
-        Toast.makeText(getApplicationContext(), "Clicado: " + String.valueOf(alternativaUsuario) + "\nCorreta: " + String.valueOf(question.getAnswer()), Toast.LENGTH_SHORT).show();
+    private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
+        boolean acertou = alternativaUsuario == question.getAnswer();
+        Toast.makeText(getApplicationContext(), String.valueOf(acertou), Toast.LENGTH_SHORT).show();
 
     }
 

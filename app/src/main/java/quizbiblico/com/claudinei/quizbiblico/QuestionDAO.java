@@ -1,6 +1,11 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.content.Context;
+import android.text.Layout;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.Toast;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -16,11 +21,12 @@ public final class QuestionDAO  {
     // Referência para o banco de dados Firebase apontando para o nó de questões
     private static DatabaseReference questionReference = FirebaseDB.getDatabaseReference().child("question");
 
-    //ArrayList de questões que conterá as questões vindas do banco de dados
-    private static ArrayList<Question> questions = new ArrayList<Question>();
-
     //Listener que irá realizar a captura das questões
     private static ValueEventListener questionListener;
+
+    //ArrayList de questões que conterá as questões vindas do banco de dados
+    private static ArrayList<Question> questions = null;
+    private static boolean called = false;
 
     //Questão que será retornada
     private static Question aleatoryQuestion;
@@ -42,8 +48,7 @@ public final class QuestionDAO  {
 
     // Método que receberá uma questão aleatória que o usuário ainda não respondeu
     //public static Question getAleatoryQuestion(ArrayList<Integer> excludedQuestions){
-    public static Question getAleatoryQuestion(ArrayList<Integer> excludedQuestions){
-
+    public static Question getAleatoryQuestion(){
         // Como recuperar uma questão aleatória
         /*
         ArrayList<Integer> answered = new ArrayList<>(); answered.add(1);answered.add(2);answered.add(3);answered.add(4);answered.add(5);answered.add(6);answered.add(7);answered.add(8);answered.add(9);answered.add(10);answered.add(11);answered.add(12);answered.add(13);answered.add(14);answered.add(15);answered.add(16);answered.add(17);answered.add(18);
@@ -58,25 +63,61 @@ public final class QuestionDAO  {
         }
         */
 
-        boolean randomOk = false;
+        return aleatoryQuestion;
+    }
 
-        Random random = new Random();
-        int randomizedQuestion = 0;
+    public static void getQuestions_aux(ArrayList<Integer> excludedQuestions){
+        getQuestions_aux(2, excludedQuestions);
+    }
 
-        while (randomOk == false){
-            randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
+    public static void getQuestions_aux(int modoDeRetorno){
+        getQuestions_aux(modoDeRetorno, null);
+    }
 
-            if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
-                randomOk = true;
+    public static void getQuestions_aux(int modoDeRetorno, ArrayList<Integer> excludedQuestions){
+        /*
+            modoDeRetorno
+                1 - Todas as questões
+                2 - Questão aleatória
+        */
+
+        if (modoDeRetorno == 1) {
+
+            questions = new ArrayList<Question>();
+            questionListener = new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot data : dataSnapshot.getChildren()) {
+                        Question question = data.getValue(Question.class);
+                        questions.add(question);
+                    }
+
+                    // Faz a remoção do listener de questões
+                    questionReference.removeEventListener(questionListener);
+                    databaseReaded = true;
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            };
+            questionReference.addValueEventListener(questionListener);
+        } else if (modoDeRetorno == 2){
+
+            boolean randomOk = false;
+
+            Random random = new Random();
+            int randomizedQuestion = 0;
+
+            while (randomOk == false){
+                randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
+
+                if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
+                    randomOk = true;
+                }
             }
-        }
 
-        // Antes de tudo verifica se a base de dados já foi lida, caso sim, retorna as informações, caso não, ativa o Listener
-        if (databaseReaded == true) {
-            databaseReaded = false;
-            return aleatoryQuestion;
-        }
-        else{
             questionListener = new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -85,11 +126,8 @@ public final class QuestionDAO  {
                         Log.d("onDataChange", "Question added");
                     }
                     Log.d("onDataChange", "All question added");
-                    databaseReaded = true;
 
-                    // Faz a remoção do listener de questões
                     questionReference.removeEventListener(questionListener);
-
                 }
 
                 @Override
@@ -97,19 +135,13 @@ public final class QuestionDAO  {
 
                 }
             };
+
+            questionReference.orderByChild("idQuestion").equalTo(randomizedQuestion).addValueEventListener(questionListener);
+
         }
-
-        questionReference.orderByChild("idQuestion").equalTo(randomizedQuestion).addValueEventListener(questionListener);
-
-        Log.d("Random", "ID: " + String.valueOf(randomizedQuestion));
-
-        // Caso já tenha lido, retorna as questões, caso contrário, retorna nulo
-        return ( databaseReaded == true ? aleatoryQuestion : null);
     }
 
-    // Método que cria e já atribui o listener de questões e recebe as questões vindas do banco de dados
     public static ArrayList<Question> getQuestions(){
-
         // Como recuperar todas as questões
         /*
         ArrayList<Question> questions = QuestionDAO.getQuestions();
@@ -121,40 +153,9 @@ public final class QuestionDAO  {
                 Toast.makeText(getApplicationContext(), "Tente novamente dentro de alguns instantes", Toast.LENGTH_SHORT).show();
             else
                 Toast.makeText(getApplicationContext(), "Erro: \n" + e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-        }*/
-
-        // Antes de tudo verifica se a base de dados já foi lida, caso sim, retorna as informações, caso não, ativa o Listener
-        if (databaseReaded == true) {
-            databaseReaded = false;
-            return questions;
         }
-        else{
-            questionListener = new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot data : dataSnapshot.getChildren() ){
-                        Question question = data.getValue(Question.class);
-                        questions.add(question);
-                        Log.d("onDataChange", "Question added");
-                    }
-                    Log.d("onDataChange", "All question added");
-                    databaseReaded = true;
+        */
 
-                    // Faz a remoção do listener de questões
-                    questionReference.removeEventListener(questionListener);
-
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            };
-
-            questionReference.addValueEventListener(questionListener);
-
-            // Caso já tenha lido, retorna as questões, caso contrário, retorna nulo
-            return ( databaseReaded == true ? questions : null);
-        }
+        return questions;
     }
 }

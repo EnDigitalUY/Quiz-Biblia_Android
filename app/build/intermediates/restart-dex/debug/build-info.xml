@@ -5,33 +5,63 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="3224899393178"
+    timestamp="13570076236865"
     token="-6648928763270010415"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="1137" />
+        duration="203" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="13" />
     <task
         name="instant-run-transform"
-        duration="200" />
+        duration="82" />
     <task
         name="verifier"
-        duration="3" />
+        duration="6" />
 
     <artifact
-        location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="3224899393178"
+        timestamp="10248085367225"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="13312968014726"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="13508721610281"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="13570076236865"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
