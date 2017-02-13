@@ -36,7 +36,8 @@
             android:layout_height="330dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
 
             <Button
                 android:layout_width="match_parent"
@@ -88,12 +89,32 @@
 
         </LinearLayout>
 
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:id="@+id/txtTempo"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true" />
+
         <Button
             android:text="Ajuda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnAjuda"
-            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/txtTempo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTempo"
+            android:layout_alignBottom="@+id/txtTempo"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 

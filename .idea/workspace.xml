@@ -15,79 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e41e067-5004-413b-8715-6a73466fc58c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_common_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_module_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_common_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_core_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_connection_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_iid_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_base_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_9_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/color.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/builds/debug/11883558059242/classes.dex" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/builds/debug/12558256957117/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/reload-dex/debug/classes.dex" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/reload-dex/debug/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/QuestionDAO$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/QuestionDAO$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
@@ -100,22 +31,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Jogo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Parameter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Parameter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Question.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$layout.class" />
@@ -123,32 +48,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.0.2/jars/classes.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.0.2/jars/classes.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Jogo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Parameter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Parameter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Question.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$layout.class" />
@@ -156,10 +73,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/1fftQTanVbLQ2zgLNBl2tyGf5kY=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/1fftQTanVbLQ2zgLNBl2tyGf5kY=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/1fftQTanVbLQ2zgLNBl2tyGf5kY=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/1fftQTanVbLQ2zgLNBl2tyGf5kY=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
@@ -172,22 +87,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Jogo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Parameter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Parameter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Question.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$layout.class" />
@@ -195,28 +104,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Jogo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Parameter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Parameter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Question.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$layout.class" />
@@ -224,13 +125,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/quizbiblico/com/claudinei/quizbiblico/splashActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
@@ -243,19 +143,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_menu_principal.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_menu_principal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/contentlogin.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/contentlogin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_jogo.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_jogo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/FirebaseDB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Jogo.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Jogo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Login.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/QuestionDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_principal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/contentlogin.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/contentlogin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="QuizBiblico.iws" />
@@ -292,7 +185,7 @@
       <file leaf-file-name="menuPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="391">
               <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -304,12 +197,33 @@
       <file leaf-file-name="Jogo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Jogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+            <state relative-caret-position="194">
+              <caret line="139" column="83" selection-start-line="139" selection-start-column="83" selection-end-line="139" selection-end-column="83" />
               <folding>
-                <element signature="e#2139#2221#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2061#2963#0" expanded="true" />
+                <element signature="e#2439#2655#0" expanded="true" />
+                <element signature="e#2654#2655#0" expanded="true" />
+                <element signature="e#2706#2936#0" expanded="true" />
+                <element signature="e#2935#2936#0" expanded="true" />
+                <element signature="e#2962#2963#0" expanded="true" />
+                <element signature="e#3963#4104#0" expanded="true" />
+                <element signature="e#4103#4104#0" expanded="true" />
+                <element signature="e#4147#4299#0" expanded="true" />
+                <element signature="e#4298#4299#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -330,12 +244,19 @@
       <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
+            <state relative-caret-position="17">
               <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-              <folding>
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splashActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -343,8 +264,8 @@
       <file leaf-file-name="activity_jogo.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="43" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="43" />
+            <state relative-caret-position="204">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -356,7 +277,7 @@
       <file leaf-file-name="Parameter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
+            <state relative-caret-position="221">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
@@ -2250,13 +2171,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/degrade_linear_blue.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/degrade_linear_whitegray.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Cronometro.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/contentcadastro.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Usuario.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_principal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Login.java" />
@@ -2266,6 +2185,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/contentlogin.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Jogo.java" />
       </list>
     </option>
@@ -2301,6 +2222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2317,28 +2239,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QuizBiblico" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2373,20 +2273,9 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QuizBiblico" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
@@ -2401,6 +2290,10 @@
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\drawable" />
+      <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\drawable\drawable_resource_file" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="quizbiblico.com.claudinei.quizbiblico" />
@@ -2409,10 +2302,6 @@
       <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\layout" />
       <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\drawable" />
       <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\java\quizbiblico\com\claudinei\quizbiblico" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\drawable" />
-      <recent name="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\res\drawable\drawable_resource_file" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -2724,7 +2613,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2734,9 +2623,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5392491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5392491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2748,8 +2637,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3053,17 +2942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -3084,19 +2962,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/UsuarioDAO.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/ParameterDAO.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/menuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="391">
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3124,7 +2994,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3139,15 +3008,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="43" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="43" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/splashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/contentlogin.xml">
@@ -3161,32 +3054,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jogo.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-          <folding>
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-          </folding>
-        </state>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/quizbiblico/com/claudinei/quizbiblico/Jogo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        <state relative-caret-position="194">
+          <caret line="139" column="83" selection-start-line="139" selection-start-column="83" selection-end-line="139" selection-end-column="83" />
           <folding>
-            <element signature="e#2139#2221#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2061#2963#0" expanded="true" />
+            <element signature="e#2439#2655#0" expanded="true" />
+            <element signature="e#2654#2655#0" expanded="true" />
+            <element signature="e#2706#2936#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3963#4104#0" expanded="true" />
+            <element signature="e#4103#4104#0" expanded="true" />
+            <element signature="e#4147#4299#0" expanded="true" />
+            <element signature="e#4298#4299#0" expanded="true" />
           </folding>
         </state>
       </provider>

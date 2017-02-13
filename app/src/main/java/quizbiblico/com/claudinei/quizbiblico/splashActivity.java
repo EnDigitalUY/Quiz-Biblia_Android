@@ -11,6 +11,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class splashActivity extends AppCompatActivity implements Runnable {
 
+
+    public boolean debug = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +33,8 @@ public class splashActivity extends AppCompatActivity implements Runnable {
     }
     @Override
     public void run() {
-        startActivity(new Intent(this, Login.class));
+        //startActivity(new Intent(this, Login.class));
+        startActivity(new Intent(this, Jogo.class));
         finish();
     }
 }

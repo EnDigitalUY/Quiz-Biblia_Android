@@ -1,10 +1,12 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,7 @@ public class Jogo extends AppCompatActivity {
             3 - Alternativa D   */
     private ArrayList<Button> botoes = new ArrayList<Button>();
     private Button btnAjuda;
+    private Button btnMaisTempo;
 
     // TextView do nome da pergunta
     private TextView txtPergunta;
@@ -36,6 +39,17 @@ public class Jogo extends AppCompatActivity {
 
     // Número de alternativas que o usuário eliminou. (O limite é 3, pois restaria apenas a alternativa correta)
     private int alternativasEliminadas = 0;
+
+    // Contador decremental de tempo
+    private int tempoRestante = 20;
+
+    // Runnable responsável por controlar o tempo
+    private Runnable controlaTempo;
+
+    // Handler
+    private Handler handler;
+
+    private TextView tempo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,12 +63,48 @@ public class Jogo extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Aqui\n\n" + usuario.toString(), Toast.LENGTH_SHORT).show();
         }
 
+        // Responsável por fazer o decremento do tempo
+        handler = new Handler();
+
+        controlaTempo = new Runnable() {
+            @Override
+            public void run() {
+                while (tempoRestante > 0) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    tempoRestante--;
+
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            tempo.setText(String.valueOf(tempoRestante));
+                        }
+                    });
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getApplicationContext(), "Terminou", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+            }
+        };
+
+        new Thread(controlaTempo).start();
+
+
         // Instanciando os botões
         botoes.add((Button) findViewById(R.id.btnA));
         botoes.add((Button) findViewById(R.id.btnB));
         botoes.add((Button) findViewById(R.id.btnC));
         botoes.add((Button) findViewById(R.id.btnD));
         btnAjuda = (Button) findViewById(R.id.btnAjuda);
+        btnMaisTempo = (Button) findViewById(R.id.btnTempo);
 
         // Instanciando o click dos botões
         botoes.get(0).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(0);}});
@@ -67,14 +117,24 @@ public class Jogo extends AppCompatActivity {
                 ajuda();
             }
         });
+        btnMaisTempo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tempoRestante += 5;
+            }
+        });
+
 
         // Instanciando o TextView da questão
         txtPergunta = (TextView) findViewById(R.id.txtPergunta);
 
+        // Instanciando o TextView do tempo
+        tempo = (TextView) findViewById(R.id.txtTempo);
+        tempo.setText(String.valueOf(tempoRestante));
 
-        // Chamada para função que irá preencher os textos na tela
-        getQuestion(usuario.getRespondidas());
-
+        // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
+        //getQuestion(usuario.getRespondidas());
+        getQuestion(null);
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
@@ -100,7 +160,14 @@ public class Jogo extends AppCompatActivity {
     }
 
     private void getQuestion(ArrayList<Integer> excludedQuestions){
-        boolean randomOk = false;
+
+        question = new Question("Quem foi Jesus", 3 ,"Um profeta", "Um juiz", "Um usado", "O Messias", "ele foi nosso Messias", 1);
+        botoes.get(0).setText(question.getAlternative_A());
+        botoes.get(1).setText(question.getAlternative_B());
+        botoes.get(2).setText(question.getAlternative_C());
+        botoes.get(3).setText(question.getAlternative_D());
+
+        /*boolean randomOk = false;
 
         Random random = new Random();
         int randomizedQuestion = 0;
@@ -131,7 +198,6 @@ public class Jogo extends AppCompatActivity {
                     alternativas.add(question.getAlternative_C());
                     alternativas.add(question.getAlternative_D());
 
-
                     //Variável booleana que identifica a comutação da resposta correta
                     boolean trocou = false;
 
@@ -158,7 +224,7 @@ public class Jogo extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });*/
 
     }
 
