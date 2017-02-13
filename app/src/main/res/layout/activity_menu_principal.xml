@@ -11,11 +11,19 @@
     tools:context="quizbiblico.com.claudinei.quizbiblico.menuPrincipal">
 
     <Button
-        android:text="Button"
+        android:text="Desconectar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/btnDisconnect" />
+
+    <Button
+        android:text="Jogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDisconnect"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnJogar" />
 
 </RelativeLayout>

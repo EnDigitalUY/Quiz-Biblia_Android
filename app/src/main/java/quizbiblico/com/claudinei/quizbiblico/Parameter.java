@@ -9,7 +9,7 @@ import android.net.ConnectivityManager;
 
 public final class Parameter {
 
-    private static int nextQuestionNum = 20;
+    private static int nextQuestionNum = 6;
 
     public Parameter(){
 

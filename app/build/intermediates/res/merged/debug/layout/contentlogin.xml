@@ -73,7 +73,7 @@
             android:paddingLeft="6dp"
             android:textSize="18sp"
             android:textColorLink="@color/myColor5"
-            android:checked="true"
+            android:checked="false"
             android:textColor="@color/myWhite" />
     </LinearLayout>
 

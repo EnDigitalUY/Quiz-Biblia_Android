@@ -59,11 +59,14 @@ public class Login extends AppCompatActivity {
         authenticationListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                // Usuário vindouro da autenticação
                 FirebaseUser user = authentication.getCurrentUser();
 
+                // Verifica se o usuário vindouro da autenticação é diferente de nulo, ou seja, está autenticado
                 if (user != null){
                     userLogged = new Usuario(user.getEmail(), user.getDisplayName(), user.getUid().toString(), swKeepConnected.isChecked());
 
+                    // Verifica se é a autenticação é vindoura de um cadastro de usuário
                     if (usuarioCadastrado)
                         FirebaseDB.getUsuarioReferencia().child(userLogged.getUid()).setValue(userLogged);
 
@@ -74,6 +77,7 @@ public class Login extends AppCompatActivity {
 
                 }else{
                     // User is signed out
+                    usuarioCadastrado = false;
                     Log.d("Login.java", "onAuthStateChanged:signed_out");
                 }
             }

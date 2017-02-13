@@ -105,38 +105,7 @@ public final class QuestionDAO  {
             questionReference.addValueEventListener(questionListener);
         } else if (modoDeRetorno == 2){
 
-            boolean randomOk = false;
 
-            Random random = new Random();
-            int randomizedQuestion = 0;
-
-            while (randomOk == false){
-                randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
-
-                if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
-                    randomOk = true;
-                }
-            }
-
-            questionListener = new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot data : dataSnapshot.getChildren() ){
-                        aleatoryQuestion = data.getValue(Question.class);
-                        Log.d("onDataChange", "Question added");
-                    }
-                    Log.d("onDataChange", "All question added");
-
-                    questionReference.removeEventListener(questionListener);
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            };
-
-            questionReference.orderByChild("idQuestion").equalTo(randomizedQuestion).addValueEventListener(questionListener);
 
         }
     }
