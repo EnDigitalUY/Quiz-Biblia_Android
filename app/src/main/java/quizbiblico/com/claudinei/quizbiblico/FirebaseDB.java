@@ -8,6 +8,7 @@ public final class FirebaseDB {
     private static DatabaseReference databaseReference;
     private static DatabaseReference usuarioReferencia = getDatabaseReference().child("usuario");
     private static DatabaseReference questionReference = getDatabaseReference().child("question");
+    private static DatabaseReference conexaoReferencia = FirebaseDatabase.getInstance().getReference(".info/connected");
 
     public static DatabaseReference getDatabaseReference(){
 
@@ -23,4 +24,8 @@ public final class FirebaseDB {
     }
 
     public static DatabaseReference getQuestionReference() {return questionReference;}
+
+    public static DatabaseReference getConexaoReferencia() {
+        return conexaoReferencia;
+    }
 }

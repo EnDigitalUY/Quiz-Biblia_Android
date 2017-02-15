@@ -1,5 +1,6 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.app.AlertDialog;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,11 +11,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class Jogo extends AppCompatActivity {
@@ -41,13 +45,16 @@ public class Jogo extends AppCompatActivity {
     private int alternativasEliminadas = 0;
 
     // Contador decremental de tempo
-    private int tempoRestante = 20;
+    private int tempoRestante;
 
     // Runnable responsável por controlar o tempo
     private Runnable controlaTempo;
 
-    // Handler
+    // Handler que fará a atualização de informações quando estiver trabalhando noutra Thread (exceto a principal)
+    //  e for necessário atualizar informações de UI
     private Handler handler;
+
+    private Thread thread;
 
     private TextView tempo;
 
@@ -60,43 +67,10 @@ public class Jogo extends AppCompatActivity {
         Bundle extra = getIntent().getExtras();
         if (extra != null){
             usuario = (Usuario) extra.getSerializable("usuario");
-            Toast.makeText(getApplicationContext(), "Aqui\n\n" + usuario.toString(), Toast.LENGTH_SHORT).show();
         }
 
         // Responsável por fazer o decremento do tempo
         handler = new Handler();
-
-        controlaTempo = new Runnable() {
-            @Override
-            public void run() {
-                while (tempoRestante > 0) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    tempoRestante--;
-
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            tempo.setText(String.valueOf(tempoRestante));
-                        }
-                    });
-                }
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(), "Terminou", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-            }
-        };
-
-        new Thread(controlaTempo).start();
-
 
         // Instanciando os botões
         botoes.add((Button) findViewById(R.id.btnA));
@@ -124,7 +98,6 @@ public class Jogo extends AppCompatActivity {
             }
         });
 
-
         // Instanciando o TextView da questão
         txtPergunta = (TextView) findViewById(R.id.txtPergunta);
 
@@ -133,8 +106,7 @@ public class Jogo extends AppCompatActivity {
         tempo.setText(String.valueOf(tempoRestante));
 
         // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
-        //getQuestion(usuario.getRespondidas());
-        getQuestion(null);
+        proximaQuestao();
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
@@ -155,76 +127,148 @@ public class Jogo extends AppCompatActivity {
     }
 
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
+
         boolean acertou = alternativaUsuario == question.getAnswer();
-        Toast.makeText(getApplicationContext(), String.valueOf(acertou), Toast.LENGTH_SHORT).show();
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        if (acertou){
+            if (Configuracoes.getConexao()){
+                usuario.addAnswered(question.getIdQuestion());
+                FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
+            }
+
+            builder.setTitle("Parabéns! Você acertou");
+
+        }else {
+            builder.setTitle("Que pena! Você errou");
+        }
+        builder.setMessage(question.getTextBiblical());
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        //thread.interrupt();
+
+        proximaQuestao();
+
+    }
+
+    private void proximaQuestao(){
+
+        alternativasEliminadas = 0;
+        for (int i = 0; i < botoes.size(); i++){
+            botoes.get(i).setVisibility(View.VISIBLE);
+        }
+
+        tempoRestante = 20;
+
+        controlaTempo = new Runnable() {
+            @Override
+            public void run() {
+                while (tempoRestante > 0) {
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            tempo.setText(String.valueOf(tempoRestante));
+                        }
+                    });
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    tempoRestante--;
+
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getApplicationContext(), "Terminou", Toast.LENGTH_SHORT).show();
+                        tentativa(5);
+                    }
+                });
+            }
+        };
+
+        thread = new Thread(controlaTempo);
+
+        thread.start();
+
+        getQuestion((Configuracoes.getConexao() ? usuario.getRespondidas() : null));
     }
 
     private void getQuestion(ArrayList<Integer> excludedQuestions){
 
-        question = new Question("Quem foi Jesus", 3 ,"Um profeta", "Um juiz", "Um usado", "O Messias", "ele foi nosso Messias", 1);
-        botoes.get(0).setText(question.getAlternative_A());
-        botoes.get(1).setText(question.getAlternative_B());
-        botoes.get(2).setText(question.getAlternative_C());
-        botoes.get(3).setText(question.getAlternative_D());
+        if (!Configuracoes.getConexao()) {
 
-        /*boolean randomOk = false;
+            question = new Question("Quem foi Jesus", 3, "Um profeta", "Um juiz", "Um usado", "O Messias", "ele foi nosso Messias", 1);
+            botoes.get(0).setText(question.getAlternative_A());
+            botoes.get(1).setText(question.getAlternative_B());
+            botoes.get(2).setText(question.getAlternative_C());
+            botoes.get(3).setText(question.getAlternative_D());
+        } else {
+            boolean randomOk = false;
 
-        Random random = new Random();
-        int randomizedQuestion = 0;
+            Random random = new Random();
+            int randomizedQuestion = 0;
 
-        while (randomOk == false){
-            randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
+            while (randomOk == false){
+                randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
 
-            if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
-                randomOk = true;
-            }
-        }
-
-        FirebaseDB.getQuestionReference().orderByChild("idQuestion").equalTo(randomizedQuestion).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot data : dataSnapshot.getChildren() ){
-                    question = data.getValue(Question.class);
-
-                    // Preechimento do nome da questão
-                    txtPergunta.setText(question.getQuestion());
-
-
-                    // Coloca o texto nos botões de maneira aleatória, ou seja, a cada vez que
-                    //  chegar na questão, as alternativas serão apresentadas de forma diferente
-                    ArrayList<String> alternativas = new ArrayList<>();
-                    alternativas.add(question.getAlternative_A());
-                    alternativas.add(question.getAlternative_B());
-                    alternativas.add(question.getAlternative_C());
-                    alternativas.add(question.getAlternative_D());
-
-                    //Variável booleana que identifica a comutação da resposta correta
-                    boolean trocou = false;
-
-
-                    // Colocando os textos nos botões
-                    Random random = new Random();
-                    int alternativaAleatoria;
-                    for (int i = 0; i <= 3; i++){
-                        alternativaAleatoria = random.nextInt(alternativas.size());
-
-                        if (alternativaAleatoria == question.getAnswer() && trocou == false){
-                            trocou = true;
-                            question.setAnswer(i);
-                        }
-
-                        botoes.get(i).setText(alternativas.get(alternativaAleatoria));
-                        alternativas.remove(alternativaAleatoria);
-                    }
-
+                if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
+                    randomOk = true;
                 }
             }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+            FirebaseDB.getQuestionReference().orderByChild("idQuestion").equalTo(randomizedQuestion).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot data : dataSnapshot.getChildren() ){
+                        question = data.getValue(Question.class);
 
-            }
-        });*/
+                        // Preechimento do nome da questão
+                        txtPergunta.setText(question.getQuestion());
+
+
+                        // Coloca o texto nos botões de maneira aleatória, ou seja, a cada vez que
+                        //  chegar na questão, as alternativas serão apresentadas de forma diferente
+                        ArrayList<String> alternativas = new ArrayList<>();
+                        alternativas.add(question.getAlternative_A());
+                        alternativas.add(question.getAlternative_B());
+                        alternativas.add(question.getAlternative_C());
+                        alternativas.add(question.getAlternative_D());
+
+                        //Variável booleana que identifica a comutação da resposta correta
+                        boolean trocou = false;
+
+
+                        // Colocando os textos nos botões
+                        Random random = new Random();
+                        int alternativaAleatoria;
+                        for (int i = 0; i <= 3; i++){
+                            alternativaAleatoria = random.nextInt(alternativas.size());
+
+                            if (alternativaAleatoria == question.getAnswer() && trocou == false){
+                                trocou = true;
+                                question.setAnswer(i);
+                            }
+
+                            botoes.get(i).setText(alternativas.get(alternativaAleatoria));
+                            alternativas.remove(alternativaAleatoria);
+                        }
+
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
 
     }
 

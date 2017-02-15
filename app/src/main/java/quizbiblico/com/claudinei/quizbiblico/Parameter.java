@@ -1,7 +1,8 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * Created by Claudinei on 03/02/2017.
@@ -10,7 +11,6 @@ import android.net.ConnectivityManager;
 public final class Parameter {
 
     private static int nextQuestionNum = 6;
-
     public Parameter(){
 
     }
@@ -26,16 +26,4 @@ public final class Parameter {
         Parameter.nextQuestionNum = getNextQuestionNum()-1;
     }
 
-    public  boolean verificaConexao(Context context) {
-        boolean conectado;
-        ConnectivityManager conectivtyManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (conectivtyManager.getActiveNetworkInfo() != null
-                && conectivtyManager.getActiveNetworkInfo().isAvailable()
-                && conectivtyManager.getActiveNetworkInfo().isConnected()) {
-            conectado = true;
-        } else {
-            conectado = false;
-        }
-        return conectado;
-    }
 }
