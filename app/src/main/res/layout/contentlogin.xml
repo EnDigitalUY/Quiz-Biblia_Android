@@ -75,6 +75,19 @@
             android:textColorLink="@color/myColor5"
             android:checked="false"
             android:textColor="@color/myWhite" />
+
+        <ProgressBar
+            android:id="@+id/progresso"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="75"
+            android:visibility="invisible" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -82,16 +95,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="410dp"
-        android:baselineAligned="false">
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="440dp"
+        android:baselineAligned="true">
 
         <Button
             android:id="@+id/btnLogIn"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
             android:text="@string/action_sign_in"
             android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@color/myLightGray"
+            android:layout_marginBottom="0dp"
             android:textAlignment="center"
             android:textStyle="normal|bold"
             android:layout_width="match_parent"
@@ -100,10 +116,12 @@
         <Button
             android:id="@+id/btnRegister"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
             android:text="@string/action_sign_up"
             android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@color/myLightGray"
+            android:layout_marginBottom="0dp"
             android:textAlignment="center"
             android:textStyle="normal|bold"
             android:layout_width="match_parent"

@@ -107,6 +107,41 @@ public class Jogo extends AppCompatActivity {
 
         // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
         proximaQuestao();
+
+        controlaTempo = new Runnable() {
+            @Override
+            public void run() {
+                while (tempoRestante > 0) {
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            tempo.setText(String.valueOf(tempoRestante));
+                        }
+                    });
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    tempoRestante--;
+
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        tentativa(5);
+                    }
+                });
+            }
+        };
+
+        thread = new Thread(controlaTempo);
+
+        thread.start();
+
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
@@ -137,17 +172,14 @@ public class Jogo extends AppCompatActivity {
                 usuario.addAnswered(question.getIdQuestion());
                 FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
             }
-
             builder.setTitle("Parabéns! Você acertou");
-
         }else {
             builder.setTitle("Que pena! Você errou");
         }
         builder.setMessage(question.getTextBiblical());
         AlertDialog dialog = builder.create();
-        dialog.show();
 
-        //thread.interrupt();
+        dialog.show();
 
         proximaQuestao();
 
@@ -161,41 +193,6 @@ public class Jogo extends AppCompatActivity {
         }
 
         tempoRestante = 20;
-
-        controlaTempo = new Runnable() {
-            @Override
-            public void run() {
-                while (tempoRestante > 0) {
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            tempo.setText(String.valueOf(tempoRestante));
-                        }
-                    });
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    tempoRestante--;
-
-                }
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(), "Terminou", Toast.LENGTH_SHORT).show();
-                        tentativa(5);
-                    }
-                });
-            }
-        };
-
-        thread = new Thread(controlaTempo);
-
-        thread.start();
 
         getQuestion((Configuracoes.getConexao() ? usuario.getRespondidas() : null));
     }

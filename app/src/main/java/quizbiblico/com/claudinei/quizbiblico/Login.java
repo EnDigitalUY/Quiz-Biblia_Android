@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -47,6 +48,9 @@ public class Login extends AppCompatActivity {
 
     //Variável que identifica se é uma criação ou não de um usuário
     private boolean usuarioCadastrado;
+
+    //Barra de progresso
+    public static ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,11 +101,15 @@ public class Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
 
+        //Instanciando o progressBar
+        progressBar = (ProgressBar) findViewById(R.id.progresso);
+
         //Definindo a ação tomada ao clicar em login
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 firebaseLogin(email.getText().toString(), password.getText().toString());
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
 
@@ -110,6 +118,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 firebaseRegister(email.getText().toString(), password.getText().toString());
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
 
@@ -150,8 +159,10 @@ public class Login extends AppCompatActivity {
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
-                        if (!task.isSuccessful())
+                        if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível criar o usuário", Snackbar.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.INVISIBLE);
+                        }
                     }
                 });
     }
@@ -168,8 +179,8 @@ public class Login extends AppCompatActivity {
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            Log.w("Login.java", "signInWithEmail:failed", task.getException());
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível conectar o usuário", Snackbar.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
                     }
                 });
