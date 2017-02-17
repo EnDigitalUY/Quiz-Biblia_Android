@@ -53,17 +53,17 @@ public class menuPrincipal extends AppCompatActivity {
         }
 
         // Instanciando os botões
-        btnDisconnect = (Button) findViewById(R.id.btnDisconnect);
+        //btnDisconnect = (Button) findViewById(R.id.menu_desconectar);
         btnJogar = (Button) findViewById(R.id.btnJogar);
 
         // Desconecta o usuário
-        btnDisconnect.setOnClickListener(new View.OnClickListener() {
+        /*btnDisconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
                 finish();
             }
-        });
+        });*/
 
         // Vai para a tela do jogo
         btnJogar.setOnClickListener(new View.OnClickListener() {

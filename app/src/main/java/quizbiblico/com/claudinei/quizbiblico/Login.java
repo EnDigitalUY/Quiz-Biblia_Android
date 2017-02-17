@@ -1,5 +1,6 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,6 +8,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,6 +59,9 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        //actionBar.
 
         usuarioCadastrado = false;
 
@@ -123,6 +129,26 @@ public class Login extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
+
+		/*MenuItem m1 = menu.add(0, 0, 0, "Item 1");
+		m1.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+
+		MenuItem m2 = menu.add(0, 1, 1, "Item 2");
+		m2.setIcon(R.drawable.ic_launcher);
+		m2.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
+		MenuItem m3 = menu.add(0, 2, 2, "Item 3");
+		m3.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+
+		MenuItem m4 = menu.add(0, 3, 3, "Item 4");
+		m4.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);*/
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return(true);
     }
 
     // No início da aplicação, seta o Listener para acompanhar as mudanças na autenticação

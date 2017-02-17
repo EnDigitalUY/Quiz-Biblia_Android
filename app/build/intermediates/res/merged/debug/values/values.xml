@@ -455,6 +455,7 @@
     <string name="action_keep_connected">Manter Conectado</string>
     <string name="action_reset">Recuperar acesso</string>
     <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_out">Desconectar</string>
     <string name="action_sign_up">Cadastrar</string>
     <string name="app_name">Quiz da Bíblia</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>

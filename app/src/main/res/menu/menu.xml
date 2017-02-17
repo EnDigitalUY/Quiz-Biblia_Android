@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:title="Item 1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/icon"
+        android:title="Item 2"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_recarregarconexao"
+        android:title="Item 4"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_desconectar"
+        android:icon="@drawable/logoff"
+        android:title="@string/action_sign_out"
+        app:showAsAction="never" />
+
+</menu>

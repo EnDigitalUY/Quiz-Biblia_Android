@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="23"
-    density="xhdpi"
+    abi="x86"
+    api-level="25"
+    density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="2461782236833"
+    timestamp="108413993934147"
     token="-6648928763270010415"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="BINARY_MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="1044" />
+        duration="1153" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1009" />
+        duration="175" />
     <task
         name="verifier"
-        duration="243" />
+        duration="35" />
 
     <artifact
         location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="2461782236833"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="108413993934147"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
             location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

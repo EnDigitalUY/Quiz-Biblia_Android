@@ -10,8 +10,6 @@
     android:background="@color/myColor5"
     app:layout_collapseParallaxMultiplier="0.0">
 
-
-
     <ImageView
         android:layout_width="match_parent"
         app:srcCompat="@drawable/initialimage"

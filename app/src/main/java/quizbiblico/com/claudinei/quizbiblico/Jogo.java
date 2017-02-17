@@ -1,6 +1,7 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,6 +56,8 @@ public class Jogo extends AppCompatActivity {
     private Handler handler;
 
     private Thread thread;
+
+    private boolean executaThread = true;
 
     private TextView tempo;
 
@@ -111,30 +114,32 @@ public class Jogo extends AppCompatActivity {
         controlaTempo = new Runnable() {
             @Override
             public void run() {
-                while (tempoRestante > 0) {
+                if (executaThread) {
+                    while (tempoRestante > 0) {
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                tempo.setText(String.valueOf(tempoRestante));
+                            }
+                        });
+
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        tempoRestante--;
+
+                    }
+
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-                            tempo.setText(String.valueOf(tempoRestante));
+                            tentativa(5);
                         }
                     });
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    tempoRestante--;
-
                 }
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        tentativa(5);
-                    }
-                });
             }
         };
 
@@ -163,6 +168,8 @@ public class Jogo extends AppCompatActivity {
 
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
 
+        executaThread = false;
+
         boolean acertou = alternativaUsuario == question.getAnswer();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -173,16 +180,24 @@ public class Jogo extends AppCompatActivity {
                 FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
             }
             builder.setTitle("Parabéns! Você acertou");
+            builder.setIcon(R.drawable.correct);
         }else {
             builder.setTitle("Que pena! Você errou");
+            builder.setIcon(R.drawable.wrong);
         }
         builder.setMessage(question.getTextBiblical());
+
+        builder.setNeutralButton("Próxima Questão", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                executaThread = false;
+                proximaQuestao();
+            }
+        });
+
         AlertDialog dialog = builder.create();
 
         dialog.show();
-
-        proximaQuestao();
-
     }
 
     private void proximaQuestao(){
