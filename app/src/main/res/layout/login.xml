@@ -24,6 +24,18 @@
             layout="@layout/contentlogin"
             android:id="@+id/contentLogin" />
 
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="89dp"
+            android:id="@+id/btnDebug"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp" />
+
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

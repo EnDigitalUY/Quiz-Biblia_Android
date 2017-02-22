@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.google.firebase.database.FirebaseDatabase;
 
 public class splashActivity extends AppCompatActivity implements Runnable {
 
@@ -20,8 +25,8 @@ public class splashActivity extends AppCompatActivity implements Runnable {
             Toast.makeText(getApplicationContext(), "FirebaseDatabase error\n\n" + e.getMessage().toString(), Toast.LENGTH_LONG).show();
         }*/
 
+        Parameter.getNexQuestionNum_Aux();
         Configuracoes.verificaConexao();
-
 
         Handler handler = new Handler();
         handler.postDelayed(this, 3000);

@@ -13,8 +13,13 @@
         app:showAsAction="ifRoom|withText" />
 
     <item
-        android:id="@+id/menu_recarregarconexao"
-        android:title="Item 4"
+        android:id="@+id/menu_status"
+        android:title=""
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="@string/titulomenu"
         app:showAsAction="never" />
 
     <item

@@ -1,5 +1,7 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.view.MenuItem;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -31,11 +33,12 @@ public final class Configuracoes {
     }
 
     public static boolean getConexao(){
-        if (bVerificado)
+        if (bVerificado) {
             return conexao;
+        }
         else{
             verificaConexao();
-            return Boolean.parseBoolean(null);
+            return false;
         }
     }
 

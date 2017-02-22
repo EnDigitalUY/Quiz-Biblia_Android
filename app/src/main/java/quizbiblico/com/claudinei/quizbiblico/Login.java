@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,9 +61,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        //actionBar.
-
         usuarioCadastrado = false;
 
         //Instanciando a autenticação
@@ -86,11 +84,11 @@ public class Login extends AppCompatActivity {
                     //Indo para a próxima tela
                     Intent intent = new Intent(Login.this, menuPrincipal.class);
                     intent.putExtra("userLogged", userLogged);
+                    intent.putExtra("cadastro", usuarioCadastrado);
                     startActivity(intent);
 
                 }else{
                     // User is signed out
-                    usuarioCadastrado = false;
                     Log.d("Login.java", "onAuthStateChanged:signed_out");
                 }
             }
@@ -106,6 +104,18 @@ public class Login extends AppCompatActivity {
         //Instanciando os botões
         btnLogin = (Button) findViewById(R.id.btnLogIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
+
+        Button btnDebug = (Button) findViewById(R.id.btnDebug);
+        btnDebug.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Indo para a próxima tela
+                Intent intent = new Intent(Login.this, menuPrincipal.class);
+                intent.putExtra("userLogged", new Usuario("claudineibjr@hotmail.com", "Claudinei Brito", "", true));
+                intent.putExtra("cadastro", false);
+                startActivity(intent);
+            }
+        });
 
         //Instanciando o progressBar
         progressBar = (ProgressBar) findViewById(R.id.progresso);
@@ -127,26 +137,12 @@ public class Login extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
             }
         });
-
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         super.onCreateOptionsMenu(menu);
 
-		/*MenuItem m1 = menu.add(0, 0, 0, "Item 1");
-		m1.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-
-		MenuItem m2 = menu.add(0, 1, 1, "Item 2");
-		m2.setIcon(R.drawable.ic_launcher);
-		m2.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-
-		MenuItem m3 = menu.add(0, 2, 2, "Item 3");
-		m3.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-
-		MenuItem m4 = menu.add(0, 3, 3, "Item 4");
-		m4.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);*/
         getMenuInflater().inflate(R.menu.menu, menu);
         return(true);
     }
@@ -188,6 +184,7 @@ public class Login extends AppCompatActivity {
                         if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível criar o usuário", Snackbar.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.INVISIBLE);
+                            usuarioCadastrado = false;
                         }
                     }
                 });
@@ -211,4 +208,5 @@ public class Login extends AppCompatActivity {
                     }
                 });
     }
+
 }

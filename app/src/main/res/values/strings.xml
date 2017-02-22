@@ -11,6 +11,16 @@
     <string name="action_reset">Recuperar acesso</string>
     <string name="action_keep_connected">Manter Conectado</string>
     <string name="action_sign_out">Desconectar</string>
+    <string name="action_salvar">Salvar</string>
+    <string name="action_resetar_dados">Resetar</string>
+
+    <string name="bemvindo">Seja bem-vindo!</string>
+    <string name="telacadastro">Estamos muito felizes por você ter se cadastrado no nosso app. Preencha os dados abaixo por favor. Deus abençõe</string>
+    <string name="titulomenu">Atualizar cadastro</string>
+
+    <string name="statuson">Conectado</string>
+    <string name="statusoff">Sem conexão</string>
+
 
     <string name="campos_obrigatorios_usuario_senha">Por favor, digite o usuário e a senha</string>
 
