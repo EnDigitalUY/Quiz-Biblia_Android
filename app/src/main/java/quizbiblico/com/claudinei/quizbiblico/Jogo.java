@@ -46,7 +46,7 @@ public class Jogo extends AppCompatActivity {
     private int alternativasEliminadas = 0;
 
     // Contador decremental de tempo
-    private int tempoRestante = 20;
+    private int tempoRestante;
 
     // Runnable responsável por controlar o tempo
     private Runnable controlaTempo;
@@ -54,8 +54,6 @@ public class Jogo extends AppCompatActivity {
     // Handler que fará a atualização de informações quando estiver trabalhando noutra Thread (exceto a principal)
     //  e for necessário atualizar informações de UI
     private Handler handler;
-
-    private Thread thread;
 
     private boolean executaThread = false;
 
@@ -97,7 +95,7 @@ public class Jogo extends AppCompatActivity {
         btnMaisTempo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tempoRestante += 5;
+                maisTempo();
             }
         });
 
@@ -114,8 +112,8 @@ public class Jogo extends AppCompatActivity {
         controlaTempo = new Runnable() {
             @Override
             public void run() {
-                if (executaThread) {
-                    while (tempoRestante > 0) {
+                while (tempoRestante > 0) {
+                    if (executaThread == true){
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
@@ -132,18 +130,24 @@ public class Jogo extends AppCompatActivity {
                         tempoRestante--;
 
                     }
-
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            tentativa(5);
-                        }
-                    });
                 }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        tentativa(5);
+                    }
+                });
+
             }
         };
 
         new Thread(controlaTempo).start();
+
+    }
+
+    private void maisTempo(){
+        tempoRestante += 5;
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
@@ -187,6 +191,7 @@ public class Jogo extends AppCompatActivity {
         builder.setNeutralButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                executaThread = false;
                 proximaQuestao();
             }
         });
@@ -211,6 +216,7 @@ public class Jogo extends AppCompatActivity {
     private void getQuestion(ArrayList<Integer> excludedQuestions){
 
         if (!Configuracoes.getConexao()) {
+
             question = new Question("Quem foi Jesus", 3, "Um profeta", "Um juiz", "Um usado", "O Messias", "ele foi nosso Messias", 1);
             botoes.get(0).setText(question.getAlternative_A());
             botoes.get(1).setText(question.getAlternative_B());
@@ -239,6 +245,7 @@ public class Jogo extends AppCompatActivity {
                         // Preechimento do nome da questão
                         txtPergunta.setText(question.getQuestion());
 
+
                         // Coloca o texto nos botões de maneira aleatória, ou seja, a cada vez que
                         //  chegar na questão, as alternativas serão apresentadas de forma diferente
                         ArrayList<String> alternativas = new ArrayList<>();
@@ -248,13 +255,13 @@ public class Jogo extends AppCompatActivity {
                         alternativas.add(question.getAlternative_D());
 
                         //Variável booleana que identifica a comutação da resposta correta
-                        //boolean trocou = false; //TODO Implementar troca de alternativas a cada questão
+                        boolean trocou = false;
 
                         // Colocando os textos nos botões
-                        //Random random = new Random();
-                        //int alternativaAleatoria;
+                        Random random = new Random();
+                        int alternativaAleatoria;
                         for (int i = 0; i <= 3; i++){
-                            /*alternativaAleatoria = random.nextInt(alternativas.size());
+                            alternativaAleatoria = random.nextInt(alternativas.size());
 
                             if (alternativaAleatoria == question.getAnswer() && trocou == false){
                                 trocou = true;
@@ -262,11 +269,11 @@ public class Jogo extends AppCompatActivity {
                             }
 
                             botoes.get(i).setText(alternativas.get(alternativaAleatoria));
-                            alternativas.remove(alternativaAleatoria);*/
-                            botoes.get(i).setText(alternativas.get(i));
+                            alternativas.remove(alternativaAleatoria);
                         }
 
                         executaThread = true;
+
                     }
                 }
 
