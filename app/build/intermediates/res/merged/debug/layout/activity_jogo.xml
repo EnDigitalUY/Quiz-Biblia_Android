@@ -114,7 +114,7 @@
             android:id="@+id/txtTempo"
             android:textStyle="normal|bold"
             android:textSize="18sp"
-            android:layout_alignParentTop="true"
+            android:layout_above="@+id/linearLayout2"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
