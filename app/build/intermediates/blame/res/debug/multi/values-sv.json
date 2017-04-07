@@ -368,8 +368,331 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2018,
+                    "endColumn": 158,
+                    "endOffset": 2172
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 158,
+                        "endOffset": 209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2177,
+                    "endColumn": 106,
+                    "endOffset": 2279
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 214,
+                        "endColumn": 106,
+                        "endOffset": 316
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2284,
+                    "endColumn": 115,
+                    "endOffset": 2395
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 321,
+                        "endColumn": 115,
+                        "endOffset": 432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2400,
+                    "endColumn": 92,
+                    "endOffset": 2488
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 437,
+                        "endColumn": 92,
+                        "endOffset": 525
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2493,
+                    "endColumn": 66,
+                    "endOffset": 2555
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 530,
+                        "endColumn": 66,
+                        "endOffset": 592
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2560,
+                    "endColumn": 68,
+                    "endOffset": 2624
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 597,
+                        "endColumn": 68,
+                        "endOffset": 661
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2629,
+                    "endColumn": 59,
+                    "endOffset": 2684
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 666,
+                        "endColumn": 59,
+                        "endOffset": 721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2689,
+                    "endColumn": 71,
+                    "endOffset": 2756
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 726,
+                        "endColumn": 71,
+                        "endOffset": 793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2761,
+                    "endColumn": 73,
+                    "endOffset": 2830
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 798,
+                        "endColumn": 73,
+                        "endOffset": 867
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2835,
+                    "endColumn": 91,
+                    "endOffset": 2922
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 872,
+                        "endColumn": 91,
+                        "endOffset": 959
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2927,
+                    "endColumn": 74,
+                    "endOffset": 2997
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 964,
+                        "endColumn": 74,
+                        "endOffset": 1034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3002,
+                    "endColumn": 74,
+                    "endOffset": 3072
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1039,
+                        "endColumn": 74,
+                        "endOffset": 1109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3077,
+                    "endColumn": 82,
+                    "endOffset": 3155
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1114,
+                        "endColumn": 82,
+                        "endOffset": 1192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3160,
+                    "endColumn": 97,
+                    "endOffset": 3253
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1197,
+                        "endColumn": 97,
+                        "endOffset": 1290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3258,
+                    "endColumn": 64,
+                    "endOffset": 3318
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1295,
+                        "endColumn": 64,
+                        "endOffset": 1355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3323,
+                    "endColumn": 63,
+                    "endOffset": 3382
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1360,
+                        "endColumn": 63,
+                        "endOffset": 1419
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3387,
+                    "endColumn": 119,
+                    "endOffset": 3502
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1424,
+                        "endColumn": 119,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3507,
                     "endColumn": 269,
-                    "endOffset": 2283
+                    "endOffset": 3772
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -384,11 +707,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2288,
+                    "startOffset": 3777,
                     "endColumn": 129,
-                    "endOffset": 2413
+                    "endOffset": 3902
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -403,11 +726,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2418,
+                    "startOffset": 3907,
                     "endColumn": 188,
-                    "endOffset": 2602
+                    "endOffset": 4091
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -422,11 +745,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2607,
+                    "startOffset": 4096,
                     "endColumn": 128,
-                    "endOffset": 2731
+                    "endOffset": 4220
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -441,11 +764,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2736,
+                    "startOffset": 4225,
                     "endColumn": 127,
-                    "endOffset": 2859
+                    "endOffset": 4348
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -460,11 +783,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2864,
+                    "startOffset": 4353,
                     "endColumn": 210,
-                    "endOffset": 3070
+                    "endOffset": 4559
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -479,11 +802,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3075,
+                    "startOffset": 4564,
                     "endColumn": 215,
-                    "endOffset": 3286
+                    "endOffset": 4775
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -498,11 +821,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3291,
+                    "startOffset": 4780,
                     "endColumn": 126,
-                    "endOffset": 3413
+                    "endOffset": 4902
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -517,11 +840,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3418,
+                    "startOffset": 4907,
                     "endColumn": 177,
-                    "endOffset": 3591
+                    "endOffset": 5080
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -536,11 +859,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3596,
+                    "startOffset": 5085,
                     "endColumn": 122,
-                    "endOffset": 3714
+                    "endOffset": 5203
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -555,11 +878,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3719,
+                    "startOffset": 5208,
                     "endColumn": 183,
-                    "endOffset": 3898
+                    "endOffset": 5387
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -574,11 +897,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 3903,
+                    "startOffset": 5392,
                     "endColumn": 117,
-                    "endOffset": 4016
+                    "endOffset": 5505
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -593,11 +916,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4021,
+                    "startOffset": 5510,
                     "endColumn": 132,
-                    "endOffset": 4149
+                    "endOffset": 5638
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -612,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4154,
+                    "startOffset": 5643,
                     "endColumn": 175,
-                    "endOffset": 4325
+                    "endOffset": 5814
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -631,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4330,
+                    "startOffset": 5819,
                     "endColumn": 147,
-                    "endOffset": 4473
+                    "endOffset": 5962
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -650,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4478,
+                    "startOffset": 5967,
                     "endColumn": 168,
-                    "endOffset": 4642
+                    "endOffset": 6131
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -669,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4647,
+                    "startOffset": 6136,
                     "endColumn": 127,
-                    "endOffset": 4770
+                    "endOffset": 6259
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -688,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4775,
+                    "startOffset": 6264,
                     "endColumn": 179,
-                    "endOffset": 4950
+                    "endOffset": 6439
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -707,11 +1030,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4955,
+                    "startOffset": 6444,
                     "endColumn": 133,
-                    "endOffset": 5084
+                    "endOffset": 6573
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -726,11 +1049,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5089,
+                    "startOffset": 6578,
                     "endColumn": 219,
-                    "endOffset": 5304
+                    "endOffset": 6793
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.0.2\\res\\values-sv\\values.xml",
@@ -745,11 +1068,11 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5309,
+                    "startOffset": 6798,
                     "endColumn": 244,
-                    "endOffset": 5549
+                    "endOffset": 7038
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -764,11 +1087,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5554,
+                    "startOffset": 7043,
                     "endColumn": 123,
-                    "endOffset": 5673
+                    "endOffset": 7162
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -783,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5678,
+                    "startOffset": 7167,
                     "endColumn": 109,
-                    "endOffset": 5783
+                    "endOffset": 7272
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -802,11 +1125,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5788,
+                    "startOffset": 7277,
                     "endColumn": 192,
-                    "endOffset": 5976
+                    "endOffset": 7465
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -821,11 +1144,11 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5981,
+                    "startOffset": 7470,
                     "endColumn": 129,
-                    "endOffset": 6106
+                    "endOffset": 7595
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -840,11 +1163,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6111,
+                    "startOffset": 7600,
                     "endColumn": 212,
-                    "endOffset": 6319
+                    "endOffset": 7808
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -859,11 +1182,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6324,
+                    "startOffset": 7813,
                     "endColumn": 132,
-                    "endOffset": 6452
+                    "endOffset": 7941
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -878,11 +1201,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6457,
+                    "startOffset": 7946,
                     "endColumn": 185,
-                    "endOffset": 6638
+                    "endOffset": 8127
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -897,11 +1220,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6643,
+                    "startOffset": 8132,
                     "endColumn": 95,
-                    "endOffset": 6734
+                    "endOffset": 8223
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -916,11 +1239,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6739,
+                    "startOffset": 8228,
                     "endColumn": 92,
-                    "endOffset": 6827
+                    "endOffset": 8316
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -935,11 +1258,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6832,
+                    "startOffset": 8321,
                     "endColumn": 107,
-                    "endOffset": 6935
+                    "endOffset": 8424
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-sv\\values.xml",
@@ -954,11 +1277,30 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6940,
+                    "startOffset": 8429,
+                    "endColumn": 61,
+                    "endOffset": 8486
+                },
+                "from": {
+                    "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.16.1\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1544,
+                        "endColumn": 61,
+                        "endOffset": 1601
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 8491,
                     "endColumn": 78,
-                    "endOffset": 7014
+                    "endOffset": 8565
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-sv\\values-sv.xml",
@@ -973,11 +1315,11 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 7019,
+                    "startOffset": 8570,
                     "endColumn": 100,
-                    "endOffset": 7115
+                    "endOffset": 8666
                 },
                 "from": {
                     "file": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-sv\\values-sv.xml",

@@ -21,7 +21,9 @@
     <string name="statuson">Conectado</string>
     <string name="statusoff">Sem conexão</string>
 
-
     <string name="campos_obrigatorios_usuario_senha">Por favor, digite o usuário e a senha</string>
+
+    <string name="action_sign_in_facebook">Login com o Facebook</string>
+    <string name="facebook_app_id">1899758983589113</string>
 
 </resources>

@@ -48,7 +48,7 @@ public class menuPrincipal extends AppCompatActivity {
             }else {
 
                 // Vai buscar no banco de dados as informações do usuário logado e atualiza o objeto
-                FirebaseDB.getUsuarioReferencia().orderByKey().equalTo(usuario.getUid()).addValueEventListener(new ValueEventListener() {
+                FirebaseDB.getUsuarioReferencia().orderByKey().equalTo(usuario.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot data : dataSnapshot.getChildren()) {
@@ -97,6 +97,7 @@ public class menuPrincipal extends AppCompatActivity {
                 return true;
             }
             case R.id.menu_perfil:{
+                // Atualiza o cadastro do usuário
                 Intent intent = new Intent(menuPrincipal.this, cadastroActivity.class);
                 intent.putExtra("usuario", usuario);
                 startActivity(intent);

@@ -217,7 +217,16 @@ public class Jogo extends AppCompatActivity {
 
         if (!Configuracoes.getConexao()) {
 
-            question = new Question("Quem foi Jesus", 3, "Um profeta", "Um juiz", "Um usado", "O Messias", "ele foi nosso Messias", 1);
+            question = new Question("Quem foi Jesus",
+                    3,
+                    "Um profeta",
+                    "Um juiz",
+                    "Um usado",
+                    "O Messias",
+                    "ele foi nosso Messias",
+                    1,
+                    2,
+                    "Evangelhos");
             botoes.get(0).setText(question.getAlternative_A());
             botoes.get(1).setText(question.getAlternative_B());
             botoes.get(2).setText(question.getAlternative_C());
