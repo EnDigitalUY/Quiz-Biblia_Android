@@ -573,6 +573,9 @@
     <string name="google_app_id" translatable="false">1:739186926536:android:1752a7aaea2bda33</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCsrnTeZ7ha-6RX7wi_03ErJSavR4hf8aM</string>
     <string name="google_storage_bucket" translatable="false">quizbiblico-b3eec.appspot.com</string>
+    <string name="jogo_eliminaalternativa">Elimina alternativa</string>
+    <string name="jogo_maistempo">+ 5 segundos</string>
+    <string name="jogo_textobiblico">Texto bíblico</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="package_name">quizbiblico.com.claudinei.quizbiblico</string>
     <string name="prompt_email">Email</string>

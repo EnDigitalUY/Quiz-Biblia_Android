@@ -26,4 +26,8 @@
     <string name="action_sign_in_facebook">Login com o Facebook</string>
     <string name="facebook_app_id">1899758983589113</string>
 
+    <string name="jogo_maistempo">+ 5 segundos</string>
+    <string name="jogo_eliminaalternativa">Elimina alternativa</string>
+    <string name="jogo_textobiblico">Texto bíblico</string>
+
 </resources>

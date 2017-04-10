@@ -11,6 +11,7 @@ public class Usuario implements Serializable {
     private boolean manterConectado;
     private int bonusTempo = 5;
     private int bonusQuestao = 5;
+    private String linkImagemUsuario;
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
 
     public void addAnswered(Integer questionAnswered){
@@ -26,6 +27,14 @@ public class Usuario implements Serializable {
         this.nome = nome;
         this.uid = uid;
         this.manterConectado = manterConectado;
+    }
+
+    public String getLinkImagemUsuario() {
+        return linkImagemUsuario;
+    }
+
+    public void setLinkImagemUsuario(String linkImagemUsuario) {
+        this.linkImagemUsuario = linkImagemUsuario;
     }
 
     public String getEmail() {

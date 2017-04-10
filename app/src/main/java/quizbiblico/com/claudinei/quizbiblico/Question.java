@@ -8,14 +8,14 @@ public class Question {
     private String alternative_A, alternative_B, alternative_C, alternative_D;
     private String textBiblical;
     private int levelQuestion;
-    private int testamento; /* 1 - Antigo Testamento | 2 - Novo testamento*/
+    private String testamento; /* Antigo | Novo */
     private String secaoBiblia; /* Pentateuco | História 1 | Poesia | Profetas Maiores | Profetas Menores | Evangelhos | História 2 | Cartas | Profecia */
 
     public Question(){
 
     }
 
-    public Question(String question, int answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, int levelQuestion, int testamento, String secaoBiblia ) {
+    public Question(String question, int answer, String alternative_A, String alternative_B, String alternative_C, String alternative_D, String textBiblical, int levelQuestion, String testamento, String secaoBiblia ) {
         this.question = question;
         this.answer = answer;
         this.alternative_A = alternative_A;
@@ -44,11 +44,11 @@ public class Question {
         this.secaoBiblia = secaoBiblia;
     }
 
-    public int getTestamento() {
+    public String getTestamento() {
         return testamento;
     }
 
-    public void setTestamento(int testamento) {
+    public void setTestamento(String testamento) {
         this.testamento = testamento;
     }
 

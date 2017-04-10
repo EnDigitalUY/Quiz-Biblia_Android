@@ -61,18 +61,6 @@ MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] D:\Claudinei BJr
 MERGED from [com.google.firebase:firebase-iid:9.0.2] D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:21:5-67
 	android:name
 		ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:9:22-64
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:11:5-89
-	android:name
-		ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:11:30-86
-android:uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:12:5-83
-	android:name
-		ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:12:30-80
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:13:5-88
-	android:name
-		ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:13:30-85
 application
 ADDED from D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:15:5-44:19
 MERGED from [com.android.support:design:23.4.0] D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:22:5-20
