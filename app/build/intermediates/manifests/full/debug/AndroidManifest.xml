@@ -25,7 +25,7 @@
     -->
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/img_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -34,7 +34,7 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="quizbiblico.com.claudinei.quizbiblico.splashActivity"
+            android:name="quizbiblico.com.claudinei.quizbiblico.activityc_Splash"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,21 +43,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="quizbiblico.com.claudinei.quizbiblico.menuPrincipal"
+            android:name="quizbiblico.com.claudinei.quizbiblico.activityc_MenuPrincipal"
             android:screenOrientation="portrait" />
         <activity
-            android:name="quizbiblico.com.claudinei.quizbiblico.Login"
+            android:name="quizbiblico.com.claudinei.quizbiblico.activityc_Login"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name="quizbiblico.com.claudinei.quizbiblico.Jogo"
+            android:name="quizbiblico.com.claudinei.quizbiblico.activityc_Jogo"
             android:screenOrientation="portrait" />
         <activity
-            android:name="quizbiblico.com.claudinei.quizbiblico.cadastroActivity"
+            android:name="quizbiblico.com.claudinei.quizbiblico.activityc_Cadastro"
             android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -134,10 +142,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:authorities="quizbiblico.com.claudinei.quizbiblico.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

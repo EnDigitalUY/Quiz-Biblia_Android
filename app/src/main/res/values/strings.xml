@@ -25,6 +25,7 @@
 
     <!-- Mensagens genéricas -->
     <string name="todos">Todos</string>
+    <string name="todas">Todas</string>
 
     <!-- Facebook -->
     <string name="action_sign_in_facebook">Login com o Facebook</string>

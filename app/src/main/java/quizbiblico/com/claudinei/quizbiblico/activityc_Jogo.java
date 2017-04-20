@@ -86,7 +86,7 @@ public class activityc_Jogo extends AppCompatActivity {
         tempo.setText(String.valueOf(tempoRestante));
 
         // Instanciando os TextViews da Dificuldade e da seção da bíblia
-        txtDificuldade = (TextView) findViewById(R.id.txtDificuldade);
+        txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
         txtSecao = (TextView) findViewById(R.id.txtSecao);
 
         // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
