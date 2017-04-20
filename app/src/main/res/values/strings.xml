@@ -2,10 +2,10 @@
     <string name="app_name">Quiz da Bíblia</string>
     <string name="package_name">quizbiblico.com.claudinei.quizbiblico</string>
 
+    <!-- Tela de activityc_Login -->
     <string name="prompt_name">Nome</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Senha</string>
-
     <string name="action_sign_in">Entrar</string>
     <string name="action_sign_up">Cadastrar</string>
     <string name="action_reset">Recuperar acesso</string>
@@ -23,11 +23,39 @@
 
     <string name="campos_obrigatorios_usuario_senha">Por favor, digite o usuário e a senha</string>
 
+    <!-- Mensagens genéricas -->
+    <string name="todos">Todos</string>
+
+    <!-- Facebook -->
     <string name="action_sign_in_facebook">Login com o Facebook</string>
     <string name="facebook_app_id">1899758983589113</string>
 
+    <!-- Ações dos menus da tela de jogo -->
     <string name="jogo_maistempo">+ 5 segundos</string>
     <string name="jogo_eliminaalternativa">Elimina alternativa</string>
     <string name="jogo_textobiblico">Texto bíblico</string>
+
+    <!-- Testamentos da bíblia -->
+    <string name="testamentos">Testamentos</string>
+    <string name="testamentos_antigo">Antigo testamento</string>
+    <string name="testamentos_novo">Novo testamento</string>
+
+    <!-- Seções da bíblia -->
+    <string name="secoes">Seções da bíblia</string>
+    <string name="secoes_pentateuco">Pentateuco</string>
+    <string name="secoes_historia1">História (A. T.)</string>
+    <string name="secoes_poesia">Poesia</string>
+    <string name="secoes_profetas1">Profetas maiores</string>
+    <string name="secoes_profetas2">Profetas menores</string>
+    <string name="secoes_evangelhos">Evangelhos</string>
+    <string name="secoes_historia2">História (N. T.)</string>
+    <string name="secoes_cartas">Cartas</string>
+    <string name="secoes_profecia">Profecia</string>
+
+    <!-- Dificuldades -->
+    <string name="dificuldades">Dificuldade</string>
+    <string name="dificuldades_facil">Fácil</string>
+    <string name="dificuldades_medio">Médio</string>
+    <string name="dificuldades_dificil">Difícil</string>
 
 </resources>

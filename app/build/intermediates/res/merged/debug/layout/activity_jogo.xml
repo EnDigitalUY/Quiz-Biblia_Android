@@ -16,20 +16,6 @@
         android:layout_margin="15dp"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:id="@+id/txtPergunta"
-            android:textColor="@color/myWhite"
-            android:padding="8dp"
-            android:textAlignment="center"
-            android:fontFamily="sans-serif"
-            android:textSize="@dimen/default_size_question"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -89,23 +75,27 @@
 
         </LinearLayout>
 
-        <Button
-            android:text="Ajuda"
+        <TextView
+            android:text="secao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnAjuda"
-            android:layout_alignBottom="@+id/txtTempo"
+            android:id="@+id/txtSecao"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd" />
 
-        <Button
-            android:text="Tempo"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnTempo"
-            android:layout_alignBottom="@+id/txtTempo"
+            android:id="@+id/txtDificuldade"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:textAlignment="viewStart"
+            android:text="dificuldade" />
 
         <TextView
             android:text="TextView"
@@ -114,8 +104,24 @@
             android:id="@+id/txtTempo"
             android:textStyle="normal|bold"
             android:textSize="18sp"
-            android:layout_above="@+id/linearLayout2"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/txtDificuldade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtPergunta"
+            android:textColor="@color/myWhite"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/default_size_question"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/txtTempo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 

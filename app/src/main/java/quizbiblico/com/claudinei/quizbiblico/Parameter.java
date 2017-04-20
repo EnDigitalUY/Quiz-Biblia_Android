@@ -13,12 +13,17 @@ import com.google.firebase.database.ValueEventListener;
 
 public final class Parameter {
 
-    private static int nextQuestionNum;
+    private static int nextQuestionNum = -1;
+    private static boolean buscaConcluida = false;
+
     public Parameter(){
 
     }
 
     public static int getNextQuestionNum() {
+        if (!buscaConcluida)
+            getNexQuestionNum_Aux();
+
         return nextQuestionNum;
     }
 
@@ -28,6 +33,7 @@ public final class Parameter {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot data: dataSnapshot.getChildren()){
                     nextQuestionNum = data.getValue(Integer.class);
+                    buscaConcluida = true;
                 }
             }
 

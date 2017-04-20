@@ -99,7 +99,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="myColor1">#0E142E</color>
+    <color name="myColor1">#0e142e</color>
     <color name="myColor2">#00407F</color>
     <color name="myColor3">#F89336</color>
     <color name="myColor4">#C0DFCE</color>
@@ -359,7 +359,7 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="big1_size_alternative">18dp</dimen>
     <dimen name="big1_size_question">22dp</dimen>
@@ -566,6 +566,10 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="default_web_client_id" translatable="false">739186926536-mrql8aqvu3g48ve87k3ku1g9eb65fq90.apps.googleusercontent.com</string>
+    <string name="dificuldades">Dificuldade</string>
+    <string name="dificuldades_dificil">Difícil</string>
+    <string name="dificuldades_facil">Fácil</string>
+    <string name="dificuldades_medio">Médio</string>
     <string name="facebook_app_id">1899758983589113</string>
     <string name="firebase_database_url" translatable="false">https://quizbiblico-b3eec.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">739186926536</string>
@@ -582,11 +586,25 @@
     <string name="prompt_name">Nome</string>
     <string name="prompt_password">Senha</string>
     <string name="search_menu_title">Search</string>
+    <string name="secoes">Seções da bíblia</string>
+    <string name="secoes_cartas">Cartas</string>
+    <string name="secoes_evangelhos">Evangelhos</string>
+    <string name="secoes_historia1">História (A. T.)</string>
+    <string name="secoes_historia2">História (N. T.)</string>
+    <string name="secoes_pentateuco">Pentateuco</string>
+    <string name="secoes_poesia">Poesia</string>
+    <string name="secoes_profecia">Profecia</string>
+    <string name="secoes_profetas1">Profetas maiores</string>
+    <string name="secoes_profetas2">Profetas menores</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="statusoff">Sem conexão</string>
     <string name="statuson">Conectado</string>
     <string name="telacadastro">Estamos muito felizes por você ter se cadastrado no nosso app. Preencha os dados abaixo por favor. Deus abençõe</string>
+    <string name="testamentos">Testamentos</string>
+    <string name="testamentos_antigo">Antigo testamento</string>
+    <string name="testamentos_novo">Novo testamento</string>
     <string name="titulomenu">Atualizar cadastro</string>
+    <string name="todos">Todos</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

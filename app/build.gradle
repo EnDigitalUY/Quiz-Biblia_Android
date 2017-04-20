@@ -11,6 +11,17 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/fragments',
+                            'src/main/res'
+                    ]
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -19,11 +30,11 @@ android {
     }
     sourceSets {
         main {
-            java.srcDirs = ['src/main/java', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/classes', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/forms', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO']
+            java.srcDirs = ['src/main/java', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/classes', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/forms', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO', 'src/main/java/activities']
             aidl.srcDirs = ['src/main/aidl', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/teste', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO']
             resources.srcDirs = ['src/main/resources', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO']
             assets.srcDirs = ['src/main/assets', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/Activities', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/Classes']
-            res.srcDirs = ['src/main/res', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO']
+            res.srcDirs = ['src/main/res', 'src/main/java/quizbiblico/com/claudinei/quizbiblico/ClassesDAO', 'src/main/res/drawable/imagens']
         }
     }
 }
