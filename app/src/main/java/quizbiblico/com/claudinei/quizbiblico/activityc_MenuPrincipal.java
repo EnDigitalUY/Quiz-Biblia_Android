@@ -1,7 +1,6 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -19,10 +17,6 @@ import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -58,11 +52,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private ArrayList<RadioButton> radioButtonsDificuldade;
     private ArrayList<RadioButton> radioButtonsTestamento;
     private ArrayList<RadioButton> radioButtonsSecao;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
+
+    // Strings que contém os valores dos RadioButtons selecionados
+    private ArrayList<String> parametros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,10 +105,18 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         }
 
         instanciaElementosInterface();
-        criaAcaoCliqueInterface();
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        setaElementosInterface();
+    }
+
+    private String getOpcaoSelecionada(ArrayList<RadioButton> radioButtons ){
+
+        for (int i = 0; i < radioButtons.size(); i++){
+            if (radioButtons.get(i).isChecked())
+                return radioButtons.get(i).getText().toString();
+        }
+
+        return "";
+
     }
 
     private void instanciaElementosInterface() {
@@ -162,14 +162,22 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profecia) );
     }
 
-    private void criaAcaoCliqueInterface() {
+    private void setaElementosInterface() {
         // Ao clicar jogar em vai para a tela do jogo
         btnJogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                // Adiciona ao array de parâmetros as opções selecionadas
+                parametros = new ArrayList<>();
+                parametros.add(getOpcaoSelecionada(radioButtonsDificuldade));
+                parametros.add(getOpcaoSelecionada(radioButtonsTestamento));
+                parametros.add(getOpcaoSelecionada(radioButtonsSecao));
+
                 //Indo para a próxima tela
                 Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
                 intent.putExtra("usuario", usuario);
+                intent.putExtra("parametros", parametros);
                 startActivity(intent);
             }
         });
@@ -268,41 +276,5 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("activityc_MenuPrincipal Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
     }
 }

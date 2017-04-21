@@ -3,6 +3,7 @@ package quizbiblico.com.claudinei.quizbiblico;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -27,7 +27,7 @@ public class activityc_Jogo extends AppCompatActivity {
             1 - Alternativa B
             2 - Alternativa C
             3 - Alternativa D   */
-    private ArrayList<Button> botoes = new ArrayList<>();
+    private ArrayList<Button> botoes;
 
     // TextView do nome da pergunta
     private TextView txtPergunta;
@@ -43,14 +43,60 @@ public class activityc_Jogo extends AppCompatActivity {
     // Número de alternativas que o usuário eliminou. (O limite é 3, pois restaria apenas a alternativa correta)
     private int alternativasEliminadas = 0;
 
-    // Contador decremental de tempo
+    // Contador de tempo
     private int tempoRestante;
+    private final int TEMPOTOTAL = 20;
 
     // Handler que fará a atualização de informações quando estiver trabalhando noutra Thread (exceto a principal)
     //  e for necessário atualizar informações de UI
     private Handler handler;
 
+    //No início dos tempos a thread ainda não é executada
     private boolean executaThread = false;
+
+    //Parametros para a seleção das perguntas
+    private ArrayList<String> parametros;
+
+    //Menu que contém algumas opções
+    private Menu menu;
+
+    //Item de menu que exibe a pontuação
+    private MenuItem itemPontuacao;
+
+    /*  A pontuação funcionará da seguinte maneira:
+
+            Quanto ao tempo
+                Acertou a questão entre 19 e 15 segundos restantes:     + 3 pontos
+                Acertou a questão entre 14 e 10 segundos restantes:     + 2 pontos
+                Acertou a questão entre 9 e 5 segundos restantes:       + 1 pontos
+                Acertou a questão com menos de 5 segundos restantes:    + 0 pontos
+                Erro a questão:                                         - 2 pontos
+
+            Quanto à dificuldade
+                Acertou difícil:    + 15 pontos
+                Acertou médio:      + 10 pontos
+                Acertou fácil:      + 5 pontos
+
+                Errou difícil:      - 1 pontos
+                Errou médio:        - 2 ponto
+                Errou fácil:        - 3 pontos
+    */
+    private int pontuacaoPartida;
+
+    private final int PONTOS_TEMPO_19_15 = 3;
+    private final int PONTOS_TEMPO_14_10 = 2;
+    private final int PONTOS_TEMPO_9_5 = 1;
+    private final int PONTOS_TEMPO_4_0 = 0;
+
+    private final int PONTOS_ACERTO_DIFICIL = 15;
+    private final int PONTOS_ACERTO_MEDIO = 10;
+    private final int PONTOS_ACERTO_FACIL = 5;
+
+    private final int PONTOS_ERRO = -2;
+    private final int PONTOS_ERRO_DIFICIL = -1;
+    private final int PONTOS_ERRO_MEDIO = -2;
+    private final int PONTOS_ERRO_FACIL = -3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,44 +107,21 @@ public class activityc_Jogo extends AppCompatActivity {
         Bundle extra = getIntent().getExtras();
         if (extra != null){
             usuario = (Usuario) extra.getSerializable("usuario");
+            parametros = extra.getStringArrayList("parametros");
         }
 
-        // Responsável por fazer o decremento do tempo
+        instanciaElementosInterface();
+        setaElementosInterface();
+
+        // Handler responsável por fazer o decremento do tempo
         handler = new Handler();
-
-        // Instanciando os botões
-        botoes.add((Button) findViewById(R.id.btnA));
-        botoes.add((Button) findViewById(R.id.btnB));
-        botoes.add((Button) findViewById(R.id.btnC));
-        botoes.add((Button) findViewById(R.id.btnD));
-
-        // Instanciando o click dos botões
-        botoes.get(0).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(0);}});
-        botoes.get(1).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(1);}});
-        botoes.get(2).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(2);}});
-        botoes.get(3).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(3);}});
-
-        // Instanciando o TextView da questão
-        txtPergunta = (TextView) findViewById(R.id.txtPergunta);
-
-        // Instanciando o TextView do tempo
-        tempo = (TextView) findViewById(R.id.txtTempo);
-        tempo.setText(String.valueOf(tempoRestante));
-
-        // Instanciando os TextViews da Dificuldade e da seção da bíblia
-        txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
-        txtSecao = (TextView) findViewById(R.id.txtSecao);
-
-        // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
-        proximaQuestao();
 
         // Runnable responsável por controlar o tempo
         Runnable controlaTempo = new Runnable() {
             @Override
             public void run() {
+
                 while (tempoRestante >= 0) {
-                    if (tempoRestante == 0)
-                        bloqueia_desbloqueiaControles(false);
 
                     if (executaThread) {
                         handler.post(new Runnable() {
@@ -130,6 +153,38 @@ public class activityc_Jogo extends AppCompatActivity {
 
         new Thread(controlaTempo).start();
 
+        // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
+        proximaQuestao();
+
+    }
+
+    private void instanciaElementosInterface() {
+        // Botões
+        botoes = new ArrayList<>();
+        botoes.add((Button) findViewById(R.id.btnA));
+        botoes.add((Button) findViewById(R.id.btnB));
+        botoes.add((Button) findViewById(R.id.btnC));
+        botoes.add((Button) findViewById(R.id.btnD));
+
+        //TextViews
+        txtPergunta = (TextView) findViewById(R.id.txtPergunta);
+        tempo = (TextView) findViewById(R.id.txtTempo);
+        txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
+        txtSecao = (TextView) findViewById(R.id.txtSecao);
+
+        pontuacaoPartida = 0;
+    }
+
+    private void setaElementosInterface() {
+        // Instanciando o click dos botões
+        botoes.get(0).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(0);}});
+        botoes.get(1).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(1);}});
+        botoes.get(2).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(2);}});
+        botoes.get(3).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(3);}});
+
+        //Seta pela primeira vez o tempo restante
+        tempo.setText(String.valueOf(tempoRestante));
+
     }
 
     private void maisTempo(){
@@ -155,7 +210,10 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
 
-        // Pára com a thread que decrementa o tempo
+        // Variável local que exibirá a pontuação obtida com esta questão
+        int pontuacaoTentativa = 0;
+
+        // Para com a thread que decrementa o tempo
         executaThread = false;
 
         //Bloqueia os controles do usuário
@@ -174,10 +232,38 @@ public class activityc_Jogo extends AppCompatActivity {
             // Seta o título e o ícone do AlertDialog como corretos
             builder.setTitle("Parabéns! Você acertou");
             builder.setIcon(R.drawable.ico_correct);
+
+            // Soma pontuação por dificuldade
+            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? PONTOS_ACERTO_DIFICIL :
+                                        (question.getLevelQuestion() == 2 ? PONTOS_ACERTO_MEDIO :
+                                                (question.getLevelQuestion() == 1 ? PONTOS_ACERTO_FACIL : 0)
+                                        )
+                                );
+
+            // Soma pontuação por tempo
+            pontuacaoTentativa += (   tempoRestante >= 15 ? PONTOS_TEMPO_19_15 :
+                                        (tempoRestante <= 14 && tempoRestante >= 10 ? PONTOS_TEMPO_14_10 :
+                                                (tempoRestante <= 9 && tempoRestante >= 5 ? PONTOS_TEMPO_9_5 :
+                                                        (tempoRestante <= 4 ? PONTOS_TEMPO_4_0 : 0)
+                                                )
+                                        )
+
+                                );
+
         }else {
             // Seta o título e o ícone do AlertDialog como incorretos
             builder.setTitle("Que pena! Você errou");
             builder.setIcon(R.drawable.ico_wrong);
+
+            // Decrementa pontuação por erro
+            pontuacaoTentativa += PONTOS_ERRO;
+
+            // Decrementa pontuação por dificuldade
+            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? PONTOS_ERRO_DIFICIL :
+                                        (question.getLevelQuestion() == 2 ? PONTOS_ERRO_MEDIO :
+                                            (question.getLevelQuestion() == 1 ? PONTOS_ERRO_FACIL : 0)
+                                        )
+                                );
         }
 
         // Seta a mensagem do AlertDialog que é o texto bíblico
@@ -200,10 +286,21 @@ public class activityc_Jogo extends AppCompatActivity {
         builder.setCancelable(false);
 
         // Instancia o AlertDialog e o exibe
-        builder.create().show();
+        if(!isFinishing())
+            builder.create().show();
 
         // Destrói as variáveis
         builder = null;
+
+        // Exibe uma mensagem para usuário sobre esta pontuação obtida
+        Snackbar.make(findViewById(R.id.activity_jogo), pontuacaoTentativa + " pontos.", Snackbar.LENGTH_SHORT).show();
+
+        // Soma a pontuação obtida nesta tentativa à pontuação da partida
+        pontuacaoPartida += pontuacaoTentativa;
+
+        // Exibe a pontuação da partida no menu
+        itemPontuacao.setTitle("Pontuação: " + String.valueOf(pontuacaoPartida));
+
     }
 
     private void proximaQuestao(){
@@ -213,7 +310,7 @@ public class activityc_Jogo extends AppCompatActivity {
             botoes.get(i).setVisibility(View.VISIBLE);
         }
 
-        tempoRestante = 20;
+        tempoRestante = TEMPOTOTAL;
 
         getQuestion(usuario.getRespondidas());
     }
@@ -222,18 +319,23 @@ public class activityc_Jogo extends AppCompatActivity {
         for (int i = 0; i < botoes.size(); i++){
             botoes.get(i).setClickable(bloqueio);
         }
+
+        for (int i = 0; i < menu.size(); i++){
+            menu.getItem(i).setEnabled(bloqueio);
+        }
+
     }
 
-    private void getQuestion(ArrayList<Integer> excludedQuestions){
+    private void getQuestion(ArrayList<Integer> questoesRespondidasPeloUsuario){
         boolean randomOk = false;
 
         Random random = new Random();
-        int randomizedQuestion = 0;
+        int questaoAletoria = 0;
 
         while (!randomOk){
-            randomizedQuestion = random.nextInt(Parameter.getNextQuestionNum());
+            questaoAletoria = random.nextInt(Parameter.getNextQuestionNum());
 
-            if ((!excludedQuestions.contains(randomizedQuestion)) && (randomizedQuestion != 0)){
+            if ((!questoesRespondidasPeloUsuario.contains(questaoAletoria)) && (questaoAletoria != 0)){
                 randomOk = true;
             }
         }
@@ -246,19 +348,21 @@ public class activityc_Jogo extends AppCompatActivity {
 
                     // Preechimento das informações da questão
                     txtPergunta.setText(question.getQuestion());
-                    txtSecao.setText(   question.getSecaoBiblia().replace(" 2", "").replace(" 1", "") +
-                                        " (" + question.getTestamento().replace("Antigo", "A.T.").replace("Novo", "N. T.") + ") ");
+                    txtSecao.setText(   "Seção da bíblia:\n" +
+                                        question.getSecaoBiblia() +
+                                        " (" + question.getTestamento().replace("Antigo", "A.T.").replace("Novo", "N. T.") + ") ".replace(" N. T(", "("));
+
                     switch (question.getLevelQuestion()){
                         case 1:{
-                            txtDificuldade.setText("Fácil");
+                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_facil));
                             break;
                         }
                         case 2:{
-                            txtDificuldade.setText("Médio");
+                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_medio));
                             break;
                         }
                         case 3:{
-                            txtDificuldade.setText("Difícil");
+                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_dificil));
                             break;
                         }
                     }
@@ -302,15 +406,23 @@ public class activityc_Jogo extends AppCompatActivity {
             }
         };
 
-        FirebaseDB.getQuestionReference().orderByChild("idQuestion").equalTo(randomizedQuestion).addListenerForSingleValueEvent(buscaQuestoes);
+        FirebaseDB.getQuestionReference().orderByChild("idQuestion").equalTo(questaoAletoria).addListenerForSingleValueEvent(buscaQuestoes);
 
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        super.onCreateOptionsMenu(menu);
+    public boolean onCreateOptionsMenu(Menu _menu){
+        super.onCreateOptionsMenu(_menu);
 
-        getMenuInflater().inflate(R.menu.menu_jogo, menu);
+        getMenuInflater().inflate(R.menu.menu_jogo, _menu);
+
+        //MenuItems
+        itemPontuacao = _menu.findItem(R.id.menu_pontuacao);
+
+        menu = _menu;
+
+        bloqueia_desbloqueiaControles(false);
+
         return(true);
     }
 
@@ -336,7 +448,6 @@ public class activityc_Jogo extends AppCompatActivity {
     public void onStop() {
         super.onStop();
 
-        Toast.makeText(getApplicationContext(), "Saí do jogo", Toast.LENGTH_LONG).show();
         finish();
     }
 

@@ -591,6 +591,7 @@
     <string name="jogo_textobiblico">Texto bíblico</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="package_name">quizbiblico.com.claudinei.quizbiblico</string>
+    <string name="pontuacao">Pontuação</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_name">Nome</string>
     <string name="prompt_password">Senha</string>
@@ -603,8 +604,8 @@
     <string name="secoes_pentateuco">Pentateuco</string>
     <string name="secoes_poesia">Poesia</string>
     <string name="secoes_profecia">Profecia</string>
-    <string name="secoes_profetas1">Profetas maiores</string>
-    <string name="secoes_profetas2">Profetas menores</string>
+    <string name="secoes_profetas1">Profetas Maiores</string>
+    <string name="secoes_profetas2">Profetas Menores</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="statusoff">Sem conexão</string>
     <string name="statuson">Conectado</string>
