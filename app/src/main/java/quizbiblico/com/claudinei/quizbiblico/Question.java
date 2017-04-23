@@ -10,6 +10,7 @@ public class Question {
     private int levelQuestion;
     private String testamento; /* Antigo | Novo */
     private String secaoBiblia; /* Pentateuco | História 1 | Poesia | Profetas Maiores | Profetas Menores | Evangelhos | História 2 | Cartas | Profecia */
+    private String referenciaBiblica;
 
     public Question(){
 
@@ -116,18 +117,11 @@ public class Question {
         this.levelQuestion = levelQuestion;
     }
 
-    @Override
-    public String toString() {
-        return "Question{" +
-                "idQuestion=" + idQuestion +
-                ", question='" + question + '\'' +
-                ", answer=" + answer +
-                ", alternative_A='" + alternative_A + '\'' +
-                ", alternative_B='" + alternative_B + '\'' +
-                ", alternative_C='" + alternative_C + '\'' +
-                ", alternative_D='" + alternative_D + '\'' +
-                ", textBiblical='" + textBiblical + '\'' +
-                ", levelQuestion=" + levelQuestion +
-                '}';
+    public String getReferenciaBiblica() {
+        return referenciaBiblica;
+    }
+
+    public void setReferenciaBiblica(String referenciaBiblica) {
+        this.referenciaBiblica = referenciaBiblica;
     }
 }

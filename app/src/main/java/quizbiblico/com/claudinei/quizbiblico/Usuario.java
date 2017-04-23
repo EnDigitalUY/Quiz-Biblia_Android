@@ -2,6 +2,7 @@ package quizbiblico.com.claudinei.quizbiblico;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Usuario implements Serializable {
 
@@ -9,10 +10,13 @@ public class Usuario implements Serializable {
     private String nome;
     private String uid;
     private boolean manterConectado;
-    private int bonusTempo = 5;
-    private int bonusQuestao = 5;
-    private String linkImagemUsuario;
+    private String linkImagem;
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
+    private int pontuacao = 0;
+    private int bonusTempo = 5;
+    private int bonusAlternativa = 5;
+    private int bonusTexto = 5;
+    private Date ultimoAcesso = new Date();
 
     public void addAnswered(Integer questionAnswered){
         respondidas.add(questionAnswered);
@@ -27,14 +31,6 @@ public class Usuario implements Serializable {
         this.nome = nome;
         this.uid = uid;
         this.manterConectado = manterConectado;
-    }
-
-    public String getLinkImagemUsuario() {
-        return linkImagemUsuario;
-    }
-
-    public void setLinkImagemUsuario(String linkImagemUsuario) {
-        this.linkImagemUsuario = linkImagemUsuario;
     }
 
     public String getEmail() {
@@ -69,20 +65,12 @@ public class Usuario implements Serializable {
         this.manterConectado = manterConectado;
     }
 
-    public int getBonusTempo() {
-        return bonusTempo;
+    public String getLinkImagem() {
+        return linkImagem;
     }
 
-    public void setBonusTempo(int bonusTempo) {
-        this.bonusTempo = bonusTempo;
-    }
-
-    public int getBonusQuestao() {
-        return bonusQuestao;
-    }
-
-    public void setBonusQuestao(int bonusQuestao) {
-        this.bonusQuestao = bonusQuestao;
+    public void setLinkImagem(String linkImagem) {
+        this.linkImagem = linkImagem;
     }
 
     public ArrayList<Integer> getRespondidas() {
@@ -93,16 +81,43 @@ public class Usuario implements Serializable {
         this.respondidas = respondidas;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "email='" + email + '\'' +
-                ", nome='" + nome + '\'' +
-                ", uid='" + uid + '\'' +
-                ", manterConectado=" + manterConectado +
-                ", bonusTempo=" + bonusTempo +
-                ", bonusQuestao=" + bonusQuestao +
-                ", respondidas=" + respondidas +
-                '}';
+    public int getPontuacao() {
+        return pontuacao;
+    }
+
+    public void setPontuacao(int pontuacaoAAcrescentar) {
+        this.pontuacao += pontuacaoAAcrescentar;
+    }
+
+    public int getBonusTempo() {
+        return bonusTempo;
+    }
+
+    public void setBonusTempo(int bonusTempoAAcrescentar) {
+        this.bonusTempo += bonusTempoAAcrescentar;
+    }
+
+    public int getBonusAlternativa() {
+        return bonusAlternativa;
+    }
+
+    public void setBonusAlternativa(int bonusAlternativaAAcrescentar) {
+        this.bonusAlternativa += bonusAlternativaAAcrescentar;
+    }
+
+    public int getBonusTexto() {
+        return bonusTexto;
+    }
+
+    public void setBonusTexto(int bonusTextoAAcrescentar) {
+        this.bonusTexto += bonusTextoAAcrescentar;
+    }
+
+    public Date getUltimoAcesso() {
+        return ultimoAcesso;
+    }
+
+    public void setUltimoAcesso(Date ultimoAcesso) {
+        this.ultimoAcesso = ultimoAcesso;
     }
 }

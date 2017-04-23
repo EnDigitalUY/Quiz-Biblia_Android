@@ -11,20 +11,20 @@
 
     <group android:id="@+id/menu_group_bonus" >
         <item
-            android:id="@+id/menu_maistempo"
-            android:title="@string/jogo_maistempo"
+            android:id="@+id/menu_bonus_maistempo"
+            android:title="@string/jogo_bonus_maistempo"
             app:showAsAction="never" />
 
         <item
-            android:id="@+id/menu_eliminaalternativa"
+            android:id="@+id/menu_bonus_eliminaalternativa"
             android:icon="@drawable/ico_logoff"
-            android:title="@string/jogo_eliminaalternativa"
+            android:title="@string/jogo_bonus_eliminaalternativa"
             app:showAsAction="never" />
 
         <item
-            android:id="@+id/menu_exibetextobiblico"
+            android:id="@+id/menu_bonus_exibetextobiblico"
             android:icon="@drawable/ico_logoff"
-            android:title="@string/jogo_textobiblico"
+            android:title="@string/jogo_bonus_referenciabiblica"
             app:showAsAction="never" />
     </group>
 

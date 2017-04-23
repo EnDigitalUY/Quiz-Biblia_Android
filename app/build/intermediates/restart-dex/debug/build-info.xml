@@ -5,36 +5,36 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="144318830305475"
+    timestamp="107591901436050"
     token="-6648928763270010415"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="368" />
+        duration="587" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="33" />
+        duration="109" />
     <task
         name="verifier"
-        duration="12" />
+        duration="19" />
 
     <artifact
         location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="143685987616843"
+        timestamp="107052405622063"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="144318830305475"
+        timestamp="107591901436050"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Claudinei BJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"

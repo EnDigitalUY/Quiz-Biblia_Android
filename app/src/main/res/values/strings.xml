@@ -33,9 +33,9 @@
     <string name="facebook_app_id">1899758983589113</string>
 
     <!-- Ações dos menus da tela de jogo -->
-    <string name="jogo_maistempo">+ 5 segundos</string>
-    <string name="jogo_eliminaalternativa">Elimina alternativa</string>
-    <string name="jogo_textobiblico">Texto bíblico</string>
+    <string name="jogo_bonus_maistempo">+ 5 segundos</string>
+    <string name="jogo_bonus_eliminaalternativa">Elimina alternativa</string>
+    <string name="jogo_bonus_referenciabiblica">Referência bíblica</string>
 
     <!-- Testamentos da bíblia -->
     <string name="testamentos">Testamentos</string>
@@ -61,6 +61,6 @@
     <string name="dificuldades_dificil">Difícil</string>
 
     <!-- Tela de jogo -->
-
+    <string name="bonus_insuficiente">Que pena! Você não tem bônus suficiente para %1$s.</string>
 
 </resources>

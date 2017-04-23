@@ -87,9 +87,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                             txtNome.setText(usuario.getNome());
 
                             // Se o usuário ter imagem, a exibe
-                            /*if (usuario.getLinkImagemUsuario() != null) {
-                                if (!(usuario.getLinkImagemUsuario().equals(""))) {
-                                    //imgUsuario.setImageURI(Uri.parse(usuario.getLinkImagemUsuario()));
+                            /*if (usuario.getLinkImagem() != null) {
+                                if (!(usuario.getLinkImagem().equals(""))) {
+                                    //imgUsuario.setImageURI(Uri.parse(usuario.getLinkImagem()));
                                 }
                             }*/
 

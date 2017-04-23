@@ -3,7 +3,6 @@ package quizbiblico.com.claudinei.quizbiblico;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -83,6 +84,7 @@ public class activityc_Jogo extends AppCompatActivity {
     */
     private int pontuacaoPartida;
 
+    /*Constantes*/
     private final int PONTOS_TEMPO_19_15 = 3;
     private final int PONTOS_TEMPO_14_10 = 2;
     private final int PONTOS_TEMPO_9_5 = 1;
@@ -96,6 +98,8 @@ public class activityc_Jogo extends AppCompatActivity {
     private final int PONTOS_ERRO_DIFICIL = -1;
     private final int PONTOS_ERRO_MEDIO = -2;
     private final int PONTOS_ERRO_FACIL = -3;
+
+    private final int MAIS_TEMPO = 5;
 
 
     @Override
@@ -187,25 +191,87 @@ public class activityc_Jogo extends AppCompatActivity {
 
     }
 
-    private void maisTempo(){
-        tempoRestante += 5;
+    private void atualizaMenuBonus(){ //Função responsável por atualizar todos os menus de bonus, inserindo o número de bonus restantes
+        for (int i = 0; i < menu.size(); i++) {
+            atualizaMenuBonus(menu.getItem(i));
+        }
+    }
+
+    private void atualizaMenuBonus(MenuItem menuItem){ //Função responsável por atualizar todos um de bonus, inserindo o número de bonus restantes
+        switch (menuItem.getItemId()){
+            case R.id.menu_bonus_exibetextobiblico:
+            {
+                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + usuario.getBonusTexto() + ")");
+                break;
+            }
+            case R.id.menu_bonus_eliminaalternativa:
+            {
+                menuItem.setTitle(getString(R.string.jogo_bonus_eliminaalternativa) + " (" + usuario.getBonusAlternativa() + ")");
+                break;
+            }
+            case R.id.menu_bonus_maistempo:
+            {
+                menuItem.setTitle(getString(R.string.jogo_bonus_maistempo) + " (" + usuario.getBonusTempo() + ")");
+                break;
+            }
+        }
+    }
+
+    private void maisTempo(){ // Função responsável por acrescentar mais tempo para responder
+        if (usuario.getBonusTempo() > 0) {
+            tempoRestante += MAIS_TEMPO;
+
+            usuario.setBonusTempo(-1);
+
+            atualizaMenuBonus(menu.findItem(R.id.menu_bonus_maistempo));
+        }else
+            Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), " acrescentar mais tempo para responder"), Toast.LENGTH_SHORT).show();
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
 
-        if (alternativasEliminadas < 3) {
+        if (usuario.getBonusAlternativa() > 0) {
+            if (alternativasEliminadas < 3) {
 
-            Random random = new Random();
-            int alternativaEliminada = random.nextInt(4);
+                Random random = new Random();
+                int alternativaEliminada = random.nextInt(4);
 
-            while (alternativaEliminada == question.getAnswer() || botoes.get(alternativaEliminada).getVisibility() == View.INVISIBLE) {
-                alternativaEliminada = random.nextInt(4);
+                while (alternativaEliminada == question.getAnswer() || botoes.get(alternativaEliminada).getVisibility() == View.INVISIBLE) {
+                    alternativaEliminada = random.nextInt(4);
+                }
+
+                botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
+                alternativasEliminadas++;
+
+                usuario.setBonusAlternativa(-1);
+
+                atualizaMenuBonus(menu.findItem(R.id.menu_bonus_eliminaalternativa));
             }
+        }else
+            Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), "eliminar uma alternativa incorreta"), Toast.LENGTH_SHORT).show();
+    }
 
-            botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
-            alternativasEliminadas++;
+    private void exibeReferenciaBiblica(){
 
-        }
+        if (usuario.getBonusTexto() > 0){
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Referência bíblica");
+            builder.setIcon(R.drawable.img_icon);
+            builder.setMessage(question.getReferenciaBiblica());
+
+            if(!isFinishing())
+                builder.create().show();
+
+            builder = null;
+
+            usuario.setBonusTexto(-1);
+
+            atualizaMenuBonus(menu.findItem(R.id.menu_bonus_exibetextobiblico));
+
+        }else
+            Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), "exibir a referência bíblica"), Toast.LENGTH_SHORT).show();
+
     }
 
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
@@ -227,11 +293,6 @@ public class activityc_Jogo extends AppCompatActivity {
 
         if (acertou){
             usuario.addAnswered(question.getIdQuestion());
-            FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
-
-            // Seta o título e o ícone do AlertDialog como corretos
-            builder.setTitle("Parabéns! Você acertou");
-            builder.setIcon(R.drawable.ico_correct);
 
             // Soma pontuação por dificuldade
             pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? PONTOS_ACERTO_DIFICIL :
@@ -250,11 +311,11 @@ public class activityc_Jogo extends AppCompatActivity {
 
                                 );
 
-        }else {
-            // Seta o título e o ícone do AlertDialog como incorretos
-            builder.setTitle("Que pena! Você errou");
-            builder.setIcon(R.drawable.ico_wrong);
+            // Seta o título e o ícone do AlertDialog como corretos
+            builder.setTitle("Parabéns! Você acertou\n" + "+ " + pontuacaoTentativa + " pontos");
+            builder.setIcon(R.drawable.ico_correct);
 
+        }else {
             // Decrementa pontuação por erro
             pontuacaoTentativa += PONTOS_ERRO;
 
@@ -264,6 +325,10 @@ public class activityc_Jogo extends AppCompatActivity {
                                             (question.getLevelQuestion() == 1 ? PONTOS_ERRO_FACIL : 0)
                                         )
                                 );
+
+            // Seta o título e o ícone do AlertDialog como incorretos
+            builder.setTitle("Que pena! Você errou\n" + "- " + (pontuacaoTentativa * -1) + " pontos");
+            builder.setIcon(R.drawable.ico_wrong);
         }
 
         // Seta a mensagem do AlertDialog que é o texto bíblico
@@ -292,15 +357,11 @@ public class activityc_Jogo extends AppCompatActivity {
         // Destrói as variáveis
         builder = null;
 
-        // Exibe uma mensagem para usuário sobre esta pontuação obtida
-        Snackbar.make(findViewById(R.id.activity_jogo), pontuacaoTentativa + " pontos.", Snackbar.LENGTH_SHORT).show();
-
         // Soma a pontuação obtida nesta tentativa à pontuação da partida
         pontuacaoPartida += pontuacaoTentativa;
 
         // Exibe a pontuação da partida no menu
         itemPontuacao.setTitle("Pontuação: " + String.valueOf(pontuacaoPartida));
-
     }
 
     private void proximaQuestao(){
@@ -423,21 +484,24 @@ public class activityc_Jogo extends AppCompatActivity {
 
         bloqueia_desbloqueiaControles(false);
 
+        atualizaMenuBonus();
+
         return(true);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
-            case R.id.menu_maistempo: {
+            case R.id.menu_bonus_maistempo: {
                 maisTempo();
                 return true;
             }
-            case R.id.menu_eliminaalternativa:{
+            case R.id.menu_bonus_eliminaalternativa:{
                 ajuda();
                 return true;
             }
-            case R.id.menu_exibetextobiblico:{
+            case R.id.menu_bonus_exibetextobiblico:{
+                exibeReferenciaBiblica();
                 return true;
             }
         }
@@ -447,6 +511,9 @@ public class activityc_Jogo extends AppCompatActivity {
     @Override
     public void onStop() {
         super.onStop();
+
+        usuario.setPontuacao(pontuacaoPartida);
+        FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
 
         finish();
     }
