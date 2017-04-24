@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\raw\\resposta_correta.mp3",
+        "source": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\raw\\resposta_correta.mp3"
+    },
+    {
+        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\raw\\resposta_incorreta.mp3",
+        "source": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\raw\\resposta_incorreta.mp3"
+    }
+]

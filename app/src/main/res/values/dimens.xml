@@ -15,4 +15,6 @@
     <dimen name="big1_size_question">22dp</dimen>
     <dimen name="big2_size_question">24dp</dimen>
 
+    <dimen name="alternativa_tamanho">70dp</dimen>
+
 </resources>

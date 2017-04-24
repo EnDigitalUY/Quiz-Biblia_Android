@@ -2,7 +2,9 @@ package quizbiblico.com.claudinei.quizbiblico;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +17,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -30,11 +34,8 @@ public class activityc_Jogo extends AppCompatActivity {
             3 - Alternativa D   */
     private ArrayList<Button> botoes;
 
-    // TextView do nome da pergunta
+    //TextView que exibe o texto da pergunta, seção da bíblia e txtDificuldade da questão
     private TextView txtPergunta;
-
-    //TextVie que exibe o tempo restante, seção da bíblia e txtDificuldade da questão
-    private TextView tempo;
     private TextView txtDificuldade;
     private TextView txtSecao;
 
@@ -44,7 +45,7 @@ public class activityc_Jogo extends AppCompatActivity {
     // Número de alternativas que o usuário eliminou. (O limite é 3, pois restaria apenas a alternativa correta)
     private int alternativasEliminadas = 0;
 
-    // Contador de tempo
+    // Contador de itemTempo
     private int tempoRestante;
     private final int TEMPOTOTAL = 20;
 
@@ -64,43 +65,21 @@ public class activityc_Jogo extends AppCompatActivity {
     //Item de menu que exibe a pontuação
     private MenuItem itemPontuacao;
 
-    /*  A pontuação funcionará da seguinte maneira:
+    //Item de menu que exibe o itemTempo restante
+    private MenuItem itemTempo;
 
-            Quanto ao tempo
-                Acertou a questão entre 19 e 15 segundos restantes:     + 3 pontos
-                Acertou a questão entre 14 e 10 segundos restantes:     + 2 pontos
-                Acertou a questão entre 9 e 5 segundos restantes:       + 1 pontos
-                Acertou a questão com menos de 5 segundos restantes:    + 0 pontos
-                Erro a questão:                                         - 2 pontos
-
-            Quanto à dificuldade
-                Acertou difícil:    + 15 pontos
-                Acertou médio:      + 10 pontos
-                Acertou fácil:      + 5 pontos
-
-                Errou difícil:      - 1 pontos
-                Errou médio:        - 2 ponto
-                Errou fácil:        - 3 pontos
-    */
+    //Pontuação obtida nesta partida
     private int pontuacaoPartida;
 
-    /*Constantes*/
-    private final int PONTOS_TEMPO_19_15 = 3;
-    private final int PONTOS_TEMPO_14_10 = 2;
-    private final int PONTOS_TEMPO_9_5 = 1;
-    private final int PONTOS_TEMPO_4_0 = 0;
+    private long tempoInicial;
 
-    private final int PONTOS_ACERTO_DIFICIL = 15;
-    private final int PONTOS_ACERTO_MEDIO = 10;
-    private final int PONTOS_ACERTO_FACIL = 5;
+    private class Partida{
+        public int pontuacao;
+        public Array acertos;   //[0] - Difícil | [1] - Média | [2] - Fácil
+        public Array erros;     //[0] - Difícil | [1] - Média | [2] - Fácil
+        //public long itemTempo;
 
-    private final int PONTOS_ERRO = -2;
-    private final int PONTOS_ERRO_DIFICIL = -1;
-    private final int PONTOS_ERRO_MEDIO = -2;
-    private final int PONTOS_ERRO_FACIL = -3;
-
-    private final int MAIS_TEMPO = 5;
-
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,10 +96,10 @@ public class activityc_Jogo extends AppCompatActivity {
         instanciaElementosInterface();
         setaElementosInterface();
 
-        // Handler responsável por fazer o decremento do tempo
+        // Handler responsável por fazer o decremento do itemTempo
         handler = new Handler();
 
-        // Runnable responsável por controlar o tempo
+        // Runnable responsável por controlar o itemTempo
         Runnable controlaTempo = new Runnable() {
             @Override
             public void run() {
@@ -131,7 +110,7 @@ public class activityc_Jogo extends AppCompatActivity {
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
-                                tempo.setText(String.valueOf(tempoRestante));
+                                itemTempo.setTitle(String.valueOf(tempoRestante) + "''");
                             }
                         });
 
@@ -157,7 +136,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
         new Thread(controlaTempo).start();
 
-        // Chamada para função que irá preencher os textos na tela, inclusive exibir o tempo
+        // Chamada para função que irá preencher os textos na tela, inclusive exibir o itemTempo
         proximaQuestao();
 
     }
@@ -172,7 +151,6 @@ public class activityc_Jogo extends AppCompatActivity {
 
         //TextViews
         txtPergunta = (TextView) findViewById(R.id.txtPergunta);
-        tempo = (TextView) findViewById(R.id.txtTempo);
         txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
         txtSecao = (TextView) findViewById(R.id.txtSecao);
 
@@ -185,9 +163,6 @@ public class activityc_Jogo extends AppCompatActivity {
         botoes.get(1).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(1);}});
         botoes.get(2).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(2);}});
         botoes.get(3).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(3);}});
-
-        //Seta pela primeira vez o tempo restante
-        tempo.setText(String.valueOf(tempoRestante));
 
     }
 
@@ -217,15 +192,15 @@ public class activityc_Jogo extends AppCompatActivity {
         }
     }
 
-    private void maisTempo(){ // Função responsável por acrescentar mais tempo para responder
+    private void maisTempo(){ // Função responsável por acrescentar mais itemTempo para responder
         if (usuario.getBonusTempo() > 0) {
-            tempoRestante += MAIS_TEMPO;
+            tempoRestante += Parameter.MAIS_TEMPO;
 
             usuario.setBonusTempo(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_maistempo));
         }else
-            Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), " acrescentar mais tempo para responder"), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), " acrescentar mais itemTempo para responder"), Toast.LENGTH_SHORT).show();
     }
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
@@ -279,7 +254,7 @@ public class activityc_Jogo extends AppCompatActivity {
         // Variável local que exibirá a pontuação obtida com esta questão
         int pontuacaoTentativa = 0;
 
-        // Para com a thread que decrementa o tempo
+        // Para com a thread que decrementa o itemTempo
         executaThread = false;
 
         //Bloqueia os controles do usuário
@@ -294,18 +269,25 @@ public class activityc_Jogo extends AppCompatActivity {
         if (acertou){
             usuario.addAnswered(question.getIdQuestion());
 
+            // Reproduz um som de correto
+            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_correta);
+            mediaPlayer.start();
+
+            // Pinta de verde a alternativa correta
+            botoes.get(alternativaUsuario).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_correta));
+
             // Soma pontuação por dificuldade
-            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? PONTOS_ACERTO_DIFICIL :
-                                        (question.getLevelQuestion() == 2 ? PONTOS_ACERTO_MEDIO :
-                                                (question.getLevelQuestion() == 1 ? PONTOS_ACERTO_FACIL : 0)
+            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ACERTO_DIFICIL :
+                                        (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ACERTO_MEDIO :
+                                                (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ACERTO_FACIL : 0)
                                         )
                                 );
 
-            // Soma pontuação por tempo
-            pontuacaoTentativa += (   tempoRestante >= 15 ? PONTOS_TEMPO_19_15 :
-                                        (tempoRestante <= 14 && tempoRestante >= 10 ? PONTOS_TEMPO_14_10 :
-                                                (tempoRestante <= 9 && tempoRestante >= 5 ? PONTOS_TEMPO_9_5 :
-                                                        (tempoRestante <= 4 ? PONTOS_TEMPO_4_0 : 0)
+            // Soma pontuação por itemTempo
+            pontuacaoTentativa += (   tempoRestante >= 15 ? Parameter.PONTOS_TEMPO_19_15 :
+                                        (tempoRestante <= 14 && tempoRestante >= 10 ? Parameter.PONTOS_TEMPO_14_10 :
+                                                (tempoRestante <= 9 && tempoRestante >= 5 ? Parameter.PONTOS_TEMPO_9_5 :
+                                                        (tempoRestante <= 4 ? Parameter.PONTOS_TEMPO_4_0 : 0)
                                                 )
                                         )
 
@@ -316,15 +298,29 @@ public class activityc_Jogo extends AppCompatActivity {
             builder.setIcon(R.drawable.ico_correct);
 
         }else {
+
+            // Reproduz um som de incorreto
+            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_incorreta);
+            mediaPlayer.start();
+
+            if (alternativaUsuario != 5) {
+                // Pinta de vermelho a alternativa incorreta
+                botoes.get(alternativaUsuario).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_incorreta));
+            }else{
+                for (int i = 0; i < botoes.size(); i++){
+                    botoes.get(i).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_incorreta));
+                }
+            }
+
             // Decrementa pontuação por erro
-            pontuacaoTentativa += PONTOS_ERRO;
+            pontuacaoTentativa += Parameter.PONTOS_ERRO;
 
             // Decrementa pontuação por dificuldade
-            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? PONTOS_ERRO_DIFICIL :
-                                        (question.getLevelQuestion() == 2 ? PONTOS_ERRO_MEDIO :
-                                            (question.getLevelQuestion() == 1 ? PONTOS_ERRO_FACIL : 0)
-                                        )
-                                );
+            pontuacaoTentativa +=   (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ERRO_DIFICIL :
+                                            (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ERRO_MEDIO :
+                                                (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ERRO_FACIL : 0)
+                                            )
+                                    );
 
             // Seta o título e o ícone do AlertDialog como incorretos
             builder.setTitle("Que pena! Você errou\n" + "- " + (pontuacaoTentativa * -1) + " pontos");
@@ -369,6 +365,7 @@ public class activityc_Jogo extends AppCompatActivity {
         alternativasEliminadas = 0;
         for (int i = 0; i < botoes.size(); i++){
             botoes.get(i).setVisibility(View.VISIBLE);
+            botoes.get(i).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa));
         }
 
         tempoRestante = TEMPOTOTAL;
@@ -479,6 +476,8 @@ public class activityc_Jogo extends AppCompatActivity {
 
         //MenuItems
         itemPontuacao = _menu.findItem(R.id.menu_pontuacao);
+        itemTempo = _menu.findItem(R.id.menu_tempo);
+        itemTempo.setTitle(String.valueOf(tempoRestante) + "''");        //Seta pela primeira vez o itemTempo restante
 
         menu = _menu;
 

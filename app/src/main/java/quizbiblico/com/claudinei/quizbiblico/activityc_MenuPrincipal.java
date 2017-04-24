@@ -28,6 +28,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
     //Botões
     private Button btnJogar;
+    private Button btnHelp;
 
     // Usuário logado, quando entrar recebe os dados vindouros da tela de activityl_login, após logar recebe os dados da base de dados
     private Usuario usuario;
@@ -122,6 +123,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private void instanciaElementosInterface() {
         //Botões
         btnJogar = (Button) findViewById(R.id.btnJogar);
+        btnHelp = (Button) findViewById(R.id.btnHelp);
 
         //ImageViews
         //imgUsuario = (ImageView) findViewById(R.id.imgUsuario);
@@ -178,6 +180,15 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("parametros", parametros);
+                startActivity(intent);
+            }
+        });
+
+        // Ao clicar em help abre a tela de ajuda do game
+        btnHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
                 startActivity(intent);
             }
         });
@@ -267,13 +278,13 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 finish();
                 return true;
             }
-            case R.id.menu_perfil: {
+            /*case R.id.menu_perfil: {
                 // Atualiza o cadastro do usuário
                 Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Cadastro.class);
                 intent.putExtra("usuario", usuario);
                 startActivity(intent);
                 return true;
-            }
+            }*/
         }
         return super.onOptionsItemSelected(item);
     }

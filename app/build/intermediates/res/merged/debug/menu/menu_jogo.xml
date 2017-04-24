@@ -3,9 +3,18 @@
 
     <group android:id="@+id/menu_group_pontos" >
         <item
+            android:id="@+id/menu_tempo"
+            android:title=""
+            app:showAsAction="ifRoom" />
+        <item
             android:id="@+id/menu_pontuacao"
-            android:title="Pontuação: 0"
+            android:title=""
             app:showAsAction="never" />
+
+        <!-- <item
+            android:id="@+id/menu_problema"
+            android:title="@string/problema"
+            app:showAsAction="never" /> -->
 
     </group>
 

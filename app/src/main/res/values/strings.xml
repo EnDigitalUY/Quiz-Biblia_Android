@@ -27,6 +27,7 @@
     <string name="todos">Todos</string>
     <string name="todas">Todas</string>
     <string name="pontuacao">Pontuação</string>
+    <string name="problema">Informe um problema</string>
 
     <!-- Facebook -->
     <string name="action_sign_in_facebook">Login com o Facebook</string>
@@ -54,6 +55,11 @@
     <string name="secoes_cartas">Cartas</string>
     <string name="secoes_profecia">Profecia</string>
 
+    <!-- Modos de jogo -->
+    <string name="modos_de_jogo">Modos de jogo</string>
+    <string name="modos_de_jogo_errou">Errou, acabou!</string>
+    <string name="modos_de_jogo_se_vira_nos_180">Se vira com o tempo</string>
+
     <!-- Dificuldades -->
     <string name="dificuldades">Dificuldade</string>
     <string name="dificuldades_facil">Fácil</string>
@@ -62,5 +68,21 @@
 
     <!-- Tela de jogo -->
     <string name="bonus_insuficiente">Que pena! Você não tem bônus suficiente para %1$s.</string>
+
+    <!-- Help -->
+    <string name="como_funciona_pontuacao">Como funciona a pontuação?</string>
+    <string name="help_como_funciona_pontuacao">A pontuaçao funciona do seguinte modo:\n
+         \t- Quando você acerta uma pergunta difícil: +%1$d pontos\n
+         \t- Quando você acerta uma pergunta média: +%2$d pontos\n
+         \t- Quando você acerta uma pergunta fácil: +%3$d pontos\n
+         \t- Quando você erra uma pergunta difícil: %4$d pontos\n
+         \t- Quando você erra uma pergunta média: %5$d pontos\n
+         \t- Quando você erra uma pergunta fácil: %6$d pontos\n
+\n
+        Quando você acerta uma questão, você tem direito a mais um bônus que é relacionado ao tempo:\n
+         \t- Quando você acerta a questão com mais de 15 segundos restantes: +%7$d pontos\n
+         \t- Quando você acerta a questão com mais de 10 segundos restantes: +%8$d pontos\n
+         \t- Quando você acerta a questão com mais de 5 segundos restantes: +%9$d pontos
+    </string>
 
 </resources>
