@@ -85,7 +85,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/myColor5"
-            android:textSize="@dimen/font_size_title_medium"
+            android:textSize="@dimen/font_size_title_small"
             android:textStyle="bold" />
 
         <TextView
@@ -118,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/font_size_title_small"
+            android:textSize="@dimen/font_size_title_extra_small"
             android:textStyle="normal|bold" />
 
     </RelativeLayout>

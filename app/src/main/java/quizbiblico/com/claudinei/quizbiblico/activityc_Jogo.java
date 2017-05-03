@@ -3,11 +3,10 @@ package quizbiblico.com.claudinei.quizbiblico;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -80,7 +79,7 @@ public class activityc_Jogo extends AppCompatActivity {
         public Array erros;     //[0] - Difícil | [1] - Média | [2] - Fácil
         //public long itemTempo;
 
-    };
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -239,8 +238,6 @@ public class activityc_Jogo extends AppCompatActivity {
             if(!isFinishing())
                 builder.create().show();
 
-            builder = null;
-
             usuario.getBonus().setBonusTexto(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_exibetextobiblico));
@@ -350,9 +347,6 @@ public class activityc_Jogo extends AppCompatActivity {
         // Instancia o AlertDialog e o exibe
         if(!isFinishing())
             builder.create().show();
-
-        // Destrói as variáveis
-        builder = null;
 
         // Soma a pontuação obtida nesta tentativa à pontuação da partida
         pontuacaoPartida += pontuacaoTentativa;

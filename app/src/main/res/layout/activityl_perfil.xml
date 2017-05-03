@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/myColor5"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_Perfil"
+    android:id="@+id/activity_perfil"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/perfil_imgPerfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_perfil" />
+        app:srcCompat="@drawable/img_perfil"
+        android:contentDescription="Imagem Perfil"/>
 
     <ScrollView
         android:id="@+id/perfil_scrollView"
@@ -55,7 +57,9 @@
                     android:layout_width="@dimen/profile_edit_icon"
                     android:layout_height="@dimen/profile_edit_icon"
                     android:layout_marginTop="@dimen/margin_extra_small"
-                    android:src="@drawable/img_edit" />
+                    android:src="@drawable/img_edit"
+                    android:visibility="invisible"
+                    android:contentDescription="Editar e-Mail"/>
 
             </LinearLayout>
 
@@ -101,14 +105,17 @@
                     android:layout_width="@dimen/profile_edit_icon"
                     android:layout_height="@dimen/profile_edit_icon"
                     android:layout_marginTop="@dimen/margin_extra_small"
-                    android:src="@drawable/img_edit" />
+                    android:src="@drawable/img_edit"
+                    android:visibility="invisible"
+                    android:contentDescription="Editar senha"/>
 
             </LinearLayout>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_preferencias" />
+                android:src="@drawable/img_preferencias"
+                android:contentDescription="Preferências"/>
 
             <Switch
                 android:id="@+id/perfil_swSons"
@@ -131,7 +138,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_powerups" />
+                android:src="@drawable/img_powerups"
+                android:contentDescription="PowerUPs"/>
 
             <TextView
                 android:id="@+id/perfil_lblPowerUP_tempo"
@@ -181,7 +189,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_pontuacao" />
+                android:src="@drawable/img_pontuacao"
+                android:contentDescription="Pontuação"/>
 
             <TextView
                 android:id="@+id/perfil_lblPontuacao"
@@ -216,7 +225,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_resetarpontuacao" />
+                android:src="@drawable/img_resetarpontuacao"
+                android:contentDescription="Resetar pontuação"/>
 
         </LinearLayout>
     </ScrollView>
@@ -235,13 +245,15 @@
             android:id="@+id/perfil_btnCancelar"
             android:layout_width="@dimen/profile_buttons"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_cancelar" />
+            android:src="@drawable/img_cancelar"
+            android:contentDescription="Cancelar"/>
 
         <ImageView
             android:id="@+id/perfil_btnSalvar"
             android:layout_width="@dimen/profile_buttons"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_salvar" />
+            android:src="@drawable/img_salvar"
+            android:contentDescription="Salvar"/>
 
     </LinearLayout>
 
