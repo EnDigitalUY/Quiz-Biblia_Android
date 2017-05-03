@@ -70,14 +70,17 @@ public class activityc_Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        /* Facebook Desativado
         //Instanciando o SDK do Facebook para utilizá-lo
         FacebookSdk.sdkInitialize(this.getApplicationContext());
+        */
 
         setContentView(R.layout.activityl_login);
 
         //Criação do callbackManager para realizar o activityl_login pelo Facebook
         callbackManager = CallbackManager.Factory.create();
 
+        /* Facebook Desativado
         //Instanciando o botão de activityl_login do Facebook
         facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
         facebookLoginButton.setReadPermissions(Arrays.asList("email", "public_profile"));
@@ -97,6 +100,7 @@ public class activityc_Login extends AppCompatActivity {
                 Log.d(getClass().toString(), "Error");
             }
         });
+        */
 
         //Inicia identificando que não é um cadastro
         usuarioCadastrado = false;
@@ -111,7 +115,7 @@ public class activityc_Login extends AppCompatActivity {
                 // Usuário vindouro da autenticação
                 FirebaseUser user = authentication.getCurrentUser();
 
-                // Verifica se o usuário vindouro da autenticação é diferente de nulo, ou seja, está autenticado
+                // Verifica se o usuário vindouro da autenticação é diferente   de nulo, ou seja, está autenticado
                 if (user != null){
                     userLogged = new Usuario(user.getEmail(), user.getDisplayName(), user.getUid().toString(), swKeepConnected.isChecked());
 
@@ -164,13 +168,15 @@ public class activityc_Login extends AppCompatActivity {
             }
         });
 
+        /*Facebook Desativado
         //Verifica se o usuário já estava conectado pelo Facebook, caso já esteja, o reconecta
         if (AccessToken.getCurrentAccessToken() != null) {
             LoginManager.getInstance().logInWithReadPermissions(this, AccessToken.getCurrentAccessToken().getPermissions());
-        }
+        }*/
 
     }
 
+    /* Facebook Desativado
     private void handleFacebookAccessToken(AccessToken accessToken) {
         AuthCredential credential = FacebookAuthProvider.getCredential(accessToken.getToken());
         authentication.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -184,6 +190,7 @@ public class activityc_Login extends AppCompatActivity {
             }
         });
     }
+    */
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 public class activityc_Splash extends AppCompatActivity implements Runnable {
 
     @Override
@@ -27,6 +29,7 @@ public class activityc_Splash extends AppCompatActivity implements Runnable {
     }
     @Override
     public void run() {
+
         startActivity(new Intent(this, activityc_Login.class));
         finish();
     }

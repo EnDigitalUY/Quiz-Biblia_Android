@@ -15,13 +15,29 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin">
 
-        <Button
+        <!-- <Button
             android:text="Jogar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnJogar"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true" /> -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnJogar"
+            android:src="@drawable/img_jogar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_perfil"
+            android:layout_below="@+id/btnJogar"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:text="HELP"
@@ -29,229 +45,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnHelp"
             android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/btnJogar" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/btnJogar"
-            android:visibility="visible" >
-
-            <TextView
-                android:text="Nome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtNome"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <!-- Dificuldade -->
-            <TextView
-                android:id="@+id/filtros_txtDificuldade"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txtNome"
-                android:layout_marginTop="15dp"
-                android:text="@string/dificuldades"
-                android:textColor="@color/myLightGray"
-                android:textSize="18sp"
-                android:textStyle="normal|bold" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_below="@+id/filtros_txtDificuldade"
-                android:id="@+id/scrollDificuldade"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_height="130dp"
-                android:fadeScrollbars="false"
-                android:visibility="invisible">
-
-                <RadioGroup
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:id="@+id/radioDificuldade"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:text="@string/todos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioDificuldade_todas"
-                        android:checked="true"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/dificuldades_facil"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioDificuldade_facil"
-                        android:checked="false"
-                        android:duplicateParentState="false"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/dificuldades_medio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioDificuldade_media"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/dificuldades_dificil"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioDificuldade_dificil"
-                        android:textColor="@color/myWhite" />
-                </RadioGroup>
-            </ScrollView>
-
-            <!-- Testamentos -->
-            <TextView
-                android:id="@+id/filtros_txtTestamentos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/filtros_txtDificuldade"
-                android:text="@string/testamentos"
-                android:textColor="@color/myLightGray"
-                android:textSize="18sp"
-                android:textStyle="normal|bold" />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:id="@+id/scrollTestamentos"
-                android:layout_height="100dp"
-                android:layout_below="@id/filtros_txtTestamentos"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:fadeScrollbars="false"
-                android:visibility="invisible">
-
-                <RadioGroup
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:id="@+id/radioTestamentos"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:text="@string/todos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioTestamentos_todos"
-                        android:checked="true"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/testamentos_antigo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioTestamentos_antigo"
-                        android:checked="false"
-                        android:duplicateParentState="false"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/testamentos_novo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioTestamentos_novo"
-                        android:textColor="@color/myWhite" />
-                </RadioGroup>
-            </ScrollView>
-
-            <!-- Seções -->
-            <TextView
-                android:id="@+id/filtros_txtSecoes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/filtros_txtTestamentos"
-                android:text="@string/secoes"
-                android:textColor="@color/myLightGray"
-                android:textSize="18sp"
-                android:textStyle="normal|bold" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:id="@+id/scrollSecoes"
-                android:layout_below="@id/filtros_txtSecoes"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:fadeScrollbars="false"
-                android:layout_height="130dp"
-                android:visibility="visible">
-
-                <RadioGroup
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:id="@+id/radioSecoes"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/radioSecoes_todos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="@string/todos"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_pentateuco"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_pentateuco"
-                        android:checked="false"
-                        android:duplicateParentState="false"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_historia1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_historia"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_poesia"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_poesia"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_profetas1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_profetas1"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_profetas2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_profetas2"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_evangelhos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_evangelhos"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_historia2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_historia2"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_cartas"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_cartas"
-                        android:textColor="@color/myWhite" />
-                    <RadioButton
-                        android:text="@string/secoes_profecia"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioSecoes_profecia"
-                        android:textColor="@color/myWhite" />
-
-                </RadioGroup>
-            </ScrollView>
+            android:layout_toEndOf="@+id/btnJogar"
+            android:visibility="invisible"/>
 
 
-        </RelativeLayout>
 
     </RelativeLayout>
 

@@ -13,10 +13,84 @@ public class Usuario implements Serializable {
     private String linkImagem;
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
     private int pontuacao = 0;
-    private int bonusTempo = 5;
-    private int bonusAlternativa = 5;
-    private int bonusTexto = 5;
     private Date ultimoAcesso = new Date();
+
+    private Bonus bonus;
+    private Preferencias preferencias;
+
+    public static class Bonus implements Serializable{
+        private int bonusTempo;
+        private int bonusAlternativa;
+        private int bonusTexto;
+
+        public Bonus(){
+            this.bonusAlternativa = 5;
+            this.bonusTempo= 5;
+            this.bonusTexto = 5;
+        }
+
+        public int getBonusTempo() {
+            return bonusTempo;
+        }
+
+        public void setBonusTempo(int bonusTempoAAcrescentar) {
+            this.bonusTempo += bonusTempoAAcrescentar;
+        }
+
+        public int getBonusAlternativa() {
+            return bonusAlternativa;
+        }
+
+        public void setBonusAlternativa(int bonusAlternativaAAcrescentar) {
+            this.bonusAlternativa += bonusAlternativaAAcrescentar;
+        }
+
+        public int getBonusTexto() {
+            return bonusTexto;
+        }
+
+        public void setBonusTexto(int bonusTextoAAcrescentar) {
+            this.bonusTexto += bonusTextoAAcrescentar;
+        }
+
+    }
+
+    public static class Preferencias implements Serializable {
+        private boolean musica;
+        private boolean sons;
+        private boolean vibracao;
+
+        public Preferencias(){
+            this.musica = true;
+            this.sons = true;
+            this.vibracao = true;
+        }
+
+        public boolean isMusica() {
+            return musica;
+        }
+
+        public void setMusica(boolean musica) {
+            this.musica = musica;
+        }
+
+        public boolean isSons() {
+            return sons;
+        }
+
+        public void setSons(boolean sons) {
+            this.sons = sons;
+        }
+
+        public boolean isVibracao() {
+            return vibracao;
+        }
+
+        public void setVibracao(boolean vibracao) {
+            this.vibracao = vibracao;
+        }
+
+    }
 
     public void addAnswered(Integer questionAnswered){
         respondidas.add(questionAnswered);
@@ -31,6 +105,10 @@ public class Usuario implements Serializable {
         this.nome = nome;
         this.uid = uid;
         this.manterConectado = manterConectado;
+
+        this.bonus = new Bonus();
+        this.preferencias = new Preferencias();
+
     }
 
     public String getEmail() {
@@ -89,35 +167,19 @@ public class Usuario implements Serializable {
         this.pontuacao += pontuacaoAAcrescentar;
     }
 
-    public int getBonusTempo() {
-        return bonusTempo;
-    }
-
-    public void setBonusTempo(int bonusTempoAAcrescentar) {
-        this.bonusTempo += bonusTempoAAcrescentar;
-    }
-
-    public int getBonusAlternativa() {
-        return bonusAlternativa;
-    }
-
-    public void setBonusAlternativa(int bonusAlternativaAAcrescentar) {
-        this.bonusAlternativa += bonusAlternativaAAcrescentar;
-    }
-
-    public int getBonusTexto() {
-        return bonusTexto;
-    }
-
-    public void setBonusTexto(int bonusTextoAAcrescentar) {
-        this.bonusTexto += bonusTextoAAcrescentar;
-    }
-
     public Date getUltimoAcesso() {
         return ultimoAcesso;
     }
 
     public void setUltimoAcesso(Date ultimoAcesso) {
         this.ultimoAcesso = ultimoAcesso;
+    }
+
+    public Bonus getBonus() {
+        return bonus;
+    }
+
+    public Preferencias getPreferencias() {
+        return preferencias;
     }
 }

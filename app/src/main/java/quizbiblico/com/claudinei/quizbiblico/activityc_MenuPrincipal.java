@@ -1,6 +1,7 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
@@ -27,8 +29,9 @@ import java.util.ArrayList;
 public class activityc_MenuPrincipal extends AppCompatActivity {
 
     //Botões
-    private Button btnJogar;
-    private Button btnHelp;
+    private ImageView btnJogar;
+    private ImageView btnPerfil;
+    private ImageView btnHelp;
 
     // Usuário logado, quando entrar recebe os dados vindouros da tela de activityl_login, após logar recebe os dados da base de dados
     private Usuario usuario;
@@ -40,9 +43,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private TextView txtNome;
 
     // TextViews dos filtros
-    private TextView txtDificuldade;
-    private TextView txtTestamento;
-    private TextView txtSecao;
+    private ImageView txtDificuldade;
+    private ImageView txtTestamento;
+    private ImageView txtSecao;
 
     // ScrollViews dos filtros
     private ScrollView scrollDificuldade;
@@ -85,14 +88,6 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot data : dataSnapshot.getChildren()) {
                             usuario = data.getValue(Usuario.class);
-                            txtNome.setText(usuario.getNome());
-
-                            // Se o usuário ter imagem, a exibe
-                            /*if (usuario.getLinkImagem() != null) {
-                                if (!(usuario.getLinkImagem().equals(""))) {
-                                    //imgUsuario.setImageURI(Uri.parse(usuario.getLinkImagem()));
-                                }
-                            }*/
 
                         }
                     }
@@ -109,6 +104,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         setaElementosInterface();
     }
 
+    /* Parâmetros desativados
     private String getOpcaoSelecionada(ArrayList<RadioButton> radioButtons ){
 
         for (int i = 0; i < radioButtons.size(); i++){
@@ -118,21 +114,19 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
         return "";
 
-    }
+    }*/
 
     private void instanciaElementosInterface() {
-        //Botões
-        btnJogar = (Button) findViewById(R.id.btnJogar);
-        btnHelp = (Button) findViewById(R.id.btnHelp);
-
         //ImageViews
-        //imgUsuario = (ImageView) findViewById(R.id.imgUsuario);
+        btnJogar = (ImageView) findViewById(R.id.btnJogar);
+        btnPerfil = (ImageView) findViewById(R.id.btnPerfil);
+        btnHelp = (ImageView) findViewById(R.id.btnHelp);
 
+        /* Parâmetros desativados
         //TextViews
-        txtNome = (TextView) findViewById(R.id.txtNome);
-        txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
-        txtTestamento = (TextView) findViewById(R.id.filtros_txtTestamentos);
-        txtSecao = (TextView) findViewById(R.id.filtros_txtSecoes);
+        txtDificuldade = (ImageView) findViewById(R.id.filtros_txtDificuldade);
+        txtTestamento = (ImageView) findViewById(R.id.filtros_txtTestamentos);
+        txtSecao = (ImageView) findViewById(R.id.filtros_txtSecoes);
 
         //ScrollViews
         scrollDificuldade = (ScrollView) findViewById(R.id.scrollDificuldade);
@@ -161,7 +155,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_evangelhos) );
         radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_historia2) );
         radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_cartas) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profecia) );
+        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profecia) );*/
     }
 
     private void setaElementosInterface() {
@@ -170,16 +164,26 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                /* Parâmetros desativados
                 // Adiciona ao array de parâmetros as opções selecionadas
                 parametros = new ArrayList<>();
                 parametros.add(getOpcaoSelecionada(radioButtonsDificuldade));
                 parametros.add(getOpcaoSelecionada(radioButtonsTestamento));
-                parametros.add(getOpcaoSelecionada(radioButtonsSecao));
+                parametros.add(getOpcaoSelecionada(radioButtonsSecao));*/
 
                 //Indo para a próxima tela
                 Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
                 intent.putExtra("usuario", usuario);
-                intent.putExtra("parametros", parametros);
+                //intent.putExtra("parametros", parametros);  Parâmetros desativados
+                startActivity(intent);
+            }
+        });
+
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
+                intent.putExtra("usuario", usuario);
                 startActivity(intent);
             }
         });
@@ -193,6 +197,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
             }
         });
 
+        /* Parâmetros desativados
         // Instanciando e definindo a ação de clique no texto de dificuldade
         txtDificuldade.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -254,7 +259,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 else
                     scrollSecao.setVisibility(View.VISIBLE);
             }
-        });
+        });*/
 
     }
 
@@ -278,13 +283,6 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 finish();
                 return true;
             }
-            /*case R.id.menu_perfil: {
-                // Atualiza o cadastro do usuário
-                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Cadastro.class);
-                intent.putExtra("usuario", usuario);
-                startActivity(intent);
-                return true;
-            }*/
         }
         return super.onOptionsItemSelected(item);
     }

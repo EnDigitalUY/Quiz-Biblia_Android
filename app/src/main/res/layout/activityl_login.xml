@@ -6,15 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_Login"
-    android:weightSum="1"
-    android:background="@color/myColor5"
-    app:layout_collapseParallaxMultiplier="0.0">
+    android:background="@color/myColor5">
 
     <ImageView
         android:layout_width="match_parent"
         app:srcCompat="@drawable/img_initialimage"
         android:id="@+id/imgLogo"
-        android:layout_height="170dp" />
+        android:layout_height="@dimen/login_img_logo_height" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,14 +23,12 @@
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:layout_marginTop="152dp"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_large"
+            android:layout_marginTop="@dimen/login_img_logo_height"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:orientation="vertical">
 
@@ -40,15 +36,8 @@
                 android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/txtSenha"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentStart="true"
-                android:layout_weight="0.27"
-                android:ems="10"
                 android:hint="@string/prompt_email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:textColor="@android:color/white"
                 android:textColorHint="@color/myWhite" />
 
@@ -56,13 +45,6 @@
                 android:id="@+id/txtSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/email_login_form"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentStart="true"
-                android:layout_weight="0.27"
-                android:ems="10"
                 android:hint="@string/prompt_password"
                 android:inputType="textPassword"
                 android:textColor="@android:color/white"
@@ -72,23 +54,21 @@
                 android:id="@+id/sw_KeepConnected"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.88"
                 android:checked="true"
-                android:paddingLeft="6dp"
+                android:paddingStart="@dimen/margin_extra_small"
                 android:text="@string/action_keep_connected"
                 android:textColor="@color/myWhite"
                 android:textColorLink="@color/myColor5"
                 android:textOff="@string/action_keep_connected"
                 android:textOn="@string/action_keep_connected"
-                android:textSize="18sp" />
+                android:textSize="@dimen/font_size_title_small" />
 
             <ProgressBar
                 android:id="@+id/progresso"
                 style="@android:style/Widget.ProgressBar.Inverse"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin_large"
                 android:max="200"
                 android:progress="75"
                 android:visibility="invisible" />
@@ -102,20 +82,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="false"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="@dimen/login_margin_sign_buttons"
         android:baselineAligned="true"
         android:orientation="vertical">
 
+        <!-- Facebook Desativado
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="invisible"/>
+            android:visibility="visible"/>
+            -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="false"
             android:baselineAligned="true"
             android:orientation="horizontal">
 
@@ -123,8 +104,6 @@
                 android:id="@+id/btnLogIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentTop="false"
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"
@@ -137,8 +116,6 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentTop="false"
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"

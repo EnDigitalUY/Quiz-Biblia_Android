@@ -14,6 +14,7 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fadeScrollbars="false"
         android:layout_alignParentEnd="true">
 
         <LinearLayout
@@ -27,17 +28,41 @@
                 android:layout_height="wrap_content"
                 android:text="@string/pontuacao"
                 android:textColor="@color/myColor3"
-                android:textSize="22sp"
+                android:textSize="@dimen/font_size_title_medium"
                 android:textStyle="normal|bold" />
 
             <TextView
                 android:id="@+id/help_pontuacao_help"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:layout_marginBottom="@dimen/horizontal_margin_small"
+                android:paddingStart="@dimen/horizontal_margin_small"
+                android:text="@string/pontuacao"
                 android:textColor="@color/myColor1"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textSize="@dimen/font_size_text_medium"
+                android:textStyle="normal"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/help_powerups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/como_funcionam_os_powerups"
+                android:textColor="@color/myColor3"
+                android:textSize="@dimen/font_size_title_medium"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/help_powerups_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/horizontal_margin_small"
+                android:paddingStart="@dimen/horizontal_margin_small"
+                android:text="@string/como_funcionam_os_powerups"
+                android:textColor="@color/myColor1"
+                android:textSize="@dimen/font_size_text_medium"
+                android:textStyle="normal"
+                android:visibility="invisible" />
 
         </LinearLayout>
     </ScrollView>

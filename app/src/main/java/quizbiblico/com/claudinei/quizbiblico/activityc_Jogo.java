@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -104,8 +105,7 @@ public class activityc_Jogo extends AppCompatActivity {
             @Override
             public void run() {
 
-                while (tempoRestante >= 0) {
-
+                while(true) {
                     if (executaThread) {
                         handler.post(new Runnable() {
                             @Override
@@ -122,14 +122,15 @@ public class activityc_Jogo extends AppCompatActivity {
 
                         tempoRestante--;
                     }
-                }
 
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        tentativa(5);
-                    }
-                });
+                    if (tempoRestante == 0)
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                tentativa(5);
+                            }
+                        });
+                }
 
             }
         };
@@ -151,7 +152,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
         //TextViews
         txtPergunta = (TextView) findViewById(R.id.txtPergunta);
-        txtDificuldade = (TextView) findViewById(R.id.filtros_txtDificuldade);
+        txtDificuldade = (TextView) findViewById(R.id.txtDificuldade);
         txtSecao = (TextView) findViewById(R.id.txtSecao);
 
         pontuacaoPartida = 0;
@@ -176,27 +177,27 @@ public class activityc_Jogo extends AppCompatActivity {
         switch (menuItem.getItemId()){
             case R.id.menu_bonus_exibetextobiblico:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + usuario.getBonusTexto() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + usuario.getBonus().getBonusTexto() + ")");
                 break;
             }
             case R.id.menu_bonus_eliminaalternativa:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_eliminaalternativa) + " (" + usuario.getBonusAlternativa() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_eliminaalternativa) + " (" + usuario.getBonus().getBonusAlternativa() + ")");
                 break;
             }
             case R.id.menu_bonus_maistempo:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_maistempo) + " (" + usuario.getBonusTempo() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_maistempo) + " (" + usuario.getBonus().getBonusTempo() + ")");
                 break;
             }
         }
     }
 
     private void maisTempo(){ // Função responsável por acrescentar mais itemTempo para responder
-        if (usuario.getBonusTempo() > 0) {
+        if (usuario.getBonus().getBonusTempo() > 0) {
             tempoRestante += Parameter.MAIS_TEMPO;
 
-            usuario.setBonusTempo(-1);
+            usuario.getBonus().setBonusTempo(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_maistempo));
         }else
@@ -205,7 +206,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
 
-        if (usuario.getBonusAlternativa() > 0) {
+        if (usuario.getBonus().getBonusAlternativa() > 0) {
             if (alternativasEliminadas < 3) {
 
                 Random random = new Random();
@@ -218,7 +219,7 @@ public class activityc_Jogo extends AppCompatActivity {
                 botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
                 alternativasEliminadas++;
 
-                usuario.setBonusAlternativa(-1);
+                usuario.getBonus().setBonusAlternativa(-1);
 
                 atualizaMenuBonus(menu.findItem(R.id.menu_bonus_eliminaalternativa));
             }
@@ -228,7 +229,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void exibeReferenciaBiblica(){
 
-        if (usuario.getBonusTexto() > 0){
+        if (usuario.getBonus().getBonusTexto() > 0){
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Referência bíblica");
@@ -240,7 +241,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
             builder = null;
 
-            usuario.setBonusTexto(-1);
+            usuario.getBonus().setBonusTexto(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_exibetextobiblico));
 
@@ -406,21 +407,20 @@ public class activityc_Jogo extends AppCompatActivity {
 
                     // Preechimento das informações da questão
                     txtPergunta.setText(question.getQuestion());
-                    txtSecao.setText(   "Seção da bíblia:\n" +
-                                        question.getSecaoBiblia() +
+                    txtSecao.setText(   question.getSecaoBiblia() +
                                         " (" + question.getTestamento().replace("Antigo", "A.T.").replace("Novo", "N. T.") + ") ".replace(" N. T(", "("));
 
                     switch (question.getLevelQuestion()){
                         case 1:{
-                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_facil));
+                            txtDificuldade.setText(getString(R.string.dificuldades_facil));
                             break;
                         }
                         case 2:{
-                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_medio));
+                            txtDificuldade.setText(getString(R.string.dificuldades_medio));
                             break;
                         }
                         case 3:{
-                            txtDificuldade.setText("Dificuldade:\n" + getString(R.string.dificuldades_dificil));
+                            txtDificuldade.setText(getString(R.string.dificuldades_dificil));
                             break;
                         }
                     }
@@ -471,7 +471,6 @@ public class activityc_Jogo extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu _menu){
         super.onCreateOptionsMenu(_menu);
-
         getMenuInflater().inflate(R.menu.menu_jogo, _menu);
 
         //MenuItems

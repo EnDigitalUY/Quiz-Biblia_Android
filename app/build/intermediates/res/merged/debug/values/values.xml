@@ -669,6 +669,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="como_funciona_pontuacao">Como funciona a pontuação?</string>
+    <string name="como_funcionam_os_powerups">O que são e como funcionam os PowerUPs?</string>
     <string name="default_web_client_id" translatable="false">739186926536-mrql8aqvu3g48ve87k3ku1g9eb65fq90.apps.googleusercontent.com</string>
     <string name="dificuldades">Dificuldade</string>
     <string name="dificuldades_dificil">Difícil</string>
@@ -682,18 +683,29 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCsrnTeZ7ha-6RX7wi_03ErJSavR4hf8aM</string>
     <string name="google_storage_bucket" translatable="false">quizbiblico-b3eec.appspot.com</string>
     <string name="help_como_funciona_pontuacao">A pontuaçao funciona do seguinte modo:\n
-         \t- Quando você acerta uma pergunta difícil: +%1$d pontos\n
-         \t- Quando você acerta uma pergunta média: +%2$d pontos\n
-         \t- Quando você acerta uma pergunta fácil: +%3$d pontos\n
-         \t- Quando você erra uma pergunta difícil: %4$d pontos\n
-         \t- Quando você erra uma pergunta média: %5$d pontos\n
-         \t- Quando você erra uma pergunta fácil: %6$d pontos\n
-\n
+        \t\tQuando você acerta uma pergunta difícil: +%1$d pontos\n
+        \t\tQuando você acerta uma pergunta média: +%2$d pontos\n
+        \t\tQuando você acerta uma pergunta fácil: +%3$d pontos\n
+        \t\tQuando você erra uma pergunta difícil: %4$d pontos\n
+        \t\tQuando você erra uma pergunta média: %5$d pontos\n
+        \t\tQuando você erra uma pergunta fácil: %6$d pontos\n
+        \n
         Quando você acerta uma questão, você tem direito a mais um bônus que é relacionado ao tempo:\n
-         \t- Quando você acerta a questão com mais de 15 segundos restantes: +%7$d pontos\n
-         \t- Quando você acerta a questão com mais de 10 segundos restantes: +%8$d pontos\n
-         \t- Quando você acerta a questão com mais de 5 segundos restantes: +%9$d pontos
+        \t\tQuando você acerta a questão com mais de 15 segundos restantes: +%7$d pontos\n
+        \t\tQuando você acerta a questão com mais de 10 segundos restantes: +%8$d pontos\n
+        \t\tQuando você acerta a questão com mais de 5 segundos restantes: +%9$d pontos
     </string>
+    <string name="help_como_funcionam_os_powerups">Atualmente, temos 3 PowerUPs:\n
+        \t\t+ %1$d segundos para responder a questão\n
+        \t\t\t\tAo acionar este PowerUP, você terá mais %1$d para responder aquela questão\n
+        \t\tEliminação de alternativas incorretas\n
+        \t\t\t\tA cada vez que você acionar este PowerUP será eliminada uma alternativa incorreta,l facilitando para que você acerte a resposta\n
+        \t\tExibição da referência bíblica da questão\n
+        \t\t\t\tAo acionar este PowerUP, será exibida uma janela com a referência bíblica daquela questão, apenas a referência bíblica (Livro, capítulo e versículo)\n
+        \n
+        \n
+    </string>
+    <string name="jogar">Jogar</string>
     <string name="jogo_bonus_eliminaalternativa">Elimina alternativa</string>
     <string name="jogo_bonus_maistempo">+ 5 segundos</string>
     <string name="jogo_bonus_referenciabiblica">Referência bíblica</string>
@@ -702,11 +714,19 @@
     <string name="modos_de_jogo_errou">Errou, acabou!</string>
     <string name="modos_de_jogo_se_vira_nos_180">Se vira com o tempo</string>
     <string name="package_name">quizbiblico.com.claudinei.quizbiblico</string>
+    <string name="perfil_bonus_elimina">Elimina alternativa</string>
+    <string name="perfil_bonus_referencia">Referência bíblica</string>
+    <string name="perfil_bonus_tempo">+ 5 segundos</string>
+    <string name="perfil_musica">Musica</string>
+    <string name="perfil_pontuacao_questoes">Questões respondidas corretamente</string>
+    <string name="perfil_sons">Permite sons</string>
+    <string name="perfil_vibracao">Permite vibração</string>
     <string name="pontuacao">Pontuação</string>
     <string name="problema">Informe um problema</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_name">Nome</string>
     <string name="prompt_password">Senha</string>
+    <string name="prompt_uid">ID do usuário (uid)</string>
     <string name="search_menu_title">Search</string>
     <string name="secoes">Seções da bíblia</string>
     <string name="secoes_cartas">Cartas</string>
