@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
@@ -13,18 +9,6 @@
     },
     {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {

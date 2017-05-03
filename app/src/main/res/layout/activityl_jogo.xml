@@ -20,7 +20,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:id="@+id/linearLayout2"
-            android:layout_height="@dimen/alternatives_sum_size">
+            android:layout_height="@dimen/game_alternatives_sum_size">
 
             <Button
                 android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                 android:textAllCaps="false"
                 android:background="@drawable/quadro_alternativa"
                 android:cropToPadding="true"
-                android:layout_height="@dimen/alternative_size"
+                android:layout_height="@dimen/game_alternative_size"
                 android:text="Alternativa A" />
 
             <Button
@@ -43,7 +43,7 @@
                 android:textAllCaps="false"
                 android:background="@drawable/quadro_alternativa"
                 android:cropToPadding="true"
-                android:layout_height="@dimen/alternative_size"
+                android:layout_height="@dimen/game_alternative_size"
                 android:text="Alternativa B" />
 
             <Button
@@ -55,7 +55,7 @@
                 android:textAllCaps="false"
                 android:background="@drawable/quadro_alternativa"
                 android:cropToPadding="true"
-                android:layout_height="@dimen/alternative_size"
+                android:layout_height="@dimen/game_alternative_size"
                 android:text="Alternativa C" />
 
             <Button
@@ -67,7 +67,7 @@
                 android:textAllCaps="false"
                 android:background="@drawable/quadro_alternativa"
                 android:cropToPadding="true"
-                android:layout_height="@dimen/alternative_size"
+                android:layout_height="@dimen/game_alternative_size"
                 android:text="Alternativa D" />
 
         </LinearLayout>
@@ -75,7 +75,7 @@
         <TextView
             android:id="@+id/txtPergunta"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/question_size"
+            android:layout_height="@dimen/game_question_size"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:background="@drawable/quadro_questao"
@@ -85,7 +85,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/myColor5"
-            android:textSize="@dimen/font_size_title_medium"
+            android:textSize="@dimen/font_size_title_small"
             android:textStyle="bold" />
 
         <TextView
@@ -118,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/font_size_title_small"
+            android:textSize="@dimen/font_size_title_extra_small"
             android:textStyle="normal|bold" />
 
     </RelativeLayout>

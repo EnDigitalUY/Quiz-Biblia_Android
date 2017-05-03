@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "D:\\Claudinei BJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "C:\\Users\\Claudinei\\.android\\build-cache\\4b4f6539492a570af26d80c259fee928647671b6\\output\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {

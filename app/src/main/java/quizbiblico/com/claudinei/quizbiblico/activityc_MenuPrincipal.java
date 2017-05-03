@@ -276,9 +276,11 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_desconectar: {
                 // Desconecta o usuário
+                /* Facebook Desativado
                 if (AccessToken.getCurrentAccessToken() != null) {
                     LoginManager.getInstance().logOut();
                 }
+                */
                 FirebaseAuth.getInstance().signOut();
                 finish();
                 return true;
