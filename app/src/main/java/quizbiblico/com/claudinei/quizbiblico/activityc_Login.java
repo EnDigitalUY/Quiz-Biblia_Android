@@ -3,15 +3,18 @@ package quizbiblico.com.claudinei.quizbiblico;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
+import android.widget.ImageView;
 import android.widget.Switch;
 
+import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -61,46 +64,24 @@ public class activityc_Login extends AppCompatActivity {
     private boolean loginFacebook = false;
 
     //Barra de progresso
-    public static ProgressBar progressBar;
+    public static ImageView progressBar;
 
     //CallbackManager responsável por auxiliar na conexão pelo Facebook
     private CallbackManager callbackManager;
+
+    private CoordinatorLayout layoutPrincipal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* Facebook Desativado
         //Instanciando o SDK do Facebook para utilizá-lo
         FacebookSdk.sdkInitialize(this.getApplicationContext());
-        */
 
         setContentView(R.layout.activityl_login);
 
         //Criação do callbackManager para realizar o activityl_login pelo Facebook
         callbackManager = CallbackManager.Factory.create();
-
-        /* Facebook Desativado
-        //Instanciando o botão de activityl_login do Facebook
-        facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
-        facebookLoginButton.setReadPermissions(Arrays.asList("email", "public_profile"));
-        facebookLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                handleFacebookAccessToken(loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                Log.d(getClass().toString(), "Cancel");
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.d(getClass().toString(), "Error");
-            }
-        });
-        */
 
         //Inicia identificando que não é um cadastro
         usuarioCadastrado = false;
@@ -127,6 +108,9 @@ public class activityc_Login extends AppCompatActivity {
                     Intent intent = new Intent(activityc_Login.this, activityc_MenuPrincipal.class);
                     intent.putExtra("userLogged", userLogged);
                     intent.putExtra("cadastro", usuarioCadastrado);
+
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
                     startActivity(intent);
 
                 }else{
@@ -136,20 +120,58 @@ public class activityc_Login extends AppCompatActivity {
             }
         };
 
-        // Instanciando os EditTexts
+        instanciaElementosInterface();
+        setaElementosInterface();
+
+        //Instanciando o botão de activityl_login do Facebook
+        facebookLoginButton.setReadPermissions(Arrays.asList("email", "public_profile"));
+        facebookLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                handleFacebookAccessToken(loginResult.getAccessToken());
+            }
+
+            @Override
+            public void onCancel() {
+                Log.d(getClass().toString(), "Cancel");
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+                Log.d(getClass().toString(), "Error");
+            }
+        });
+
+        //Verifica se o usuário já estava conectado pelo Facebook, caso já esteja, o reconecta
+        if (AccessToken.getCurrentAccessToken() != null) {
+            LoginManager.getInstance().logInWithReadPermissions(this, AccessToken.getCurrentAccessToken().getPermissions());
+        }
+
+    }
+
+    private void instanciaElementosInterface() {
+        //EditText
         email = (EditText) findViewById(R.id.txtEmail);
         password = (EditText) findViewById(R.id.txtSenha);
 
-        //Instanciando o Switch
+        //Switch
         swKeepConnected = (Switch) findViewById(R.id.sw_KeepConnected);
 
-        //Instanciando os botões
+        //Buttons
         btnLogin = (Button) findViewById(R.id.btnLogIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
 
-        //Instanciando o progressBar
-        progressBar = (ProgressBar) findViewById(R.id.progresso);
+        //ProgressBar
+        progressBar = (ImageView) findViewById(R.id.progresso);
 
+        //Instanciando o botão de activityl_login do Facebook
+        facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
+
+        layoutPrincipal = (CoordinatorLayout) findViewById(R.id.layout_login);
+
+    }
+
+    private void setaElementosInterface() {
         //Definindo a ação tomada ao clicar em activityl_login
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -168,15 +190,13 @@ public class activityc_Login extends AppCompatActivity {
             }
         });
 
-        /*Facebook Desativado
-        //Verifica se o usuário já estava conectado pelo Facebook, caso já esteja, o reconecta
-        if (AccessToken.getCurrentAccessToken() != null) {
-            LoginManager.getInstance().logInWithReadPermissions(this, AccessToken.getCurrentAccessToken().getPermissions());
-        }*/
+        Glide.with(this)
+                .load(R.drawable.other_loading)
+                .asGif()
+                .into(progressBar);
 
     }
 
-    /* Facebook Desativado
     private void handleFacebookAccessToken(AccessToken accessToken) {
         AuthCredential credential = FacebookAuthProvider.getCredential(accessToken.getToken());
         authentication.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -190,7 +210,6 @@ public class activityc_Login extends AppCompatActivity {
             }
         });
     }
-    */
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -203,11 +222,16 @@ public class activityc_Login extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         authentication.addAuthStateListener(authenticationListener);
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left));
+
     }
 
     // No término da aplicação, remove o Listener que acompanha as mudanças na autenticação
     @Override
     public void onStop() {
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
         super.onStop();
 
         if (userLogged != null){

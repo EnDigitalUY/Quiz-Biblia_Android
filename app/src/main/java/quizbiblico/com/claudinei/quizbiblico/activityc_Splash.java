@@ -27,10 +27,12 @@ public class activityc_Splash extends AppCompatActivity implements Runnable {
         Handler handler = new Handler();
         handler.postDelayed(this, 3000);
     }
+
     @Override
     public void run() {
 
         startActivity(new Intent(this, activityc_Login.class));
         finish();
     }
+
 }

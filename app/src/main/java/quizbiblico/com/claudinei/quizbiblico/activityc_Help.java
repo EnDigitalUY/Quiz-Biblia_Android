@@ -3,6 +3,10 @@ package quizbiblico.com.claudinei.quizbiblico;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class activityc_Help extends AppCompatActivity {
@@ -13,6 +17,7 @@ public class activityc_Help extends AppCompatActivity {
     private TextView txtPowerUPs;
     private TextView txtPowerUPs_Help;
 
+    private ScrollView layoutPrincipal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,9 @@ public class activityc_Help extends AppCompatActivity {
         txtPontuacao_Help = (TextView) findViewById(R.id.help_pontuacao_help);
         txtPowerUPs = (TextView) findViewById(R.id.help_powerups);
         txtPowerUPs_Help = (TextView) findViewById(R.id.help_powerups_help);
+
+        layoutPrincipal = (ScrollView) findViewById(R.id.layout_help);
+
     }
     public void setaElementosInterface(){
         txtPontuacao.setOnClickListener(new View.OnClickListener() {
@@ -78,4 +86,18 @@ public class activityc_Help extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStop() {
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
+        super.onStop();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left));
+    }
 }

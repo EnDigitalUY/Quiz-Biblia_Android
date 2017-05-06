@@ -40,6 +40,7 @@
     <string name="pontuacao">Pontuação</string>
     <string name="problema">Informe um problema</string>
     <string name="jogar">Jogar</string>
+    <string name="carregando">Carregando</string>
 
     <!-- Facebook -->
     <string name="action_sign_in_facebook">Login com o Facebook</string>

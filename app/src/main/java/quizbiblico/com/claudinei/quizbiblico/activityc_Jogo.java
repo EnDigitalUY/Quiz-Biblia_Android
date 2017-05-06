@@ -5,12 +5,15 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 public class activityc_Jogo extends AppCompatActivity {
@@ -46,8 +50,8 @@ public class activityc_Jogo extends AppCompatActivity {
     private int alternativasEliminadas = 0;
 
     // Contador de itemTempo
-    private int tempoRestante;
     private final int TEMPOTOTAL = 20;
+    private int tempoRestante = TEMPOTOTAL;
 
     // Handler que fará a atualização de informações quando estiver trabalhando noutra Thread (exceto a principal)
     //  e for necessário atualizar informações de UI
@@ -73,12 +77,15 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private long tempoInicial;
 
+    private RelativeLayout layoutPrincipal;
+
+    private boolean elementosInstanciados = false;
+    private boolean elementosSetados = false;
+
     private class Partida{
         public int pontuacao;
         public Array acertos;   //[0] - Difícil | [1] - Média | [2] - Fácil
         public Array erros;     //[0] - Difícil | [1] - Média | [2] - Fácil
-        //public long itemTempo;
-
     }
 
     @Override
@@ -142,27 +149,63 @@ public class activityc_Jogo extends AppCompatActivity {
     }
 
     private void instanciaElementosInterface() {
-        // Botões
-        botoes = new ArrayList<>();
-        botoes.add((Button) findViewById(R.id.btnA));
-        botoes.add((Button) findViewById(R.id.btnB));
-        botoes.add((Button) findViewById(R.id.btnC));
-        botoes.add((Button) findViewById(R.id.btnD));
 
-        //TextViews
-        txtPergunta = (TextView) findViewById(R.id.txtPergunta);
-        txtDificuldade = (TextView) findViewById(R.id.txtDificuldade);
-        txtSecao = (TextView) findViewById(R.id.txtSecao);
+        if (! elementosInstanciados) {
 
-        pontuacaoPartida = 0;
+            // Botões
+            botoes = new ArrayList<>();
+            botoes.add((Button) findViewById(R.id.btnA));
+            botoes.add((Button) findViewById(R.id.btnB));
+            botoes.add((Button) findViewById(R.id.btnC));
+            botoes.add((Button) findViewById(R.id.btnD));
+
+            //TextViews
+            txtPergunta = (TextView) findViewById(R.id.txtPergunta);
+            txtDificuldade = (TextView) findViewById(R.id.txtDificuldade);
+            txtSecao = (TextView) findViewById(R.id.txtSecao);
+
+            layoutPrincipal = (RelativeLayout) findViewById(R.id.layout_jogo);
+
+            pontuacaoPartida = 0;
+
+            elementosInstanciados = true;
+
+        }
     }
 
     private void setaElementosInterface() {
-        // Instanciando o click dos botões
-        botoes.get(0).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(0);}});
-        botoes.get(1).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(1);}});
-        botoes.get(2).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(2);}});
-        botoes.get(3).setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {tentativa(3);}});
+
+        if (! elementosSetados) {
+
+            // Instanciando o click dos botões
+            botoes.get(0).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tentativa(0);
+                }
+            });
+            botoes.get(1).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tentativa(1);
+                }
+            });
+            botoes.get(2).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tentativa(2);
+                }
+            });
+            botoes.get(3).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tentativa(3);
+                }
+            });
+
+            elementosSetados = true;
+
+        }
 
     }
 
@@ -255,9 +298,6 @@ public class activityc_Jogo extends AppCompatActivity {
         // Para com a thread que decrementa o itemTempo
         executaThread = false;
 
-        //Bloqueia os controles do usuário
-        bloqueia_desbloqueiaControles(false);
-
         // Verifica se o usuário acertou
         boolean acertou = alternativaUsuario == question.getAnswer();
 
@@ -267,9 +307,12 @@ public class activityc_Jogo extends AppCompatActivity {
         if (acertou){
             usuario.addAnswered(question.getIdQuestion());
 
-            // Reproduz um som de correto
-            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_correta);
-            mediaPlayer.start();
+            if (usuario.getPreferencias().isSons()) {
+                // Reproduz um som de correto
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_correta);
+                mediaPlayer.start();
+                mediaPlayer.setLooping(false);
+            }
 
             // Pinta de verde a alternativa correta
             botoes.get(alternativaUsuario).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_correta));
@@ -297,9 +340,12 @@ public class activityc_Jogo extends AppCompatActivity {
 
         }else {
 
-            // Reproduz um som de incorreto
-            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_incorreta);
-            mediaPlayer.start();
+            if (usuario.getPreferencias().isSons()) {
+                // Reproduz um som de incorreto
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_incorreta);
+                mediaPlayer.start();
+                mediaPlayer.setLooping(false);
+            }
 
             if (alternativaUsuario != 5) {
                 // Pinta de vermelho a alternativa incorreta
@@ -348,18 +394,21 @@ public class activityc_Jogo extends AppCompatActivity {
         if(!isFinishing())
             builder.create().show();
 
+        //Bloqueia os controles do usuário
+        congelaTela(true);
+
         // Soma a pontuação obtida nesta tentativa à pontuação da partida
         pontuacaoPartida += pontuacaoTentativa;
 
         // Exibe a pontuação da partida no menu
         itemPontuacao.setTitle("Pontuação: " + String.valueOf(pontuacaoPartida));
+
     }
 
     private void proximaQuestao(){
 
         alternativasEliminadas = 0;
         for (int i = 0; i < botoes.size(); i++){
-            botoes.get(i).setVisibility(View.VISIBLE);
             botoes.get(i).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa));
         }
 
@@ -368,18 +417,47 @@ public class activityc_Jogo extends AppCompatActivity {
         getQuestion(usuario.getRespondidas());
     }
 
-    public void bloqueia_desbloqueiaControles(boolean bloqueio){
-        for (int i = 0; i < botoes.size(); i++){
-            botoes.get(i).setClickable(bloqueio);
+    public void congelaTela(boolean bloqueio){
+
+        ArrayList<View> views = new ArrayList<>();
+        views.add(txtPergunta);views.add(txtSecao);views.add(txtDificuldade);views.add(botoes.get(0));views.add(botoes.get(1));views.add(botoes.get(2));views.add(botoes.get(3));
+
+        for (int i = 0; i < views.size(); i++){
+            views.get(i).startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), (bloqueio ? android.R.anim.slide_out_right : android.R.anim.slide_in_left) ));
+            views.get(i).setClickable(! bloqueio);
+            views.get(i).setVisibility( bloqueio ? View.INVISIBLE : View.VISIBLE );
+
         }
 
         for (int i = 0; i < menu.size(); i++){
-            menu.getItem(i).setEnabled(bloqueio);
+            menu.getItem(i).setEnabled(! bloqueio);
         }
+
+        /*
+        if (bloqueio){
+            if (layoutPrincipal.getVisibility() == View.VISIBLE) {
+                layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                layoutPrincipal.setVisibility(View.INVISIBLE);
+            }
+
+            telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_in));
+            telaLoading.setVisibility(View.VISIBLE);
+
+        }else{
+            if (telaLoading.getVisibility() == View.VISIBLE) {
+                telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                telaLoading.setVisibility(View.INVISIBLE);
+            }
+
+            layoutPrincipal.setVisibility(View.VISIBLE);
+
+        }
+        * */
 
     }
 
     private void getQuestion(ArrayList<Integer> questoesRespondidasPeloUsuario){
+
         boolean randomOk = false;
 
         Random random = new Random();
@@ -445,8 +523,7 @@ public class activityc_Jogo extends AppCompatActivity {
                         botoes.get(i).setText(alternativas.get(i));
                         //alternativas.remove(alternativaAleatoria);
                     }
-
-                    bloqueia_desbloqueiaControles(true);
+                    congelaTela(false);
                     executaThread = true;
 
                 }
@@ -474,7 +551,9 @@ public class activityc_Jogo extends AppCompatActivity {
 
         menu = _menu;
 
-        bloqueia_desbloqueiaControles(false);
+        instanciaElementosInterface();
+        setaElementosInterface();
+        congelaTela(true);
 
         atualizaMenuBonus();
 
@@ -502,12 +581,22 @@ public class activityc_Jogo extends AppCompatActivity {
 
     @Override
     public void onStop() {
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
         super.onStop();
 
-        usuario.setPontuacao(pontuacaoPartida);
+        usuario.setPontuacao(usuario.getPontuacao() + pontuacaoPartida);
         FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
 
         finish();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left));
+
+    }
 }

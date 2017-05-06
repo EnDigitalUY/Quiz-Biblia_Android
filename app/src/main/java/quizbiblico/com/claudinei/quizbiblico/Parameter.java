@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -70,6 +72,8 @@ public final class Parameter {
         return nextQuestionNum;
     }
 
+    
+
     public static void getNexQuestionNum_Aux(){
         FirebaseDB.getParametrosReferencia().addValueEventListener(new ValueEventListener() {
             @Override
@@ -77,6 +81,7 @@ public final class Parameter {
                 for (DataSnapshot data: dataSnapshot.getChildren()){
                     nextQuestionNum = data.getValue(Integer.class);
                     buscaConcluida = true;
+                    //activityc_MenuPrincipal.parametrosCarreados = true;
                 }
             }
 
@@ -93,5 +98,9 @@ public final class Parameter {
     }
     public static void setNextQuestionNumMM() {
         Parameter.nextQuestionNum = getNextQuestionNum()-1;
+    }
+
+    public static boolean isBuscaConcluida() {
+        return buscaConcluida;
     }
 }

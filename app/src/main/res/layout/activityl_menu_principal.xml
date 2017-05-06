@@ -7,41 +7,70 @@
     android:background="@color/myColor5"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_MenuPrincipal">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="@dimen/margin_medium"
-        android:layout_marginRight="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_small">
+        android:id="@+id/menuprincipal_layout_carregando"
+        android:visibility="invisible">
 
-        <!-- <Button
-            android:text="Jogar"
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:id="@+id/menuprincipal_progresso"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnJogar"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" /> -->
+            android:layout_centerHorizontal="true"
+            android:id="@+id/menuprincipal_carregando"
+            android:text="@string/carregando"
+            android:textColor="@color/myWhite"
+            android:textSize="@dimen/font_size_title_large"
+            android:textStyle="bold"
+            android:layout_below="@id/menuprincipal_progresso" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnJogar"
-            android:src="@drawable/img_jogar" />
+    </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/btnPerfil"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_menuprincipal"
+        android:visibility="invisible">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_perfil" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/menuprincipal_linearlayout"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium">
 
-        <ImageView
-            android:id="@+id/btnHelp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_manual" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnJogar"
+                android:src="@drawable/img_jogar" />
+
+            <ImageView
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_perfil" />
+
+            <ImageView
+                android:id="@+id/btnHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_manual" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>

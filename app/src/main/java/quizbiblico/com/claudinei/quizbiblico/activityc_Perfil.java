@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 
 
@@ -32,6 +35,8 @@ public class activityc_Perfil extends AppCompatActivity {
 
     private ImageView btnCancelar;
     private ImageView btnSalvar;
+
+    private LinearLayout layoutPrincipal;
 
     private boolean emailAlterado = false;
     private boolean senhaAlterada = false;
@@ -74,6 +79,9 @@ public class activityc_Perfil extends AppCompatActivity {
         btnEditarSenha =    (ImageView) findViewById(R.id.perfil_btnEditSenha);
         btnCancelar =       (ImageView) findViewById(R.id.perfil_btnCancelar);
         btnSalvar =         (ImageView) findViewById(R.id.perfil_btnSalvar);
+
+        layoutPrincipal = (LinearLayout) findViewById(R.id.layout_perfil);
+
 
     }
 
@@ -119,7 +127,7 @@ public class activityc_Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Cria um AlertDialog que confirmará se o usuário realmente quer sair
-                AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
                 builder.setTitle("Você deseja sair?");
                 builder.setMessage("Ao sair, todas as alterações serão desfeitas. Você deseja sair?");
                 builder.setCancelable(false);
@@ -146,7 +154,7 @@ public class activityc_Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Cria um AlertDialog que confirmará se o usuário realmente quer salvar
-                AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
                 builder.setTitle("Você deseja gravar?");
                 builder.setMessage("Ao confirmar, todas as alterações não poderão mais ser desfeitas. Você deseja gravar as alterações?");
                 builder.setCancelable(false);
@@ -156,6 +164,7 @@ public class activityc_Perfil extends AppCompatActivity {
 
                     }
                 });
+
                 builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -163,7 +172,7 @@ public class activityc_Perfil extends AppCompatActivity {
                         try{
 
                             usuario.setNome(txtNome.getText().toString());
-                            usuario.getPreferencias().setMusica(swSons.isChecked());
+                            usuario.getPreferencias().setSons(swSons.isChecked());
                             usuario.getPreferencias().setVibracao(swVibracao.isChecked());
                             FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
 
@@ -180,5 +189,20 @@ public class activityc_Perfil extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left));
+    }
+
+    @Override
+    protected void onStop() {
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
+        super.onStop();
     }
 }

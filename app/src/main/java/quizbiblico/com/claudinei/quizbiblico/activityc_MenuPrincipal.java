@@ -1,30 +1,27 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.RadioButton;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
 
 public class activityc_MenuPrincipal extends AppCompatActivity {
 
@@ -36,29 +33,17 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     // Usuário logado, quando entrar recebe os dados vindouros da tela de activityl_login, após logar recebe os dados da base de dados
     private Usuario usuario;
 
-    //ImageView que contem a imagem do usuário
-    //private ImageView imgUsuario;
+    //Menu que contém algumas opções
+    private Menu menu;
 
-    // TextView que conterá o nome do usuário
-    private TextView txtNome;
+    //RelativeLayout
+    private RelativeLayout layoutPrincipal;
 
-    // TextViews dos filtros
-    private ImageView txtDificuldade;
-    private ImageView txtTestamento;
-    private ImageView txtSecao;
+    //Tela de loading
+    public static RelativeLayout telaLoading;
 
-    // ScrollViews dos filtros
-    private ScrollView scrollDificuldade;
-    private ScrollView scrollTestamento;
-    private ScrollView scrollSecao;
-
-    // RadioButton dos filtros
-    private ArrayList<RadioButton> radioButtonsDificuldade;
-    private ArrayList<RadioButton> radioButtonsTestamento;
-    private ArrayList<RadioButton> radioButtonsSecao;
-
-    // Strings que contém os valores dos RadioButtons selecionados
-    private ArrayList<String> parametros;
+    private boolean elementosInstanciados = false;
+    private boolean elementosSetados = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,170 +89,154 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         setaElementosInterface();
     }
 
-    /* Parâmetros desativados
-    private String getOpcaoSelecionada(ArrayList<RadioButton> radioButtons ){
-
-        for (int i = 0; i < radioButtons.size(); i++){
-            if (radioButtons.get(i).isChecked())
-                return radioButtons.get(i).getText().toString();
+    private void congelaTela(boolean bloqueio) {
+        for (int i = 0; i < menu.size(); i++){
+            menu.getItem(i).setEnabled(! bloqueio);
         }
 
-        return "";
+        if (bloqueio){
+            if (layoutPrincipal.getVisibility() == View.VISIBLE) {
+                layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                layoutPrincipal.setVisibility(View.INVISIBLE);
+            }
 
-    }*/
+            telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_in));
+            telaLoading.setVisibility(View.VISIBLE);
+
+        }else{
+            if (telaLoading.getVisibility() == View.VISIBLE) {
+                telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                telaLoading.setVisibility(View.INVISIBLE);
+            }
+
+            layoutPrincipal.setVisibility(View.VISIBLE);
+
+        }
+
+    }
+
+    private void atualizaTela(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(!Parameter.isBuscaConcluida()){
+                    try{
+                        Thread.sleep(100);
+                        Log.d(getClass().toString(), "Espera ai");
+                    } catch (Exception e){
+                        Log.d(getClass().toString(), "Carregando parâmetros\n" + e.getMessage().toString());
+                    }
+                }
+
+                Log.d(getClass().toString(), "Carregaou çagabaça");
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        congelaTela(false);
+                    }
+                });
+
+                /*handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        congelaTela(false);
+                    }
+                });*/
+
+
+            }
+        }).start();
+
+    }
 
     private void instanciaElementosInterface() {
-        //ImageViews
-        btnJogar = (ImageView) findViewById(R.id.btnJogar);
-        btnPerfil = (ImageView) findViewById(R.id.btnPerfil);
-        btnHelp = (ImageView) findViewById(R.id.btnHelp);
 
-        /* Parâmetros desativados
-        //TextViews
-        txtDificuldade = (ImageView) findViewById(R.id.filtros_txtDificuldade);
-        txtTestamento = (ImageView) findViewById(R.id.filtros_txtTestamentos);
-        txtSecao = (ImageView) findViewById(R.id.filtros_txtSecoes);
+        if (!elementosInstanciados) {
 
-        //ScrollViews
-        scrollDificuldade = (ScrollView) findViewById(R.id.scrollDificuldade);
-        scrollTestamento = (ScrollView) findViewById(R.id.scrollTestamentos);
-        scrollSecao = (ScrollView) findViewById(R.id.scrollSecoes);
+            //ImageViews
+            btnJogar = (ImageView) findViewById(R.id.btnJogar);
+            btnPerfil = (ImageView) findViewById(R.id.btnPerfil);
+            btnHelp = (ImageView) findViewById(R.id.btnHelp);
 
-        //RadioButtons
-        radioButtonsDificuldade = new ArrayList<>();
-        radioButtonsDificuldade.add((RadioButton) findViewById(R.id.radioDificuldade_todas));
-        radioButtonsDificuldade.add((RadioButton) findViewById(R.id.radioDificuldade_facil));
-        radioButtonsDificuldade.add((RadioButton) findViewById(R.id.radioDificuldade_media));
-        radioButtonsDificuldade.add((RadioButton) findViewById(R.id.radioDificuldade_dificil));
+            telaLoading = (RelativeLayout) findViewById(R.id.menuprincipal_layout_carregando);
 
-        radioButtonsTestamento = new ArrayList<>();
-        radioButtonsTestamento.add( (RadioButton) findViewById(R.id.radioTestamentos_todos) );
-        radioButtonsTestamento.add( (RadioButton) findViewById(R.id.radioTestamentos_antigo) );
-        radioButtonsTestamento.add( (RadioButton) findViewById(R.id.radioTestamentos_novo) );
+            //LinearLayout
+            layoutPrincipal = (RelativeLayout) findViewById(R.id.layout_menuprincipal);
 
-        radioButtonsSecao = new ArrayList<>();
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_todos) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_pentateuco) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_historia) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_poesia) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profetas1) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profetas2) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_evangelhos) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_historia2) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_cartas) );
-        radioButtonsSecao.add((RadioButton) findViewById(R.id.radioSecoes_profecia) );*/
+            elementosInstanciados = true;
+
+        }
     }
 
     private void setaElementosInterface() {
-        // Ao clicar jogar em vai para a tela do jogo
-        btnJogar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                /* Parâmetros desativados
-                // Adiciona ao array de parâmetros as opções selecionadas
-                parametros = new ArrayList<>();
-                parametros.add(getOpcaoSelecionada(radioButtonsDificuldade));
-                parametros.add(getOpcaoSelecionada(radioButtonsTestamento));
-                parametros.add(getOpcaoSelecionada(radioButtonsSecao));*/
+        if (! elementosSetados) {
 
-                //Indo para a próxima tela
-                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
-                intent.putExtra("usuario", usuario);
-                //intent.putExtra("parametros", parametros);  Parâmetros desativados
-                startActivity(intent);
-            }
-        });
+            // Ao clicar jogar em vai para a tela do jogo
+            btnJogar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-        btnPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
-                intent.putExtra("usuario", usuario);
-                startActivity(intent);
-            }
-        });
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
 
-        // Ao clicar em help abre a tela de ajuda do game
-        btnHelp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
-                startActivity(intent);
-            }
-        });
-
-        /* Parâmetros desativados
-        // Instanciando e definindo a ação de clique no texto de dificuldade
-        txtDificuldade.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //Caso a lista esteja fechada, a abre, caso esteja aberta, a fecha
-                if (scrollDificuldade.getVisibility() == View.VISIBLE) {
-                    scrollDificuldade.setVisibility(View.INVISIBLE);
-
-                    // Recolhe o texto abaixo
-                    RelativeLayout.LayoutParams parametros = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    parametros.addRule(RelativeLayout.BELOW, R.id.filtros_txtDificuldade);
-                    txtTestamento.setLayoutParams(parametros);
-                } else {
-                    scrollDificuldade.setVisibility(View.VISIBLE);
-
-                    // Expande o texto abaixo
-                    RelativeLayout.LayoutParams parametros = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    parametros.addRule(RelativeLayout.BELOW, R.id.scrollDificuldade);
-                    txtTestamento.setLayoutParams(parametros);
+                    //Indo para a próxima tela
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
+                    intent.putExtra("usuario", usuario);
+                    startActivity(intent);
                 }
+            });
 
-            }
-        });
+            btnPerfil.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-        // Instanciando e definindo a ação de clique no texto de testamento
-        txtTestamento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
 
-                //Caso a lista esteja fechada, a abre, caso esteja aberta, a fecha
-                if (scrollTestamento.getVisibility() == View.VISIBLE) {
-                    scrollTestamento.setVisibility(View.INVISIBLE);
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
+                    intent.putExtra("usuario", usuario);
 
-                    // Recolhe o texto abaixo
-                    RelativeLayout.LayoutParams parametros = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    parametros.addRule(RelativeLayout.BELOW, R.id.filtros_txtTestamentos);
-                    txtSecao.setLayoutParams(parametros);
-                } else {
-                    scrollTestamento.setVisibility(View.VISIBLE);
-
-                    // Expande o texto abaixo
-                    RelativeLayout.LayoutParams parametros = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    parametros.addRule(RelativeLayout.BELOW, R.id.scrollTestamentos);
-                    txtSecao.setLayoutParams(parametros);
-
+                    startActivity(intent);
                 }
-            }
-        });
+            });
 
-        // Instanciando e definindo a ação de clique no texto de seções
-        txtSecao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            // Ao clicar em help abre a tela de ajuda do game
+            btnHelp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-                //Caso a lista esteja fechada, a abre, caso esteja aberta, a fecha
-                if (scrollSecao.getVisibility() == View.VISIBLE)
-                    scrollSecao.setVisibility(View.INVISIBLE);
-                else
-                    scrollSecao.setVisibility(View.VISIBLE);
-            }
-        });*/
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
+
+                    startActivity(intent);
+                }
+            });
+
+            Glide.with(this)
+                    .load(R.drawable.other_loading)
+                    .asGif()
+                    .into((ImageView) findViewById(R.id.menuprincipal_progresso));
+
+            elementosSetados = true;
+
+        }
 
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
+    public boolean onCreateOptionsMenu(Menu _menu) {
+        super.onCreateOptionsMenu(_menu);
 
-        getMenuInflater().inflate(R.menu.menu_menuprincipal, menu);
+        menu = _menu;
+
+        instanciaElementosInterface();
+        setaElementosInterface();
+        congelaTela(true);
+        atualizaTela();
+
+        getMenuInflater().inflate(R.menu.menu_menuprincipal, _menu);
         return (true);
     }
 
@@ -276,16 +245,30 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_desconectar: {
                 // Desconecta o usuário
-                /* Facebook Desativado
                 if (AccessToken.getCurrentAccessToken() != null) {
                     LoginManager.getInstance().logOut();
                 }
-                */
+
                 FirebaseAuth.getInstance().signOut();
                 finish();
                 return true;
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left));
+    }
+
+    @Override
+    protected void onStop() {
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+
+        super.onStop();
     }
 }

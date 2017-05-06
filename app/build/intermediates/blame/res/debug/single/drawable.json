@@ -4,12 +4,16 @@
         "source": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\drawable\\quadro_alternativa_incorreta.png"
     },
     {
+        "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
         "source": "C:\\Users\\Claudinei\\.android\\build-cache\\f2839ffdee3af8405a006a223627c6565e0f7d23\\output\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\other_loading.gif",
+        "source": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\drawable\\other_loading.gif"
     },
     {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
@@ -126,6 +130,10 @@
     {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ico_wrong.png",
         "source": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\drawable\\ico_wrong.png"
+    },
+    {
+        "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_black.png",
+        "source": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\drawable\\color_black.png"
     },
     {
         "merged": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",

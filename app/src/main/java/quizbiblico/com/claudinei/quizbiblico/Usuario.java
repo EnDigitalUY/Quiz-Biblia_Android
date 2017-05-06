@@ -12,7 +12,7 @@ public class Usuario implements Serializable {
     private boolean manterConectado;
     private String linkImagem;
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
-    private int pontuacao = 0;
+    private int pontuacao;
     private Date ultimoAcesso = new Date();
 
     private Bonus bonus;
@@ -24,9 +24,6 @@ public class Usuario implements Serializable {
         private int bonusTexto;
 
         public Bonus(){
-            this.bonusAlternativa = 5;
-            this.bonusTempo= 5;
-            this.bonusTexto = 5;
         }
 
         public int getBonusTempo() {
@@ -56,22 +53,11 @@ public class Usuario implements Serializable {
     }
 
     public static class Preferencias implements Serializable {
-        private boolean musica;
         private boolean sons;
         private boolean vibracao;
 
         public Preferencias(){
-            this.musica = true;
-            this.sons = true;
-            this.vibracao = true;
-        }
 
-        public boolean isMusica() {
-            return musica;
-        }
-
-        public void setMusica(boolean musica) {
-            this.musica = musica;
         }
 
         public boolean isSons() {
@@ -163,8 +149,8 @@ public class Usuario implements Serializable {
         return pontuacao;
     }
 
-    public void setPontuacao(int pontuacaoAAcrescentar) {
-        this.pontuacao += pontuacaoAAcrescentar;
+    public void setPontuacao(int pontuacao) {
+        this.pontuacao = pontuacao;
     }
 
     public Date getUltimoAcesso() {

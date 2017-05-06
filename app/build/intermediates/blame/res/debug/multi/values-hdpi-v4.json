@@ -13,11 +13,11 @@
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 378,
+                        "startOffset": 427,
                         "endColumn": 52,
-                        "endOffset": 426
+                        "endOffset": 475
                     }
                 }
             },
@@ -32,11 +32,11 @@
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 318,
+                        "startOffset": 367,
                         "endColumn": 58,
-                        "endOffset": 372
+                        "endOffset": 421
                     }
                 }
             },
@@ -51,11 +51,11 @@
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 432,
+                        "startOffset": 481,
                         "endColumn": 50,
-                        "endOffset": 478
+                        "endOffset": 527
                     }
                 }
             },
@@ -68,7 +68,14 @@
                     "endOffset": 271
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 227,
+                        "endColumn": 57,
+                        "endOffset": 280
+                    }
                 }
             },
             {
@@ -80,7 +87,14 @@
                     "endOffset": 322
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 286,
+                        "endColumn": 50,
+                        "endOffset": 332
+                    }
                 }
             },
             {
@@ -88,20 +102,46 @@
                     "startLine": 7,
                     "startColumn": 4,
                     "startOffset": 327,
-                    "endColumn": 50,
-                    "endOffset": 373
+                    "endColumn": 47,
+                    "endOffset": 370
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 47,
+                        "endOffset": 191
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 378,
+                    "startOffset": 375,
+                    "endColumn": 50,
+                    "endOffset": 421
+                },
+                "from": {
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 96,
+                        "endColumn": 50,
+                        "endOffset": 142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 426,
                     "endColumn": 46,
-                    "endOffset": 420
+                    "endOffset": 468
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
@@ -116,15 +156,23 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 425,
-                    "endLine": 13,
+                    "startOffset": 473,
+                    "endLine": 14,
                     "endColumn": 13,
-                    "endOffset": 697
+                    "endOffset": 745
                 },
                 "from": {
-                    "file": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml"
+                    "file": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 6,
+                        "endColumn": 13,
+                        "endOffset": 327
+                    }
                 }
             }
         ]
