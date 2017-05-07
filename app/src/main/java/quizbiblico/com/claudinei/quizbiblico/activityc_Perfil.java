@@ -28,8 +28,6 @@ public class activityc_Perfil extends AppCompatActivity {
     private Switch swSons;
     private Switch swVibracao;
 
-    private Usuario usuario;
-
     private ImageView btnEditarEmail;
     private ImageView btnEditarSenha;
 
@@ -45,14 +43,6 @@ public class activityc_Perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activityl_perfil);
-
-        //Verifica se existem dados vindouros da tela anterior
-        Bundle extra = getIntent().getExtras();
-        if (extra != null) {
-
-            // Recebe o usuário da tela anterior
-            usuario = (Usuario) extra.getSerializable("usuario");
-        }
 
         instanciaElementosInterface();
         setaElementosInterface();
@@ -88,17 +78,17 @@ public class activityc_Perfil extends AppCompatActivity {
     private void setaElementosInterface() {
 
         //EditText
-        txtEmail.setText(           usuario.getEmail());
-        txtNome.setText(            usuario.getNome());
-        txtPUPTempo.setText(        String.valueOf(usuario.getBonus().getBonusTempo()));
-        txtPUPAlternativa.setText(  String.valueOf(usuario.getBonus().getBonusAlternativa()));
-        txtPUPReferencia.setText(   String.valueOf(usuario.getBonus().getBonusTexto()));
-        txtPontuacao.setText(       String.valueOf(usuario.getPontuacao()));
-        txtQuestoes.setText(        String.valueOf(usuario.getRespondidas().size()));
+        txtEmail.setText(           activityc_MenuPrincipal.usuario.getEmail());
+        txtNome.setText(            activityc_MenuPrincipal.usuario.getNome());
+        txtPUPTempo.setText(        String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusTempo()));
+        txtPUPAlternativa.setText(  String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa()));
+        txtPUPReferencia.setText(   String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusTexto()));
+        txtPontuacao.setText(       String.valueOf(activityc_MenuPrincipal.usuario.getPontuacao()));
+        txtQuestoes.setText(        String.valueOf(activityc_MenuPrincipal.usuario.getRespondidas().size()));
 
         //Switch
-        swSons.setChecked(usuario.getPreferencias().isSons());
-        swVibracao.setChecked(usuario.getPreferencias().isVibracao());
+        swSons.setChecked(activityc_MenuPrincipal.usuario.getPreferencias().isSons());
+        swVibracao.setChecked(activityc_MenuPrincipal.usuario.getPreferencias().isVibracao());
 
         //ImageView
         btnEditarEmail.setOnClickListener(new View.OnClickListener() {
@@ -108,7 +98,7 @@ public class activityc_Perfil extends AppCompatActivity {
                 if(txtEmail.isEnabled())
                     txtEmail.requestFocus();
                 else
-                    emailAlterado = (! txtEmail.getText().toString().equals(usuario.getEmail()));
+                    emailAlterado = (! txtEmail.getText().toString().equals(activityc_MenuPrincipal.usuario.getEmail()));
             }
         });
 
@@ -171,10 +161,10 @@ public class activityc_Perfil extends AppCompatActivity {
 
                         try{
 
-                            usuario.setNome(txtNome.getText().toString());
-                            usuario.getPreferencias().setSons(swSons.isChecked());
-                            usuario.getPreferencias().setVibracao(swVibracao.isChecked());
-                            FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
+                            activityc_MenuPrincipal.usuario.setNome(txtNome.getText().toString());
+                            activityc_MenuPrincipal.usuario.getPreferencias().setSons(swSons.isChecked());
+                            activityc_MenuPrincipal.usuario.getPreferencias().setVibracao(swVibracao.isChecked());
+                            FirebaseDB.getUsuarioReferencia().child(activityc_MenuPrincipal.usuario.getUid()).setValue(activityc_MenuPrincipal.usuario);
 
                             Snackbar.make(findViewById(R.id.activity_perfil), "Alterações gravadas", Snackbar.LENGTH_SHORT).show();
                             finish();

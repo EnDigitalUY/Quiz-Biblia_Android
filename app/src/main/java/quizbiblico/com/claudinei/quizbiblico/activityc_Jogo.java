@@ -8,15 +8,18 @@ import android.os.Handler;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -42,9 +45,6 @@ public class activityc_Jogo extends AppCompatActivity {
     private TextView txtPergunta;
     private TextView txtDificuldade;
     private TextView txtSecao;
-
-    // Objeto que receberá o usuário
-    private Usuario usuario;
 
     // Número de alternativas que o usuário eliminou. (O limite é 3, pois restaria apenas a alternativa correta)
     private int alternativasEliminadas = 0;
@@ -78,9 +78,11 @@ public class activityc_Jogo extends AppCompatActivity {
     private long tempoInicial;
 
     private RelativeLayout layoutPrincipal;
+    private RelativeLayout telaLoading;
 
     private boolean elementosInstanciados = false;
     private boolean elementosSetados = false;
+    private boolean podeExibirNovaQuestao = true;
 
     private class Partida{
         public int pontuacao;
@@ -92,13 +94,6 @@ public class activityc_Jogo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activityl_jogo);
-
-        // Recebe os dados da Activity anterior
-        Bundle extra = getIntent().getExtras();
-        if (extra != null){
-            usuario = (Usuario) extra.getSerializable("usuario");
-            parametros = extra.getStringArrayList("parametros");
-        }
 
         instanciaElementosInterface();
         setaElementosInterface();
@@ -144,7 +139,8 @@ public class activityc_Jogo extends AppCompatActivity {
         new Thread(controlaTempo).start();
 
         // Chamada para função que irá preencher os textos na tela, inclusive exibir o itemTempo
-        proximaQuestao();
+        //proximaQuestao();
+        getQuestion(activityc_MenuPrincipal.usuario.getRespondidas());
 
     }
 
@@ -165,6 +161,7 @@ public class activityc_Jogo extends AppCompatActivity {
             txtSecao = (TextView) findViewById(R.id.txtSecao);
 
             layoutPrincipal = (RelativeLayout) findViewById(R.id.layout_jogo);
+            telaLoading = (RelativeLayout) findViewById(R.id.jogo_layout_carregando);
 
             pontuacaoPartida = 0;
 
@@ -203,6 +200,11 @@ public class activityc_Jogo extends AppCompatActivity {
                 }
             });
 
+            Glide.with(this)
+                    .load(R.drawable.other_loading)
+                    .asGif()
+                    .into((ImageView) findViewById(R.id.jogo_progresso));
+
             elementosSetados = true;
 
         }
@@ -219,27 +221,27 @@ public class activityc_Jogo extends AppCompatActivity {
         switch (menuItem.getItemId()){
             case R.id.menu_bonus_exibetextobiblico:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + usuario.getBonus().getBonusTexto() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + activityc_MenuPrincipal.usuario.getBonus().getBonusTexto() + ")");
                 break;
             }
             case R.id.menu_bonus_eliminaalternativa:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_eliminaalternativa) + " (" + usuario.getBonus().getBonusAlternativa() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_eliminaalternativa) + " (" + activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa() + ")");
                 break;
             }
             case R.id.menu_bonus_maistempo:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_maistempo) + " (" + usuario.getBonus().getBonusTempo() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_maistempo) + " (" + activityc_MenuPrincipal.usuario.getBonus().getBonusTempo() + ")");
                 break;
             }
         }
     }
 
     private void maisTempo(){ // Função responsável por acrescentar mais itemTempo para responder
-        if (usuario.getBonus().getBonusTempo() > 0) {
+        if (activityc_MenuPrincipal.usuario.getBonus().getBonusTempo() > 0) {
             tempoRestante += Parameter.MAIS_TEMPO;
 
-            usuario.getBonus().setBonusTempo(-1);
+            activityc_MenuPrincipal.usuario.getBonus().setBonusTempo(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_maistempo));
         }else
@@ -248,7 +250,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
 
-        if (usuario.getBonus().getBonusAlternativa() > 0) {
+        if (activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa() > 0) {
             if (alternativasEliminadas < 3) {
 
                 Random random = new Random();
@@ -261,7 +263,7 @@ public class activityc_Jogo extends AppCompatActivity {
                 botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
                 alternativasEliminadas++;
 
-                usuario.getBonus().setBonusAlternativa(-1);
+                activityc_MenuPrincipal.usuario.getBonus().setBonusAlternativa(-1);
 
                 atualizaMenuBonus(menu.findItem(R.id.menu_bonus_eliminaalternativa));
             }
@@ -271,7 +273,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void exibeReferenciaBiblica(){
 
-        if (usuario.getBonus().getBonusTexto() > 0){
+        if (activityc_MenuPrincipal.usuario.getBonus().getBonusTexto() > 0){
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Referência bíblica");
@@ -281,7 +283,7 @@ public class activityc_Jogo extends AppCompatActivity {
             if(!isFinishing())
                 builder.create().show();
 
-            usuario.getBonus().setBonusTexto(-1);
+            activityc_MenuPrincipal.usuario.getBonus().setBonusTexto(-1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_exibetextobiblico));
 
@@ -291,6 +293,9 @@ public class activityc_Jogo extends AppCompatActivity {
     }
 
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
+
+        podeExibirNovaQuestao = false;
+        getQuestion(activityc_MenuPrincipal.usuario.getRespondidas());
 
         // Variável local que exibirá a pontuação obtida com esta questão
         int pontuacaoTentativa = 0;
@@ -305,9 +310,9 @@ public class activityc_Jogo extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         if (acertou){
-            usuario.addAnswered(question.getIdQuestion());
+            activityc_MenuPrincipal.usuario.addAnswered(question.getIdQuestion());
 
-            if (usuario.getPreferencias().isSons()) {
+            if (activityc_MenuPrincipal.usuario.getPreferencias().isSons()) {
                 // Reproduz um som de correto
                 MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_correta);
                 mediaPlayer.start();
@@ -340,7 +345,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
         }else {
 
-            if (usuario.getPreferencias().isSons()) {
+            if (activityc_MenuPrincipal.usuario.getPreferencias().isSons()) {
                 // Reproduz um som de incorreto
                 MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_incorreta);
                 mediaPlayer.start();
@@ -408,51 +413,80 @@ public class activityc_Jogo extends AppCompatActivity {
     private void proximaQuestao(){
 
         alternativasEliminadas = 0;
-        for (int i = 0; i < botoes.size(); i++){
+        for (int i = 0; i < botoes.size(); i++) {
             botoes.get(i).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa));
         }
 
         tempoRestante = TEMPOTOTAL;
 
-        getQuestion(usuario.getRespondidas());
+        podeExibirNovaQuestao = true;
+
     }
 
-    public void congelaTela(boolean bloqueio){
+    public void congelaTela(final boolean bloqueio){
 
-        ArrayList<View> views = new ArrayList<>();
-        views.add(txtPergunta);views.add(txtSecao);views.add(txtDificuldade);views.add(botoes.get(0));views.add(botoes.get(1));views.add(botoes.get(2));views.add(botoes.get(3));
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (!bloqueio && !podeExibirNovaQuestao) {
+                    try {
+                        Thread.sleep(100);
+                        Log.d(getClass().toString(), "Ainda não pode exibir a nova questão");
+                    } catch (Exception e) {
+                        Log.d(getClass().toString(), e.getMessage().toString());
+                    }
+                }
 
-        for (int i = 0; i < views.size(); i++){
-            views.get(i).startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), (bloqueio ? android.R.anim.slide_out_right : android.R.anim.slide_in_left) ));
-            views.get(i).setClickable(! bloqueio);
-            views.get(i).setVisibility( bloqueio ? View.INVISIBLE : View.VISIBLE );
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        ArrayList<View> views = new ArrayList<>();
+                        views.add(txtPergunta);
+                        views.add(txtSecao);
+                        views.add(txtDificuldade);
+                        views.add(botoes.get(0));
+                        views.add(botoes.get(1));
+                        views.add(botoes.get(2));
+                        views.add(botoes.get(3));
 
-        }
+                        for (int i = 0; i < views.size(); i++) {
+                            views.get(i).startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), (bloqueio ? android.R.anim.slide_out_right : android.R.anim.slide_in_left)));
+                            views.get(i).setClickable(!bloqueio);
+                            views.get(i).setVisibility(bloqueio ? View.INVISIBLE : View.VISIBLE);
 
-        for (int i = 0; i < menu.size(); i++){
-            menu.getItem(i).setEnabled(! bloqueio);
-        }
+                        }
 
-        /*
-        if (bloqueio){
-            if (layoutPrincipal.getVisibility() == View.VISIBLE) {
-                layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
-                layoutPrincipal.setVisibility(View.INVISIBLE);
+                        for (int i = 0; i < menu.size(); i++) {
+                            menu.getItem(i).setEnabled(!bloqueio);
+                        }
+
+                        //Coloca/Retira tela de Loading e faz as devidas animações
+                        if (bloqueio){
+                            if (layoutPrincipal.getVisibility() == View.VISIBLE) {
+                                layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                                layoutPrincipal.setVisibility(View.INVISIBLE);
+                            }
+
+                            telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_in));
+                            telaLoading.setVisibility(View.VISIBLE);
+
+                        }else{
+                            if (telaLoading.getVisibility() == View.VISIBLE) {
+                                telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
+                                telaLoading.setVisibility(View.INVISIBLE);
+                            }
+
+                            layoutPrincipal.setVisibility(View.VISIBLE);
+
+                        }
+
+                        if(!bloqueio)
+                            executaThread = true;
+
+                    }
+                });
             }
-
-            telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_in));
-            telaLoading.setVisibility(View.VISIBLE);
-
-        }else{
-            if (telaLoading.getVisibility() == View.VISIBLE) {
-                telaLoading.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out));
-                telaLoading.setVisibility(View.INVISIBLE);
-            }
-
-            layoutPrincipal.setVisibility(View.VISIBLE);
-
-        }
-        * */
+        }).start();
 
     }
 
@@ -524,7 +558,6 @@ public class activityc_Jogo extends AppCompatActivity {
                         //alternativas.remove(alternativaAleatoria);
                     }
                     congelaTela(false);
-                    executaThread = true;
 
                 }
             }
@@ -586,8 +619,10 @@ public class activityc_Jogo extends AppCompatActivity {
 
         super.onStop();
 
-        usuario.setPontuacao(usuario.getPontuacao() + pontuacaoPartida);
-        FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
+        activityc_MenuPrincipal.usuario.setPontuacao(activityc_MenuPrincipal.usuario.getPontuacao() + pontuacaoPartida);
+        FirebaseDB.getUsuarioReferencia().child(activityc_MenuPrincipal.usuario.getUid()).setValue(activityc_MenuPrincipal.usuario);
+
+        executaThread = false;
 
         finish();
     }

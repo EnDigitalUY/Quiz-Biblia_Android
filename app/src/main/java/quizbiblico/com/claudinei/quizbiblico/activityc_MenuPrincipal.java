@@ -31,7 +31,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private ImageView btnHelp;
 
     // Usuário logado, quando entrar recebe os dados vindouros da tela de activityl_login, após logar recebe os dados da base de dados
-    private Usuario usuario;
+    public static Usuario usuario;
 
     //Menu que contém algumas opções
     private Menu menu;
@@ -40,7 +40,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private RelativeLayout layoutPrincipal;
 
     //Tela de loading
-    public static RelativeLayout telaLoading;
+    private RelativeLayout telaLoading;
 
     private boolean elementosInstanciados = false;
     private boolean elementosSetados = false;
@@ -51,7 +51,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         setContentView(R.layout.activityl_menu_principal);
 
         // Coloca como invisível a barra de progresso da tela de activityl_login
-        activityc_Login.progressBar.setVisibility(View.INVISIBLE);
+        activityc_Login.telaLoading.setVisibility(View.INVISIBLE);
 
         //Verifica se existem dados vindouros da tela anterior
         Bundle extra = getIntent().getExtras();
@@ -123,13 +123,10 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 while(!Parameter.isBuscaConcluida()){
                     try{
                         Thread.sleep(100);
-                        Log.d(getClass().toString(), "Espera ai");
                     } catch (Exception e){
-                        Log.d(getClass().toString(), "Carregando parâmetros\n" + e.getMessage().toString());
+                        Log.d(getClass().toString(), e.getMessage().toString());
                     }
                 }
-
-                Log.d(getClass().toString(), "Carregaou çagabaça");
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -180,10 +177,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 public void onClick(View v) {
 
                     layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-
-                    //Indo para a próxima tela
                     Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
-                    intent.putExtra("usuario", usuario);
                     startActivity(intent);
                 }
             });
@@ -193,10 +187,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 public void onClick(View v) {
 
                     layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-
                     Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
-                    intent.putExtra("usuario", usuario);
-
                     startActivity(intent);
                 }
             });
@@ -207,9 +198,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 public void onClick(View v) {
 
                     layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-
                     Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
-
                     startActivity(intent);
                 }
             });

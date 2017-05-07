@@ -6,8 +6,10 @@
     <dimen name="profile_buttons">148dp</dimen>
 
     <!-- Tela de login -->
-    <dimen name="login_margin_sign_buttons">370dp</dimen>
+    <dimen name="login_margin_sign_buttons">380dp</dimen>
     <dimen name="login_size_buttons">160dp</dimen>
+    <dimen name="login_img_logo_height">150dp</dimen>
+    <dimen name="login_margin_loading">190dp</dimen>
 
     <!-- Tela de jogo -->
     <dimen name="game_alternatives_sum_size">270dp</dimen>

@@ -11,14 +11,7 @@
                     "endOffset": 104
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 47,
-                        "endColumn": 53,
-                        "endOffset": 96
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml"
                 }
             },
             {
@@ -26,17 +19,17 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 109,
-                    "endColumn": 50,
-                    "endOffset": 155
+                    "endColumn": 52,
+                    "endOffset": 157
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 102,
-                        "endColumn": 50,
-                        "endOffset": 148
+                        "startOffset": 154,
+                        "endColumn": 52,
+                        "endOffset": 202
                     }
                 }
             },
@@ -44,38 +37,36 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 160,
-                    "endColumn": 47,
-                    "endOffset": 203
+                    "startOffset": 162,
+                    "endColumn": 50,
+                    "endOffset": 208
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 237,
-                        "endColumn": 47,
-                        "endOffset": 280
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 208,
-                    "endColumn": 50,
-                    "endOffset": 254
+                    "startOffset": 213,
+                    "endColumn": 47,
+                    "endOffset": 256
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 185,
-                        "endColumn": 50,
-                        "endOffset": 231
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 261,
+                    "endColumn": 50,
+                    "endOffset": 307
+                },
+                "from": {
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xhdpi\\dimens.xml"
                 }
             }
         ]

@@ -8,6 +8,36 @@
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_Login"
     android:background="@color/myColor5">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_layout_carregando"
+        android:layout_marginTop="@dimen/login_margin_loading"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:id="@+id/login_progresso"
+            android:src="@drawable/other_loading"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_carregando"
+            android:text="@string/carregando"
+            android:textColor="@color/myWhite"
+            android:textSize="@dimen/font_size_title_large"
+            android:textStyle="bold"
+            android:layout_below="@id/login_progresso" />
+
+    </RelativeLayout>
+
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

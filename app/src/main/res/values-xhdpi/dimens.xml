@@ -3,6 +3,7 @@
     <!-- Tela de login -->
     <dimen name="login_img_logo_height">185dp</dimen>
     <dimen name="login_size_buttons">192dp</dimen>
+    <dimen name="login_margin_loading">240dp</dimen>
 
     <!-- Tela de perfil -->
     <dimen name="profile_field_edit">255dp</dimen>

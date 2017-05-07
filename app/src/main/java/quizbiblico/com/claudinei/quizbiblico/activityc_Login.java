@@ -12,6 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
@@ -63,13 +64,11 @@ public class activityc_Login extends AppCompatActivity {
     //Variável que identifica se é um activityl_login pelo Facebook
     private boolean loginFacebook = false;
 
-    //Barra de progresso
-    public static ImageView progressBar;
-
     //CallbackManager responsável por auxiliar na conexão pelo Facebook
     private CallbackManager callbackManager;
 
     private CoordinatorLayout layoutPrincipal;
+    public static RelativeLayout telaLoading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,13 +160,11 @@ public class activityc_Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
 
-        //ProgressBar
-        progressBar = (ImageView) findViewById(R.id.progresso);
-
         //Instanciando o botão de activityl_login do Facebook
         facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
 
         layoutPrincipal = (CoordinatorLayout) findViewById(R.id.layout_login);
+        telaLoading = (RelativeLayout) findViewById(R.id.login_layout_carregando);
 
     }
 
@@ -177,7 +174,7 @@ public class activityc_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 firebaseLogin(email.getText().toString(), password.getText().toString());
-                progressBar.setVisibility(View.VISIBLE);
+                telaLoading.setVisibility(View.VISIBLE);
             }
         });
 
@@ -186,14 +183,14 @@ public class activityc_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 firebaseRegister(email.getText().toString(), password.getText().toString());
-                progressBar.setVisibility(View.VISIBLE);
+                telaLoading.setVisibility(View.VISIBLE);
             }
         });
 
         Glide.with(this)
                 .load(R.drawable.other_loading)
                 .asGif()
-                .into(progressBar);
+                .into((ImageView) findViewById(R.id.login_progresso));
 
     }
 
@@ -259,7 +256,7 @@ public class activityc_Login extends AppCompatActivity {
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível criar o usuário", Snackbar.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.INVISIBLE);
+                            telaLoading.setVisibility(View.INVISIBLE);
                             usuarioCadastrado = false;
                         }
                     }
@@ -279,7 +276,7 @@ public class activityc_Login extends AppCompatActivity {
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível conectar o usuário", Snackbar.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.INVISIBLE);
+                            telaLoading.setVisibility(View.INVISIBLE);
                         }
                     }
                 });

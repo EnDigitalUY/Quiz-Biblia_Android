@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_img_logo_height">185dp</dimen>
+    <dimen name="login_margin_loading">240dp</dimen>
+    <dimen name="login_size_buttons">192dp</dimen>
+    <dimen name="profile_buttons">180dp</dimen>
+    <dimen name="profile_field_edit">255dp</dimen>
+</resources>
