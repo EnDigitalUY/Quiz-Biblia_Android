@@ -1,5 +1,6 @@
 package quizbiblico.com.claudinei.quizbiblico;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +8,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -22,6 +20,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 public class activityc_MenuPrincipal extends AppCompatActivity {
 
@@ -74,6 +77,8 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                         for (DataSnapshot data : dataSnapshot.getChildren()) {
                             usuario = data.getValue(Usuario.class);
 
+                            verificaDatas();
+
                         }
                     }
 
@@ -87,6 +92,67 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
         instanciaElementosInterface();
         setaElementosInterface();
+
+    }
+
+    private void verificaDatas() {
+
+        // Caso tenha passado um dia desde o ultimo acesso do usuário, ele receberá 5 PowerUPs aleatórios
+        if ( System.currentTimeMillis() -  usuario.getBonus().getUltimoBonusRecebido().getTime() >= Parameter.HORA_EM_MILISEGUNDO * 24){
+
+            int powerUPTempo = 0;
+            int powerUPEliminaAlternativa = 0;
+            int powerUPReferenciaBiblica = 0;
+
+            for (int i = 0; i < Parameter.POWER_UP_INICIAL; i++){
+                /*  0 - PowerUP de tempo
+                    1 - PowerUP de eliminação de alternativa incorreta
+                    2 - PowerUP da referência bíblica
+                 */
+                Random random = new Random();
+
+                int powerUPSorteado = random.nextInt(3);
+                switch (powerUPSorteado){
+                    case 0: {
+                        powerUPTempo++;
+                        break;
+                    }
+                    case 1:{
+                        powerUPEliminaAlternativa++;
+                        break;
+                    }
+                    case 2:{
+                        powerUPReferenciaBiblica++;
+                        break;
+                    }
+                }
+
+            }
+
+            usuario.getBonus().setBonusTempo(powerUPTempo);
+            usuario.getBonus().setBonusAlternativa(powerUPEliminaAlternativa);
+            usuario.getBonus().setBonusReferenciaBiblica(powerUPReferenciaBiblica);
+
+            String mensagem = "Parabéns, você ganhou:\n" +
+                    "\t" + powerUPTempo + " PowerUP(s) de tempo\n" +
+                    "\t" + powerUPEliminaAlternativa + " PowerUP(s) de eliminação de alternativa incorreta\n" +
+                    "\t" + powerUPReferenciaBiblica + " PowerUP(s) de exibição da referência bíblica.";
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Bônus diário");
+            builder.setIcon(R.drawable.img_gift);
+            builder.setMessage(mensagem);
+
+            if(!isFinishing())
+                builder.create().show();
+
+            usuario.getBonus().setUltimoBonusRecebido(new Date(System.currentTimeMillis()));
+        }
+
+        usuario.setUltimoAcesso(new Date(System.currentTimeMillis()));
+
+        FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
+
     }
 
     private void congelaTela(boolean bloqueio) {
@@ -259,5 +325,6 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
 
         super.onStop();
+
     }
 }

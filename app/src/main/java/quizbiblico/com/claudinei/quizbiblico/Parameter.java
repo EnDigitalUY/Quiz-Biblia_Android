@@ -56,10 +56,12 @@ public final class Parameter {
     public static final int MAIS_TEMPO = 5;
 
     public static final int POWER_UP_INICIAL = 5;
-    public static final int POWER_UP_DIARIO = 3;
+    public static final int POWER_UP_DIARIO = 5;
 
     private static int nextQuestionNum = -1;
     private static boolean buscaConcluida = false;
+
+    public static long HORA_EM_MILISEGUNDO = 3600000;
 
     public Parameter(){
 

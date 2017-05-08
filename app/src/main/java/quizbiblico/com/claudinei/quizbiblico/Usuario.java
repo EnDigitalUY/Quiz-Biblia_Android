@@ -15,41 +15,50 @@ public class Usuario implements Serializable {
     private int pontuacao;
     private Date ultimoAcesso = new Date();
 
-    private Bonus bonus;
-    private Preferencias preferencias;
+    private Bonus bonus = new Bonus();
+    private Preferencias preferencias = new Preferencias();
 
     public static class Bonus implements Serializable{
         private int bonusTempo;
         private int bonusAlternativa;
-        private int bonusTexto;
+        private int bonusReferenciaBiblica;
+        private Date ultimoBonusRecebido = new Date();
 
         public Bonus(){
+
         }
 
         public int getBonusTempo() {
-            return bonusTempo;
+            return this.bonusTempo;
         }
 
-        public void setBonusTempo(int bonusTempoAAcrescentar) {
-            this.bonusTempo += bonusTempoAAcrescentar;
+        public void setBonusTempo(int bonusTempo) {
+            this.bonusTempo += bonusTempo;
         }
 
         public int getBonusAlternativa() {
-            return bonusAlternativa;
+            return this.bonusAlternativa;
         }
 
-        public void setBonusAlternativa(int bonusAlternativaAAcrescentar) {
-            this.bonusAlternativa += bonusAlternativaAAcrescentar;
+        public void setBonusAlternativa(int bonusAlternativa) {
+            this.bonusAlternativa += bonusAlternativa;
         }
 
-        public int getBonusTexto() {
-            return bonusTexto;
+        public int getBonusReferenciaBiblica() {
+            return this.bonusReferenciaBiblica;
         }
 
-        public void setBonusTexto(int bonusTextoAAcrescentar) {
-            this.bonusTexto += bonusTextoAAcrescentar;
+        public void setBonusReferenciaBiblica(int bonusReferenciaBiblica) {
+            this.bonusReferenciaBiblica += bonusReferenciaBiblica;
         }
 
+        public Date getUltimoBonusRecebido() {
+            return ultimoBonusRecebido;
+        }
+
+        public void setUltimoBonusRecebido(Date ultimoBonusRecebido) {
+            this.ultimoBonusRecebido = ultimoBonusRecebido;
+        }
     }
 
     public static class Preferencias implements Serializable {
@@ -168,4 +177,5 @@ public class Usuario implements Serializable {
     public Preferencias getPreferencias() {
         return preferencias;
     }
+
 }

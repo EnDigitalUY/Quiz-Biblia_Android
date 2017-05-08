@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -26,7 +25,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Random;
 
 public class activityc_Jogo extends AppCompatActivity {
@@ -221,7 +219,7 @@ public class activityc_Jogo extends AppCompatActivity {
         switch (menuItem.getItemId()){
             case R.id.menu_bonus_exibetextobiblico:
             {
-                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + activityc_MenuPrincipal.usuario.getBonus().getBonusTexto() + ")");
+                menuItem.setTitle(getString(R.string.jogo_bonus_referenciabiblica) + " (" + activityc_MenuPrincipal.usuario.getBonus().getBonusReferenciaBiblica() + ")");
                 break;
             }
             case R.id.menu_bonus_eliminaalternativa:
@@ -237,18 +235,20 @@ public class activityc_Jogo extends AppCompatActivity {
         }
     }
 
-    private void maisTempo(){ // Função responsável por acrescentar mais itemTempo para responder
+    // Função responsável por acrescentar mais itemTempo para responder
+    private void maisTempo(){
         if (activityc_MenuPrincipal.usuario.getBonus().getBonusTempo() > 0) {
             tempoRestante += Parameter.MAIS_TEMPO;
 
-            activityc_MenuPrincipal.usuario.getBonus().setBonusTempo(-1);
+            activityc_MenuPrincipal.usuario.getBonus().setBonusTempo( - 1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_maistempo));
         }else
             Toast.makeText(getApplicationContext(), String.format(getString(R.string.bonus_insuficiente), " acrescentar mais itemTempo para responder"), Toast.LENGTH_SHORT).show();
     }
 
-    private void ajuda(){ // Função responsável por eliminar uma resposta incorreta
+    // Função responsável por eliminar uma resposta incorreta
+    private void ajuda(){
 
         if (activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa() > 0) {
             if (alternativasEliminadas < 3) {
@@ -263,7 +263,7 @@ public class activityc_Jogo extends AppCompatActivity {
                 botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
                 alternativasEliminadas++;
 
-                activityc_MenuPrincipal.usuario.getBonus().setBonusAlternativa(-1);
+                activityc_MenuPrincipal.usuario.getBonus().setBonusAlternativa(- 1);
 
                 atualizaMenuBonus(menu.findItem(R.id.menu_bonus_eliminaalternativa));
             }
@@ -273,7 +273,7 @@ public class activityc_Jogo extends AppCompatActivity {
 
     private void exibeReferenciaBiblica(){
 
-        if (activityc_MenuPrincipal.usuario.getBonus().getBonusTexto() > 0){
+        if (activityc_MenuPrincipal.usuario.getBonus().getBonusReferenciaBiblica() > 0){
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Referência bíblica");
@@ -283,7 +283,7 @@ public class activityc_Jogo extends AppCompatActivity {
             if(!isFinishing())
                 builder.create().show();
 
-            activityc_MenuPrincipal.usuario.getBonus().setBonusTexto(-1);
+            activityc_MenuPrincipal.usuario.getBonus().setBonusReferenciaBiblica( - 1);
 
             atualizaMenuBonus(menu.findItem(R.id.menu_bonus_exibetextobiblico));
 

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -82,7 +81,7 @@ public class activityc_Perfil extends AppCompatActivity {
         txtNome.setText(            activityc_MenuPrincipal.usuario.getNome());
         txtPUPTempo.setText(        String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusTempo()));
         txtPUPAlternativa.setText(  String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa()));
-        txtPUPReferencia.setText(   String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusTexto()));
+        txtPUPReferencia.setText(   String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusReferenciaBiblica()));
         txtPontuacao.setText(       String.valueOf(activityc_MenuPrincipal.usuario.getPontuacao()));
         txtQuestoes.setText(        String.valueOf(activityc_MenuPrincipal.usuario.getRespondidas().size()));
 
