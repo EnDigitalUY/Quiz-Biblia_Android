@@ -32,6 +32,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     private ImageView btnJogar;
     private ImageView btnPerfil;
     private ImageView btnHelp;
+    private ImageView btnRanking;
 
     // Usuário logado, quando entrar recebe os dados vindouros da tela de activityl_login, após logar recebe os dados da base de dados
     public static Usuario usuario;
@@ -113,18 +114,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
                 int powerUPSorteado = random.nextInt(3);
                 switch (powerUPSorteado){
-                    case 0: {
-                        powerUPTempo++;
-                        break;
-                    }
-                    case 1:{
-                        powerUPEliminaAlternativa++;
-                        break;
-                    }
-                    case 2:{
-                        powerUPReferenciaBiblica++;
-                        break;
-                    }
+                    case 0: {   powerUPTempo++;                 break;  }
+                    case 1: {   powerUPEliminaAlternativa++;    break;  }
+                    case 2: {   powerUPReferenciaBiblica++;     break;  }
                 }
 
             }
@@ -152,6 +144,80 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         usuario.setUltimoAcesso(new Date(System.currentTimeMillis()));
 
         FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
+
+    }
+
+    private void instanciaElementosInterface() {
+
+        if (!elementosInstanciados) {
+
+            //ImageViews
+            btnJogar = (ImageView) findViewById(R.id.btnJogar);
+            btnPerfil = (ImageView) findViewById(R.id.btnPerfil);
+            btnHelp = (ImageView) findViewById(R.id.btnHelp);
+            btnRanking = (ImageView) findViewById(R.id.btnRanking);
+
+            telaLoading = (RelativeLayout) findViewById(R.id.menuprincipal_layout_carregando);
+
+            //LinearLayout
+            layoutPrincipal = (RelativeLayout) findViewById(R.id.layout_menuprincipal);
+
+            elementosInstanciados = true;
+
+        }
+    }
+
+    private void setaElementosInterface() {
+
+        if (! elementosSetados) {
+
+            // Ao clicar jogar em vai para a tela do jogo
+            btnJogar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnPerfil.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
+                    startActivity(intent);
+                }
+            });
+
+            // Ao clicar em help abre a tela de ajuda do game
+            btnHelp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnRanking.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+
+            Glide.with(this)
+                    .load(R.drawable.other_loading)
+                    .asGif()
+                    .into((ImageView) findViewById(R.id.menuprincipal_progresso));
+
+            elementosSetados = true;
+
+        }
 
     }
 
@@ -214,71 +280,6 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
     }
 
-    private void instanciaElementosInterface() {
-
-        if (!elementosInstanciados) {
-
-            //ImageViews
-            btnJogar = (ImageView) findViewById(R.id.btnJogar);
-            btnPerfil = (ImageView) findViewById(R.id.btnPerfil);
-            btnHelp = (ImageView) findViewById(R.id.btnHelp);
-
-            telaLoading = (RelativeLayout) findViewById(R.id.menuprincipal_layout_carregando);
-
-            //LinearLayout
-            layoutPrincipal = (RelativeLayout) findViewById(R.id.layout_menuprincipal);
-
-            elementosInstanciados = true;
-
-        }
-    }
-
-    private void setaElementosInterface() {
-
-        if (! elementosSetados) {
-
-            // Ao clicar jogar em vai para a tela do jogo
-            btnJogar.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Jogo.class);
-                    startActivity(intent);
-                }
-            });
-
-            btnPerfil.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
-                    startActivity(intent);
-                }
-            });
-
-            // Ao clicar em help abre a tela de ajuda do game
-            btnHelp.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Help.class);
-                    startActivity(intent);
-                }
-            });
-
-            Glide.with(this)
-                    .load(R.drawable.other_loading)
-                    .asGif()
-                    .into((ImageView) findViewById(R.id.menuprincipal_progresso));
-
-            elementosSetados = true;
-
-        }
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu _menu) {

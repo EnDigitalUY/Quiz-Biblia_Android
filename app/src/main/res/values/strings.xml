@@ -41,6 +41,7 @@
     <string name="problema">Informe um problema</string>
     <string name="jogar">Jogar</string>
     <string name="carregando">Carregando</string>
+    <string name="ultimobunus">Data do último bônus recebido</string>
 
     <!-- Facebook -->
     <string name="action_sign_in_facebook">Login com o Facebook</string>

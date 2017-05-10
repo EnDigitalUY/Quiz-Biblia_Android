@@ -58,6 +58,9 @@ public final class Parameter {
     public static final int POWER_UP_INICIAL = 5;
     public static final int POWER_UP_DIARIO = 5;
 
+    public static final int TEMPO_QUESTAO = 20;
+    public static final int TEMPO_JOGO = 120;
+
     private static int nextQuestionNum = -1;
     private static boolean buscaConcluida = false;
 

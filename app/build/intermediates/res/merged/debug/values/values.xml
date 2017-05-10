@@ -736,6 +736,7 @@
     <string name="titulomenu">Atualizar cadastro</string>
     <string name="todas">Todas</string>
     <string name="todos">Todos</string>
+    <string name="ultimobunus">Data do último bônus recebido</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

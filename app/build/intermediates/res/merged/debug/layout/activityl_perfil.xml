@@ -36,12 +36,6 @@
                 android:paddingLeft="@dimen/margin_medium"
                 android:paddingRight="@dimen/margin_medium">
 
-                <TextView
-                    android:id="@+id/perfil_lblEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/prompt_email"
-                    android:textColor="@color/myLightGray" />
 
                 <LinearLayout
                     android:id="@+id/perfil_linearLayout4"
@@ -49,14 +43,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/perfil_txtEmail"
-                        android:layout_width="@dimen/profile_field_edit"
-                        android:layout_marginEnd="@dimen/margin_small"
-                        android:layout_height="wrap_content"
-                        android:enabled="false"
-                        android:inputType="textEmailAddress"
-                        android:textColor="@android:color/white" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/perfil_txtEmail"
+                            android:layout_width="@dimen/profile_field_edit"
+                            android:layout_marginEnd="@dimen/margin_small"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/white"
+                            android:hint="@string/prompt_email"/>
+
+                    </android.support.design.widget.TextInputLayout>
 
                     <ImageView
                         android:id="@+id/perfil_btnEditEmail"
@@ -69,26 +70,20 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/perfil_lblNome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/prompt_name"
-                    android:textColor="@color/myLightGray" />
 
-                <EditText
-                    android:id="@+id/perfil_txtNome"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textAutoComplete"
-                    android:textColor="@android:color/white" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/perfil_lblSenha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/prompt_password"
-                    android:textColor="@color/myLightGray" />
+                    <EditText
+                        android:id="@+id/perfil_txtNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:hint="@string/prompt_name"
+                        android:textColor="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
 
 
                 <LinearLayout
@@ -97,14 +92,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/perfil_txtSenha"
-                        android:layout_width="@dimen/profile_field_edit"
-                        android:layout_marginEnd="@dimen/margin_small"
-                        android:layout_height="wrap_content"
-                        android:enabled="false"
-                        android:inputType="textPassword"
-                        android:textColor="@android:color/white" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/perfil_txtSenha"
+                            android:layout_width="@dimen/profile_field_edit"
+                            android:layout_marginEnd="@dimen/margin_small"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:inputType="textPassword"
+                            android:hint="@string/prompt_password"
+                            android:textColor="@android:color/white" />
+
+                    </android.support.design.widget.TextInputLayout>
 
                     <ImageView
                         android:id="@+id/perfil_btnEditSenha"
@@ -147,42 +149,54 @@
                     android:src="@drawable/img_powerups"
                     android:contentDescription="PowerUPs"/>
 
-                <TextView
-                    android:id="@+id/perfil_lblPowerUP_tempo"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/perfil_bonus_tempo"
-                    android:textColor="@color/myLightGray" />
+                    android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/perfil_powerUP_tempo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:inputType="number"
-                    android:textColor="@android:color/white" />
+                    <EditText
+                        android:id="@+id/perfil_txtDataUltimoBonus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="datetime"
+                        android:enabled="false"
+                        android:hint="@string/ultimobunus"
+                        android:textColor="@android:color/white" />
 
-                <TextView
-                    android:id="@+id/perfil_lblPowerUP_alternativa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/perfil_bonus_elimina"
-                    android:textColor="@color/myLightGray" />
+                </android.support.design.widget.TextInputLayout>
 
-                <EditText
-                    android:id="@+id/perfil_powerUP_alternativa"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:inputType="number"
-                    android:textColor="@android:color/white" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/perfil_lblPowerUP_referencia"
+                    <EditText
+                        android:id="@+id/perfil_powerUP_tempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="+ 5 segundos"
+                        android:textColor="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/perfil_bonus_referencia"
-                    android:textColor="@color/myLightGray" />
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/perfil_powerUP_alternativa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="Elimina alternativa"
+                        android:textColor="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <EditText
                     android:id="@+id/perfil_powerUP_referencia"
@@ -190,7 +204,10 @@
                     android:layout_height="wrap_content"
                     android:enabled="false"
                     android:inputType="number"
+                    android:hint="Referêcia bíblica"
                     android:textColor="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -198,35 +215,35 @@
                     android:src="@drawable/img_pontuacao"
                     android:contentDescription="Pontuação"/>
 
-                <TextView
-                    android:id="@+id/perfil_lblPontuacao"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pontuacao"
-                    android:textColor="@color/myLightGray" />
+                    android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/perfil_pontuacao"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:inputType="number"
-                    android:textColor="@android:color/white" />
+                    <EditText
+                        android:id="@+id/perfil_pontuacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="Pontuação"
+                        android:textColor="@android:color/white" />
 
-                <TextView
-                    android:id="@+id/perfil_lblPontuacao_questoes"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/perfil_pontuacao_questoes"
-                    android:textColor="@color/myLightGray" />
+                </android.support.design.widget.TextInputLayout>
 
-                <EditText
-                    android:id="@+id/perfil_pontuacao_acertos"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:inputType="number"
-                    android:textColor="@android:color/white" />
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/perfil_pontuacao_acertos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="Questões respondidas corretamente"
+                        android:textColor="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
 
                 <ImageView
                     android:layout_width="match_parent"

@@ -12,12 +12,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 
+import java.text.SimpleDateFormat;
+
 
 public class activityc_Perfil extends AppCompatActivity {
 
     private EditText txtEmail;
     private EditText txtNome;
     private EditText txtSenha;
+    private EditText txtDataUltimoBonus;
     private EditText txtPUPTempo;
     private EditText txtPUPAlternativa;
     private EditText txtPUPReferencia;
@@ -58,6 +61,7 @@ public class activityc_Perfil extends AppCompatActivity {
         txtPUPReferencia    = (EditText) findViewById(R.id.perfil_powerUP_referencia);
         txtPontuacao        = (EditText) findViewById(R.id.perfil_pontuacao);
         txtQuestoes         = (EditText) findViewById(R.id.perfil_pontuacao_acertos);
+        txtDataUltimoBonus  = (EditText) findViewById(R.id.perfil_txtDataUltimoBonus);
 
         //Switch
         swSons      =   (Switch) findViewById(R.id.perfil_swSons);
@@ -79,6 +83,7 @@ public class activityc_Perfil extends AppCompatActivity {
         //EditText
         txtEmail.setText(           activityc_MenuPrincipal.usuario.getEmail());
         txtNome.setText(            activityc_MenuPrincipal.usuario.getNome());
+        txtDataUltimoBonus.setText( new SimpleDateFormat("dd/MM/yyyy HH:mm").format(activityc_MenuPrincipal.usuario.getBonus().getUltimoBonusRecebido()));
         txtPUPTempo.setText(        String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusTempo()));
         txtPUPAlternativa.setText(  String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusAlternativa()));
         txtPUPReferencia.setText(   String.valueOf(activityc_MenuPrincipal.usuario.getBonus().getBonusReferenciaBiblica()));

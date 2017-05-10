@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1494212928703"
+    timestamp="1494372729199"
     token="-4220078871656309042"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="598" />
+        duration="1483" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="41" />
+        duration="124" />
     <task
         name="verifier"
-        duration="13" />
+        duration="26" />
 
     <artifact
         location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -32,19 +32,19 @@
 
     <build
         build-mode="FULL"
-        timestamp="1494210315924"
+        timestamp="1494372296951"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -73,15 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1494212896285"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1494212928703"
+        timestamp="1494372729199"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
