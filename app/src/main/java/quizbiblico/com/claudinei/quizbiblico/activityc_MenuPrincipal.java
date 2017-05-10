@@ -206,7 +206,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
             btnRanking.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+                    Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Ranking.class);
+                    startActivity(intent);
                 }
             });
 

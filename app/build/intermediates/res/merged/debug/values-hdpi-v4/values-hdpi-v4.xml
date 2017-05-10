@@ -10,6 +10,8 @@
     <dimen name="profile_buttons">148dp</dimen>
     <dimen name="profile_field_edit">255dp</dimen>
     <dimen name="profile_fields">280dp</dimen>
+    <dimen name="ranking_name">200dp</dimen>
+    <dimen name="ranking_position">40dp</dimen>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
           <item name="barLength">18.66dp</item>
           <item name="gapBetweenBars">3.33dp</item>

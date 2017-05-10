@@ -4,7 +4,7 @@
     android:id="@+id/activity_menu_principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/myColor5"
+    android:background="@drawable/degrade_linear_blue"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_MenuPrincipal">
 
     <RelativeLayout

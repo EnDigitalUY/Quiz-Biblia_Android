@@ -16,4 +16,8 @@
     <dimen name="game_alternative_size">60dp</dimen>
     <dimen name="game_question_size">140dp</dimen>
 
+    <!-- Tela de ranking -->
+    <dimen name="ranking_name">200dp</dimen>
+    <dimen name="ranking_position">40dp</dimen>
+
 </resources>

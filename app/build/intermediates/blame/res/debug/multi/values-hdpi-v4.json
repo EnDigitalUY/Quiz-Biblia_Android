@@ -47,14 +47,7 @@
                     "endOffset": 267
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 338,
-                        "endColumn": 53,
-                        "endOffset": 387
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
                 }
             },
             {
@@ -66,14 +59,7 @@
                     "endOffset": 320
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 393,
-                        "endColumn": 52,
-                        "endOffset": 441
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
                 }
             },
             {
@@ -85,14 +71,7 @@
                     "endOffset": 378
                 },
                 "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 227,
-                        "endColumn": 57,
-                        "endOffset": 280
-                    }
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml"
                 }
             },
             {
@@ -148,9 +127,47 @@
                     "startLine": 12,
                     "startColumn": 4,
                     "startOffset": 580,
-                    "endLine": 16,
+                    "endColumn": 44,
+                    "endOffset": 620
+                },
+                "from": {
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 674,
+                        "endColumn": 44,
+                        "endOffset": 714
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 625,
+                    "endColumn": 47,
+                    "endOffset": 668
+                },
+                "from": {
+                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 720,
+                        "endColumn": 47,
+                        "endOffset": 763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 673,
+                    "endLine": 18,
                     "endColumn": 13,
-                    "endOffset": 852
+                    "endOffset": 945
                 },
                 "from": {
                     "file": "C:\\Users\\Claudinei\\.android\\build-cache\\780f17d7f7369f6fa5a79b3eb5ac8191af629257\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml"

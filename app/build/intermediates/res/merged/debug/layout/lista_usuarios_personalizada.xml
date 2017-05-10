@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lista_usuarios_personalizada">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_extra_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/ranking_position"
+            android:layout_height="match_parent"
+            android:text="111º"
+            android:textColor="@color/myWhite"
+            android:textSize="@dimen/font_size_text_large"
+            android:id="@+id/lista_usuarios_personalizada_posicao"/>
+
+        <TextView
+            android:layout_width="@dimen/ranking_name"
+            android:layout_height="match_parent"
+            android:text="Claudinei Brito Junior da Costa Machado"
+            android:textColor="@color/myWhite"
+            android:textSize="@dimen/font_size_title_extra_small"
+            android:id="@+id/lista_usuarios_personalizada_nome"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="12345"
+            android:textAlignment="textEnd"
+            android:textColor="@color/myLightGray"
+            android:textSize="@dimen/font_size_text_large"
+            android:id="@+id/lista_usuarios_personalizada_pontuacao"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/ranking_position"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="Jogador(a) desde 01/01/2017 "
+        android:textColor="@color/myMediumGray"
+        android:textSize="@dimen/font_size_text_small"
+        android:id="@+id/lista_usuarios_personalizada_datacadastro"/>
+
+</LinearLayout>

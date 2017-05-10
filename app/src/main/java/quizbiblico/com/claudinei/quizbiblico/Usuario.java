@@ -14,6 +14,7 @@ public class Usuario implements Serializable {
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
     private int pontuacao;
     private Date ultimoAcesso = new Date();
+    private Date primeiroAcesso = new Date();
 
     private Bonus bonus = new Bonus();
     private Preferencias preferencias = new Preferencias();
@@ -87,10 +88,6 @@ public class Usuario implements Serializable {
 
     }
 
-    public void addAnswered(Integer questionAnswered){
-        respondidas.add(questionAnswered);
-    }
-
     public Usuario(){
 
     }
@@ -104,6 +101,10 @@ public class Usuario implements Serializable {
         this.bonus = new Bonus();
         this.preferencias = new Preferencias();
 
+    }
+
+    public void addAnswered(Integer questionAnswered){
+        respondidas.add(questionAnswered);
     }
 
     public String getEmail() {
@@ -168,6 +169,14 @@ public class Usuario implements Serializable {
 
     public void setUltimoAcesso(Date ultimoAcesso) {
         this.ultimoAcesso = ultimoAcesso;
+    }
+
+    public Date getPrimeiroAcesso() {
+        return primeiroAcesso;
+    }
+
+    public void setPrimeiroAcesso(Date primeiroAcesso) {
+        this.primeiroAcesso = primeiroAcesso;
     }
 
     public Bonus getBonus() {
