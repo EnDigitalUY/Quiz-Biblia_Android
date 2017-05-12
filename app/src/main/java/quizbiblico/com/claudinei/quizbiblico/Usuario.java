@@ -151,6 +151,10 @@ public class Usuario implements Serializable {
         return respondidas;
     }
 
+    public void deleteRespondidas(){
+        this.respondidas = new ArrayList<Integer>();
+    };
+
     public void setRespondidas(ArrayList<Integer> respondidas) {
         this.respondidas = respondidas;
     }

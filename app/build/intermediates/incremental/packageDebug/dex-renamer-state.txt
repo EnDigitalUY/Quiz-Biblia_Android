@@ -1,7 +1,4 @@
-#Wed May 10 19:31:29 BRT 2017
-base.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_480f39ed943675d4507df4ca27ce27d0b669521d
-renamed.1=classes2.dex
+#Thu May 11 13:04:10 BRT 2017
+base.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b1e5df5b4bf60206f56b30a8b8d37fdb91a29b83\\classes.dex
-base.1=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b1e5df5b4bf60206f56b30a8b8d37fdb91a29b83
-file.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_480f39ed943675d4507df4ca27ce27d0b669521d\\classes.dex
+file.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

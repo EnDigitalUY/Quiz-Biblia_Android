@@ -9,32 +9,32 @@
     android:background="@color/myColor5">
 
     <RelativeLayout
+        android:id="@+id/login_layout_carregando"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/login_layout_carregando"
         android:layout_marginTop="@dimen/login_margin_loading"
         android:visibility="invisible">
 
         <ImageView
+            android:id="@+id/login_progresso"
             android:layout_width="64dp"
             android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_small"
-            android:id="@+id/login_progresso"
-            android:src="@drawable/other_loading"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" />
+            android:src="@drawable/other_loading" />
 
         <TextView
+            android:id="@+id/login_carregando"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/login_progresso"
             android:layout_centerHorizontal="true"
-            android:id="@+id/login_carregando"
             android:text="@string/carregando"
             android:textColor="@color/myWhite"
             android:textSize="@dimen/font_size_title_large"
-            android:textStyle="bold"
-            android:layout_below="@id/login_progresso" />
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -78,7 +78,8 @@
                         android:hint="@string/prompt_email"
                         android:inputType="textEmailAddress"
                         android:textColor="@android:color/white"
-                        android:textColorHint="@color/myWhite" />
+                        android:textColorHint="@color/myWhite"
+                        android:textSize="@dimen/login_size_field_font" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -93,7 +94,8 @@
                         android:hint="@string/prompt_password"
                         android:inputType="textPassword"
                         android:textColor="@android:color/white"
-                        android:textColorHint="@color/myWhite" />
+                        android:textColorHint="@color/myWhite"
+                        android:textSize="@dimen/login_size_field_font" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -134,7 +136,7 @@
                 android:id="@+id/login_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -150,6 +152,7 @@
                     android:text="@string/action_sign_in"
                     android:textAlignment="center"
                     android:textColor="@color/myLightGray"
+                    android:textSize="@dimen/login_size_button_font"
                     android:textStyle="normal|bold" />
 
                 <Button
@@ -160,6 +163,7 @@
                     android:text="@string/action_sign_up"
                     android:textAlignment="center"
                     android:textColor="@color/myLightGray"
+                    android:textSize="@dimen/login_size_button_font"
                     android:textStyle="normal|bold" />
             </LinearLayout>
 

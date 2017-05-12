@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_Ranking"
+    android:id="@+id/activity_ranking"
     android:background="@drawable/degrade_linear_blue">
 
     <RelativeLayout
@@ -40,26 +41,17 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_ranking"
         android:contentDescription="Imagem Ranking"
-        android:layout_marginBottom="381dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <!-- <ScrollView
-        android:id="@+id/layout_ranking"
+    <ListView
+        android:id="@+id/ranking_lista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
-        android:visibility="visible"> -->
+        android:layout_marginTop="@dimen/ranking_margin_list"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium">
 
-        <ListView
-            android:id="@+id/ranking_lista"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="75dp"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium">
-
-        </ListView>
+    </ListView>
 
     <!-- </ScrollView> -->
 

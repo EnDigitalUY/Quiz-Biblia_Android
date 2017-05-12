@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 52,
-                    "endOffset": 103
+                    "endColumn": 51,
+                    "endOffset": 102
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 190,
-                        "endColumn": 52,
-                        "endOffset": 238
+                        "startOffset": 427,
+                        "endColumn": 51,
+                        "endOffset": 474
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 108,
-                    "endColumn": 49,
-                    "endOffset": 153
+                    "startOffset": 107,
+                    "endColumn": 52,
+                    "endOffset": 155
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 462,
-                        "endColumn": 49,
-                        "endOffset": 507
+                        "startOffset": 373,
+                        "endColumn": 52,
+                        "endOffset": 421
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 158,
-                    "endColumn": 52,
-                    "endOffset": 206
+                    "startOffset": 160,
+                    "endColumn": 51,
+                    "endOffset": 207
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 244,
-                        "endColumn": 52,
-                        "endOffset": 292
+                        "startOffset": 320,
+                        "endColumn": 51,
+                        "endOffset": 367
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 211,
-                    "endColumn": 49,
-                    "endOffset": 256
+                    "startOffset": 212,
+                    "endColumn": 58,
+                    "endOffset": 266
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 513,
-                        "endColumn": 49,
-                        "endOffset": 558
+                        "startOffset": 705,
+                        "endColumn": 58,
+                        "endOffset": 759
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 261,
-                    "endColumn": 55,
-                    "endOffset": 312
+                    "startOffset": 271,
+                    "endColumn": 58,
+                    "endOffset": 325
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 133,
-                        "endColumn": 55,
-                        "endOffset": 184
+                        "startOffset": 482,
+                        "endColumn": 58,
+                        "endOffset": 536
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 317,
+                    "startOffset": 330,
                     "endColumn": 52,
-                    "endOffset": 365
+                    "endOffset": 378
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 408,
+                        "startOffset": 651,
                         "endColumn": 52,
-                        "endOffset": 456
+                        "endOffset": 699
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 370,
-                    "endColumn": 51,
-                    "endOffset": 417
+                    "startOffset": 383,
+                    "endColumn": 53,
+                    "endOffset": 432
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1259,
-                        "endColumn": 51,
-                        "endOffset": 1306
+                        "startOffset": 596,
+                        "endColumn": 53,
+                        "endOffset": 645
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 422,
+                    "startOffset": 437,
                     "endColumn": 52,
-                    "endOffset": 470
+                    "endOffset": 485
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1205,
+                        "startOffset": 542,
                         "endColumn": 52,
-                        "endOffset": 1253
+                        "endOffset": 590
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 475,
-                    "endColumn": 51,
-                    "endOffset": 522
+                    "startOffset": 490,
+                    "endColumn": 52,
+                    "endOffset": 538
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 34,
                         "startColumn": 4,
-                        "startOffset": 1152,
-                        "endColumn": 51,
-                        "endOffset": 1199
+                        "startOffset": 1334,
+                        "endColumn": 52,
+                        "endOffset": 1382
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 527,
+                    "startOffset": 543,
                     "endColumn": 58,
-                    "endOffset": 581
+                    "endOffset": 597
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 33,
                         "startColumn": 4,
-                        "startOffset": 1090,
+                        "startOffset": 1274,
                         "endColumn": 58,
-                        "endOffset": 1144
+                        "endOffset": 1328
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 586,
-                    "endColumn": 58,
-                    "endOffset": 640
+                    "startOffset": 602,
+                    "endColumn": 50,
+                    "endOffset": 648
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 35,
                         "startColumn": 4,
-                        "startOffset": 867,
-                        "endColumn": 58,
-                        "endOffset": 921
+                        "startOffset": 1388,
+                        "endColumn": 50,
+                        "endOffset": 1434
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 645,
-                    "endColumn": 52,
-                    "endOffset": 693
+                    "startOffset": 653,
+                    "endColumn": 53,
+                    "endOffset": 702
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 1036,
-                        "endColumn": 52,
-                        "endOffset": 1084
+                        "startOffset": 795,
+                        "endColumn": 53,
+                        "endOffset": 844
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 698,
-                    "endColumn": 53,
-                    "endOffset": 747
+                    "startOffset": 707,
+                    "endColumn": 52,
+                    "endOffset": 755
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 981,
-                        "endColumn": 53,
-                        "endOffset": 1030
+                        "startOffset": 961,
+                        "endColumn": 52,
+                        "endOffset": 1009
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 752,
-                    "endColumn": 52,
-                    "endOffset": 800
+                    "startOffset": 760,
+                    "endColumn": 57,
+                    "endOffset": 813
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 927,
-                        "endColumn": 52,
-                        "endOffset": 975
+                        "startOffset": 850,
+                        "endColumn": 57,
+                        "endOffset": 903
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 805,
-                    "endColumn": 52,
-                    "endOffset": 853
+                    "startOffset": 818,
+                    "endColumn": 50,
+                    "endOffset": 864
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 45,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 1827,
-                        "endColumn": 52,
-                        "endOffset": 1875
+                        "startOffset": 909,
+                        "endColumn": 50,
+                        "endOffset": 955
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 858,
-                    "endColumn": 58,
-                    "endOffset": 912
+                    "startOffset": 869,
+                    "endColumn": 49,
+                    "endOffset": 914
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 1767,
-                        "endColumn": 58,
-                        "endOffset": 1821
+                        "startOffset": 236,
+                        "endColumn": 49,
+                        "endOffset": 281
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 917,
-                    "endColumn": 50,
+                    "startOffset": 919,
+                    "endColumn": 48,
                     "endOffset": 963
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 46,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 1881,
-                        "endColumn": 50,
-                        "endOffset": 1927
+                        "startOffset": 51,
+                        "endColumn": 48,
+                        "endOffset": 95
                     }
                 }
             },
@@ -330,17 +330,17 @@
                     "startLine": 19,
                     "startColumn": 4,
                     "startOffset": 968,
-                    "endColumn": 55,
-                    "endOffset": 1019
+                    "endColumn": 43,
+                    "endOffset": 1007
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 19,
-                        "endColumn": 55,
-                        "endOffset": 70
+                        "startOffset": 191,
+                        "endColumn": 43,
+                        "endOffset": 230
                     }
                 }
             },
@@ -348,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1024,
-                    "endColumn": 52,
-                    "endOffset": 1072
+                    "startOffset": 1012,
+                    "endColumn": 44,
+                    "endOffset": 1052
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 300,
-                        "endColumn": 52,
-                        "endOffset": 348
+                        "startOffset": 145,
+                        "endColumn": 44,
+                        "endOffset": 185
                     }
                 }
             },
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1077,
-                    "endColumn": 55,
-                    "endOffset": 1128
+                    "startOffset": 1057,
+                    "endColumn": 42,
+                    "endOffset": 1095
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 76,
-                        "endColumn": 55,
-                        "endOffset": 127
+                        "startOffset": 101,
+                        "endColumn": 42,
+                        "endOffset": 139
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1133,
-                    "endColumn": 52,
-                    "endOffset": 1181
+                    "startOffset": 1100,
+                    "endColumn": 47,
+                    "endOffset": 1143
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 354,
-                        "endColumn": 52,
-                        "endOffset": 402
+                        "startOffset": 1196,
+                        "endColumn": 47,
+                        "endOffset": 1239
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1186,
-                    "endColumn": 53,
-                    "endOffset": 1235
+                    "startOffset": 1148,
+                    "endColumn": 48,
+                    "endOffset": 1192
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 33,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 1342,
-                        "endColumn": 53,
-                        "endOffset": 1391
+                        "startOffset": 1146,
+                        "endColumn": 48,
+                        "endOffset": 1190
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1240,
-                    "endColumn": 57,
-                    "endOffset": 1293
+                    "startOffset": 1197,
+                    "endColumn": 50,
+                    "endOffset": 1243
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 34,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1397,
-                        "endColumn": 57,
-                        "endOffset": 1450
+                        "startOffset": 1094,
+                        "endColumn": 50,
+                        "endOffset": 1140
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1298,
-                    "endColumn": 50,
-                    "endOffset": 1344
+                    "startOffset": 1248,
+                    "endColumn": 46,
+                    "endOffset": 1290
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 35,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1456,
-                        "endColumn": 50,
-                        "endOffset": 1502
+                        "startOffset": 1046,
+                        "endColumn": 46,
+                        "endOffset": 1088
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1349,
-                    "endColumn": 49,
-                    "endOffset": 1394
+                    "startOffset": 1295,
+                    "endColumn": 50,
+                    "endOffset": 1341
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 783,
-                        "endColumn": 49,
-                        "endOffset": 828
+                        "startOffset": 1567,
+                        "endColumn": 50,
+                        "endOffset": 1613
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1399,
-                    "endColumn": 48,
-                    "endOffset": 1443
+                    "startOffset": 1346,
+                    "endColumn": 44,
+                    "endOffset": 1386
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 598,
-                        "endColumn": 48,
-                        "endOffset": 642
+                        "startOffset": 1472,
+                        "endColumn": 44,
+                        "endOffset": 1512
                     }
                 }
             },
@@ -500,132 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1448,
-                    "endColumn": 43,
-                    "endOffset": 1487
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 738,
-                        "endColumn": 43,
-                        "endOffset": 777
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 1492,
-                    "endColumn": 44,
-                    "endOffset": 1532
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 692,
-                        "endColumn": 44,
-                        "endOffset": 732
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 1537,
-                    "endColumn": 42,
-                    "endOffset": 1575
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 648,
-                        "endColumn": 42,
-                        "endOffset": 686
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 1580,
+                    "startOffset": 1391,
                     "endColumn": 47,
-                    "endOffset": 1623
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 41,
-                        "startColumn": 4,
-                        "startOffset": 1689,
-                        "endColumn": 47,
-                        "endOffset": 1732
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 1628,
-                    "endColumn": 48,
-                    "endOffset": 1672
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 1639,
-                        "endColumn": 48,
-                        "endOffset": 1683
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 1677,
-                    "endColumn": 50,
-                    "endOffset": 1723
+                    "endOffset": 1434
                 },
                 "from": {
                     "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
-                        "startOffset": 1587,
-                        "endColumn": 50,
-                        "endOffset": 1633
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 1728,
-                    "endColumn": 46,
-                    "endOffset": 1770
-                },
-                "from": {
-                    "file": "D:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 46,
-                        "endOffset": 1581
+                        "startOffset": 1518,
+                        "endColumn": 47,
+                        "endOffset": 1561
                     }
                 }
             }

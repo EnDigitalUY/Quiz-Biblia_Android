@@ -8,12 +8,20 @@
     android:id="@+id/activity_help"
     tools:context="quizbiblico.com.claudinei.quizbiblico.activityc_Help">
 
+    <ImageView
+        android:id="@+id/help_imagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_manual"
+        android:contentDescription="Imagem Help"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/margin_medium"
         android:fadeScrollbars="false"
         android:layout_alignParentEnd="true"
+        android:layout_below="@id/help_imagem"
         android:id="@+id/layout_help">
 
         <LinearLayout

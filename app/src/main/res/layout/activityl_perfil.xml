@@ -44,18 +44,18 @@
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="@dimen/profile_field_edit"
                         android:layout_height="wrap_content">
 
                         <EditText
                             android:id="@+id/perfil_txtEmail"
                             android:layout_width="@dimen/profile_field_edit"
-                            android:layout_marginEnd="@dimen/margin_small"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_small"
                             android:enabled="false"
+                            android:hint="@string/prompt_email"
                             android:inputType="textEmailAddress"
-                            android:textColor="@android:color/white"
-                            android:hint="@string/prompt_email"/>
+                            android:textColor="@android:color/white" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -93,17 +93,17 @@
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="@dimen/profile_field_edit"
                         android:layout_height="wrap_content">
 
                         <EditText
                             android:id="@+id/perfil_txtSenha"
                             android:layout_width="@dimen/profile_field_edit"
-                            android:layout_marginEnd="@dimen/margin_small"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_small"
                             android:enabled="false"
-                            android:inputType="textPassword"
                             android:hint="@string/prompt_password"
+                            android:inputType="textPassword"
                             android:textColor="@android:color/white" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -249,7 +249,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/img_resetarpontuacao"
-                    android:contentDescription="Resetar pontuação"/>
+                    android:contentDescription="Resetar pontuação"
+                    android:id="@+id/perfil_btnResetar"/>
 
             </LinearLayout>
         </ScrollView>

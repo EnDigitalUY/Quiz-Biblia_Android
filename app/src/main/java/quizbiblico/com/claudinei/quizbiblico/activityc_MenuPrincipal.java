@@ -2,6 +2,7 @@ package quizbiblico.com.claudinei.quizbiblico;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,8 +23,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 public class activityc_MenuPrincipal extends AppCompatActivity {
@@ -68,7 +67,9 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
             // Caso seja um cadastro, apenas exibe
             if (extra.getBoolean("cadastro")) {
-                Toast.makeText(getApplicationContext(), "Usuário sendo cadastrado", Toast.LENGTH_SHORT).show();
+                Snackbar.make(findViewById(R.id.activity_menu_principal), "Usuário cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+                usuario.setPrimeiroAcesso(new Date(System.currentTimeMillis()));
+                geraBonusPowerUP(true);
             } else {
 
                 // Vai buscar no banco de dados as informações do usuário logado e atualiza o objeto
@@ -78,7 +79,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                         for (DataSnapshot data : dataSnapshot.getChildren()) {
                             usuario = data.getValue(Usuario.class);
 
-                            verificaDatas();
+                            geraBonusPowerUP(false);
 
                         }
                     }
@@ -96,10 +97,10 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
     }
 
-    private void verificaDatas() {
+    private void geraBonusPowerUP(boolean geraBonus) {
 
         // Caso tenha passado um dia desde o ultimo acesso do usuário, ele receberá 5 PowerUPs aleatórios
-        if ( System.currentTimeMillis() -  usuario.getBonus().getUltimoBonusRecebido().getTime() >= Parameter.HORA_EM_MILISEGUNDO * 24){
+        if ( geraBonus || System.currentTimeMillis() - usuario.getBonus().getUltimoBonusRecebido().getTime() >= Parameter.HORA_EM_MILISEGUNDO * 24){
 
             int powerUPTempo = 0;
             int powerUPEliminaAlternativa = 0;
@@ -269,19 +270,10 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                     }
                 });
 
-                /*handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        congelaTela(false);
-                    }
-                });*/
-
-
             }
         }).start();
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu _menu) {

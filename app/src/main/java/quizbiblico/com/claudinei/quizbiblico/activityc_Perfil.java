@@ -36,6 +36,8 @@ public class activityc_Perfil extends AppCompatActivity {
     private ImageView btnCancelar;
     private ImageView btnSalvar;
 
+    private ImageView btnResetar;
+
     private LinearLayout layoutPrincipal;
 
     private boolean emailAlterado = false;
@@ -72,6 +74,7 @@ public class activityc_Perfil extends AppCompatActivity {
         btnEditarSenha =    (ImageView) findViewById(R.id.perfil_btnEditSenha);
         btnCancelar =       (ImageView) findViewById(R.id.perfil_btnCancelar);
         btnSalvar =         (ImageView) findViewById(R.id.perfil_btnSalvar);
+        btnResetar =        (ImageView) findViewById(R.id.perfil_btnResetar);
 
         layoutPrincipal = (LinearLayout) findViewById(R.id.layout_perfil);
 
@@ -180,6 +183,46 @@ public class activityc_Perfil extends AppCompatActivity {
 
                 if(!isFinishing())
                     builder.create().show();
+            }
+        });
+
+        btnResetar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Cria um AlertDialog que confirmará se o usuário realmente quer resetar a pontuação
+                AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
+                builder.setTitle("Resetar pontuação?");
+                builder.setMessage("Ao confirmar, todas as alterações não poderão mais ser desfeitas. Você deseja resetar sua pontuação?");
+                builder.setCancelable(false);
+                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        try{
+
+                            activityc_MenuPrincipal.usuario.setPontuacao(0);
+                            activityc_MenuPrincipal.usuario.deleteRespondidas();
+
+                            FirebaseDB.getUsuarioReferencia().child(activityc_MenuPrincipal.usuario.getUid()).setValue(activityc_MenuPrincipal.usuario);
+
+                            Snackbar.make(findViewById(R.id.activity_perfil), "Pontuação resetada", Snackbar.LENGTH_SHORT).show();
+                            finish();
+                        } catch (Exception e){
+                            Snackbar.make(findViewById(R.id.activity_perfil), "Houve uma falha! Tente novamente mais tarde", Snackbar.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+                if(!isFinishing())
+                    builder.create().show();
+
             }
         });
 
