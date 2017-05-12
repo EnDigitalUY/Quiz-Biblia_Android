@@ -88,7 +88,7 @@ public class activityc_Ranking extends AppCompatActivity {
     //Tela de loading
     private RelativeLayout telaLoading;
 
-    private ArrayList<Usuario> usuarios = new ArrayList<>();
+    private ArrayList<Usuario> usuarios;
 
     private boolean rankingCarregado = false;
 
@@ -106,6 +106,7 @@ public class activityc_Ranking extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 ArrayList<Usuario> usuarios_aux = new ArrayList<>();
+                usuarios = new ArrayList<>();
 
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
                     Log.d(getClass().toString(), data.toString());
