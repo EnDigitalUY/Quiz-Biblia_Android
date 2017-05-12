@@ -12,7 +12,7 @@
     <dimen name="login_size_button_font">16sp</dimen> <!-- Default: 14sp -->
     <dimen name="font_size_text_small">12sp</dimen>
     <dimen name="font_size_text_medium">14sp</dimen>
-    <dimen name="font_size_text_large">16sp</dimen>
+    <dimen name="font_size_text_large">18sp</dimen>
 
     <dimen name="font_size_title_extra_small">20sp</dimen>
     <dimen name="font_size_title_small">22sp</dimen>

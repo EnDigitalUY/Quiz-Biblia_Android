@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_text_large">22sp</dimen>
+    <dimen name="font_size_text_medium">20sp</dimen>
+    <dimen name="font_size_text_small">18sp</dimen>
+    <dimen name="font_size_title_extra_large">32sp</dimen>
+    <dimen name="font_size_title_extra_small">24sp</dimen>
+    <dimen name="font_size_title_large">30sp</dimen>
+    <dimen name="font_size_title_medium">28sp</dimen>
+    <dimen name="font_size_title_small">26sp</dimen>
+    <dimen name="game_alternative_size">80dp</dimen>
+    <dimen name="game_alternatives_sum_size">350dp</dimen>
+    <dimen name="game_question_size">200dp</dimen>
+    <dimen name="login_img_logo_height">200dp</dimen>
+    <dimen name="login_margin_loading">225dp</dimen>
+    <dimen name="login_margin_sign_buttons">520dp</dimen>
+    <dimen name="login_size_button_font">18sp</dimen>
+    <dimen name="login_size_buttons">205dp</dimen>
+    <dimen name="login_size_field_font">22sp</dimen>
+    <dimen name="margin_extra_large">20dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="profile_buttons">195dp</dimen>
+    <dimen name="profile_edit_icon">30dp</dimen>
+    <dimen name="profile_field_edit">350dp</dimen>
+    <dimen name="profile_fields">420dp</dimen>
+    <dimen name="ranking_margin_list">90dp</dimen>
+    <dimen name="ranking_name">290dp</dimen>
+    <dimen name="ranking_position">55dp</dimen>
+</resources>

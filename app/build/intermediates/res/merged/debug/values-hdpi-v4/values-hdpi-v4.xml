@@ -14,7 +14,9 @@
     <dimen name="login_img_logo_height">150dp</dimen>
     <dimen name="login_margin_loading">225dp</dimen>
     <dimen name="login_margin_sign_buttons">380dp</dimen>
+    <dimen name="login_size_button_font">14sp</dimen>
     <dimen name="login_size_buttons">160dp</dimen>
+    <dimen name="login_size_field_font">18sp</dimen>
     <dimen name="margin_extra_large">20dp</dimen>
     <dimen name="margin_extra_small">4dp</dimen>
     <dimen name="margin_large">16dp</dimen>
@@ -25,7 +27,7 @@
     <dimen name="profile_field_edit">255dp</dimen>
     <dimen name="profile_fields">280dp</dimen>
     <dimen name="ranking_margin_list">90dp</dimen>
-    <dimen name="ranking_name">200dp</dimen>
+    <dimen name="ranking_name">215dp</dimen>
     <dimen name="ranking_position">40dp</dimen>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
           <item name="barLength">18.66dp</item>

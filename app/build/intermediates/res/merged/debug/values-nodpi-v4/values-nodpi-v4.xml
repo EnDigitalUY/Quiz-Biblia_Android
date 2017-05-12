@@ -14,7 +14,9 @@
     <dimen name="login_img_logo_height">170dp</dimen>
     <dimen name="login_margin_loading">225dp</dimen>
     <dimen name="login_margin_sign_buttons">440dp</dimen>
+    <dimen name="login_size_button_font">18sp</dimen>
     <dimen name="login_size_buttons">180dp</dimen>
+    <dimen name="login_size_field_font">22sp</dimen>
     <dimen name="margin_extra_large">20dp</dimen>
     <dimen name="margin_extra_small">4dp</dimen>
     <dimen name="margin_large">16dp</dimen>

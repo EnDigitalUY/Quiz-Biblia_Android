@@ -78,7 +78,8 @@
                         android:hint="@string/prompt_email"
                         android:inputType="textEmailAddress"
                         android:textColor="@android:color/white"
-                        android:textColorHint="@color/myWhite" />
+                        android:textColorHint="@color/myWhite"
+                        android:textSize="@dimen/login_size_field_font" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -93,7 +94,8 @@
                         android:hint="@string/prompt_password"
                         android:inputType="textPassword"
                         android:textColor="@android:color/white"
-                        android:textColorHint="@color/myWhite" />
+                        android:textColorHint="@color/myWhite"
+                        android:textSize="@dimen/login_size_field_font" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -150,6 +152,7 @@
                     android:text="@string/action_sign_in"
                     android:textAlignment="center"
                     android:textColor="@color/myLightGray"
+                    android:textSize="@dimen/login_size_button_font"
                     android:textStyle="normal|bold" />
 
                 <Button
@@ -160,6 +163,7 @@
                     android:text="@string/action_sign_up"
                     android:textAlignment="center"
                     android:textColor="@color/myLightGray"
+                    android:textSize="@dimen/login_size_button_font"
                     android:textStyle="normal|bold" />
             </LinearLayout>
 

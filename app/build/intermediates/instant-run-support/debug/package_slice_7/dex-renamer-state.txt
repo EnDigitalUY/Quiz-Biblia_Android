@@ -1,4 +1,0 @@
-#Wed May 10 21:39:25 BRT 2017
-base.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7
-renamed.0=classes.dex
-file.0=D\:\\ClaudineiBJr\\Estudo\\QuizBiblico\\Android App\\QuizBiblico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7\\classes.dex

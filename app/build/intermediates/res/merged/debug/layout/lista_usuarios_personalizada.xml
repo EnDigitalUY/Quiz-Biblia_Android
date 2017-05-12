@@ -12,29 +12,29 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/lista_usuarios_personalizada_posicao"
             android:layout_width="@dimen/ranking_position"
             android:layout_height="match_parent"
             android:text="111º"
             android:textColor="@color/myWhite"
-            android:textSize="@dimen/font_size_text_large"
-            android:id="@+id/lista_usuarios_personalizada_posicao"/>
+            android:textSize="@dimen/font_size_text_large" />
 
         <TextView
+            android:id="@+id/lista_usuarios_personalizada_nome"
             android:layout_width="@dimen/ranking_name"
             android:layout_height="match_parent"
             android:text="Claudinei Brito Junior da Costa Machado"
             android:textColor="@color/myWhite"
-            android:textSize="@dimen/font_size_title_extra_small"
-            android:id="@+id/lista_usuarios_personalizada_nome"/>
+            android:textSize="@dimen/font_size_text_large" />
 
         <TextView
+            android:id="@+id/lista_usuarios_personalizada_pontuacao"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="12345"
             android:textAlignment="textEnd"
             android:textColor="@color/myLightGray"
-            android:textSize="@dimen/font_size_text_large"
-            android:id="@+id/lista_usuarios_personalizada_pontuacao"/>
+            android:textSize="@dimen/font_size_text_large" />
 
     </LinearLayout>
 
