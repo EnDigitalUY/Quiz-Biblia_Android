@@ -70,6 +70,8 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
                 Snackbar.make(findViewById(R.id.activity_menu_principal), "Usuário cadastrado com sucesso", Toast.LENGTH_SHORT).show();
                 usuario.setPrimeiroAcesso(new Date(System.currentTimeMillis()));
                 geraBonusPowerUP(true);
+
+                atualizaCadastro();
             } else {
 
                 // Vai buscar no banco de dados as informações do usuário logado e atualiza o objeto
@@ -81,6 +83,12 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
                             geraBonusPowerUP(false);
 
+                            if (usuario.getNome() != null) {
+                                if (usuario.getNome().equals("")) {
+                                    atualizaCadastro();
+                                }
+                            }else
+                                atualizaCadastro();
                         }
                     }
 
@@ -94,19 +102,27 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
 
         instanciaElementosInterface();
         setaElementosInterface();
+    }
+
+    private void atualizaCadastro() {
+        Toast.makeText(getApplicationContext(), "Informe o seu nome e atualize o seu cadastro", Toast.LENGTH_SHORT).show();
+
+        layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
+        Intent intent = new Intent(activityc_MenuPrincipal.this, activityc_Perfil.class);
+        startActivity(intent);
 
     }
 
     private void geraBonusPowerUP(boolean geraBonus) {
 
         // Caso tenha passado um dia desde o ultimo acesso do usuário, ele receberá 5 PowerUPs aleatórios
-        if ( geraBonus || System.currentTimeMillis() - usuario.getBonus().getUltimoBonusRecebido().getTime() >= Parameter.HORA_EM_MILISEGUNDO * 24){
+        if ( geraBonus || System.currentTimeMillis() - usuario.getBonus().getUltimoBonusRecebido().getTime() >= Parameter.DIA_EM_MILISEGUNDO){
 
             int powerUPTempo = 0;
             int powerUPEliminaAlternativa = 0;
             int powerUPReferenciaBiblica = 0;
 
-            for (int i = 0; i < Parameter.POWER_UP_INICIAL; i++){
+            for (int i = 0; i < (geraBonus ? Parameter.POWER_UP_INICIAL : Parameter.POWER_UP_DIARIO) ; i++){
                 /*  0 - PowerUP de tempo
                     1 - PowerUP de eliminação de alternativa incorreta
                     2 - PowerUP da referência bíblica
@@ -142,7 +158,7 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
             usuario.getBonus().setUltimoBonusRecebido(new Date(System.currentTimeMillis()));
         }
 
-        usuario.setUltimoAcesso(new Date(System.currentTimeMillis()));
+        usuario.setUltimoJogo(new Date(System.currentTimeMillis()));
 
         FirebaseDB.getUsuarioReferencia().child(usuario.getUid()).setValue(usuario);
 
@@ -290,17 +306,20 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
         return (true);
     }
 
+    public void desconecta(){
+        // Desconecta o usuário
+        if (AccessToken.getCurrentAccessToken() != null) {
+            LoginManager.getInstance().logOut();
+        }
+        FirebaseAuth.getInstance().signOut();
+        finish();
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_desconectar: {
-                // Desconecta o usuário
-                if (AccessToken.getCurrentAccessToken() != null) {
-                    LoginManager.getInstance().logOut();
-                }
-
-                FirebaseAuth.getInstance().signOut();
-                finish();
+                desconecta();
                 return true;
             }
         }
@@ -310,16 +329,18 @@ public class activityc_MenuPrincipal extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
         layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left));
     }
 
     @Override
+    public void onBackPressed() {
+        desconecta();
+        super.onBackPressed();
+    }
+
+    @Override
     protected void onStop() {
-
         layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-
         super.onStop();
-
     }
 }

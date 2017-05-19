@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 
@@ -19,7 +20,7 @@ public class activityc_Perfil extends AppCompatActivity {
 
     private EditText txtEmail;
     private EditText txtNome;
-    private EditText txtSenha;
+    //private EditText txtSenha;
     private EditText txtDataUltimoBonus;
     private EditText txtPUPTempo;
     private EditText txtPUPAlternativa;
@@ -31,7 +32,7 @@ public class activityc_Perfil extends AppCompatActivity {
     private Switch swVibracao;
 
     private ImageView btnEditarEmail;
-    private ImageView btnEditarSenha;
+    //private ImageView btnEditarSenha;
 
     private ImageView btnCancelar;
     private ImageView btnSalvar;
@@ -41,7 +42,7 @@ public class activityc_Perfil extends AppCompatActivity {
     private LinearLayout layoutPrincipal;
 
     private boolean emailAlterado = false;
-    private boolean senhaAlterada = false;
+    //private boolean senhaAlterada = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class activityc_Perfil extends AppCompatActivity {
         //EditText
         txtEmail            = (EditText) findViewById(R.id.perfil_txtEmail);
         txtNome             = (EditText) findViewById(R.id.perfil_txtNome);
-        txtSenha            = (EditText) findViewById(R.id.perfil_txtSenha);
+        //txtSenha            = (EditText) findViewById(R.id.perfil_txtSenha);
         txtPUPTempo         = (EditText) findViewById(R.id.perfil_powerUP_tempo);
         txtPUPAlternativa   = (EditText) findViewById(R.id.perfil_powerUP_alternativa);
         txtPUPReferencia    = (EditText) findViewById(R.id.perfil_powerUP_referencia);
@@ -71,7 +72,7 @@ public class activityc_Perfil extends AppCompatActivity {
 
         //ImageView
         btnEditarEmail =    (ImageView) findViewById(R.id.perfil_btnEditEmail);
-        btnEditarSenha =    (ImageView) findViewById(R.id.perfil_btnEditSenha);
+        //btnEditarSenha =    (ImageView) findViewById(R.id.perfil_btnEditSenha);
         btnCancelar =       (ImageView) findViewById(R.id.perfil_btnCancelar);
         btnSalvar =         (ImageView) findViewById(R.id.perfil_btnSalvar);
         btnResetar =        (ImageView) findViewById(R.id.perfil_btnResetar);
@@ -109,7 +110,7 @@ public class activityc_Perfil extends AppCompatActivity {
             }
         });
 
-        btnEditarSenha.setOnClickListener(new View.OnClickListener() {
+        /*btnEditarSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 txtSenha.setEnabled(!txtSenha.isEnabled());
@@ -118,77 +119,89 @@ public class activityc_Perfil extends AppCompatActivity {
                 else
                     senhaAlterada = (! txtSenha.getText().toString().isEmpty());
             }
-        });
+        });*/
 
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Cria um AlertDialog que confirmará se o usuário realmente quer sair
-                AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
-                builder.setTitle("Você deseja sair?");
-                builder.setMessage("Ao sair, todas as alterações serão desfeitas. Você deseja sair?");
-                builder.setCancelable(false);
-                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
 
-                    }
-                });
-                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Snackbar.make(findViewById(R.id.activity_perfil), "Alterações descartadas", Snackbar.LENGTH_LONG).show();
-                        finish();
-                    }
-                });
 
-                if(!isFinishing())
-                    builder.create().show();
+                if (!validaCadastro())
+                    Toast.makeText(getApplicationContext(), "Informe o seu nome e atualize o seu cadastro", Toast.LENGTH_SHORT).show();
+                else {
+                    //Cria um AlertDialog que confirmará se o usuário realmente quer sair
+                    AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
+                    builder.setTitle("Você deseja sair?");
+                    builder.setMessage("Ao sair, todas as alterações serão desfeitas. Você deseja sair?");
+                    builder.setCancelable(false);
+                    builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Snackbar.make(findViewById(R.id.activity_perfil), "Alterações descartadas", Snackbar.LENGTH_LONG).show();
+                            finish();
+                        }
+                    });
+
+                    if (!isFinishing())
+                        builder.create().show();
+
+                }
             }
         });
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Cria um AlertDialog que confirmará se o usuário realmente quer salvar
-                AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
-                builder.setTitle("Você deseja gravar?");
-                builder.setMessage("Ao confirmar, todas as alterações não poderão mais ser desfeitas. Você deseja gravar as alterações?");
-                builder.setCancelable(false);
-                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
 
-                    }
-                });
+                if (!validaCadastro())
+                    Toast.makeText(getApplicationContext(), "Informe o seu nome e atualize o seu cadastro", Toast.LENGTH_SHORT).show();
+                else {
+                    //Cria um AlertDialog que confirmará se o usuário realmente quer salvar
+                    AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
+                    builder.setTitle("Você deseja gravar?");
+                    builder.setMessage("Ao confirmar, todas as alterações não poderão mais ser desfeitas. Você deseja gravar as alterações?");
+                    builder.setCancelable(false);
+                    builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
 
-                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        try{
-
-                            activityc_MenuPrincipal.usuario.setNome(txtNome.getText().toString());
-                            activityc_MenuPrincipal.usuario.getPreferencias().setSons(swSons.isChecked());
-                            activityc_MenuPrincipal.usuario.getPreferencias().setVibracao(swVibracao.isChecked());
-                            FirebaseDB.getUsuarioReferencia().child(activityc_MenuPrincipal.usuario.getUid()).setValue(activityc_MenuPrincipal.usuario);
-
-                            Snackbar.make(findViewById(R.id.activity_perfil), "Alterações gravadas", Snackbar.LENGTH_SHORT).show();
-                            finish();
-                        } catch (Exception e){
-                            Snackbar.make(findViewById(R.id.activity_perfil), "Houve uma falha! Tente novamente mais tarde", Snackbar.LENGTH_SHORT).show();
                         }
-                    }
-                });
+                    });
 
-                if(!isFinishing())
-                    builder.create().show();
+                    builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            try {
+                                activityc_MenuPrincipal.usuario.setNome(txtNome.getText().toString());
+                                activityc_MenuPrincipal.usuario.getPreferencias().setSons(swSons.isChecked());
+                                activityc_MenuPrincipal.usuario.getPreferencias().setVibracao(swVibracao.isChecked());
+                                FirebaseDB.getUsuarioReferencia().child(activityc_MenuPrincipal.usuario.getUid()).setValue(activityc_MenuPrincipal.usuario);
+
+                                Snackbar.make(findViewById(R.id.activity_perfil), "Alterações gravadas", Snackbar.LENGTH_SHORT).show();
+                                finish();
+                            } catch (Exception e) {
+                                Snackbar.make(findViewById(R.id.activity_perfil), "Houve uma falha! Tente novamente mais tarde", Snackbar.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+
+                    if (!isFinishing())
+                        builder.create().show();
+                }
             }
         });
 
         btnResetar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //Cria um AlertDialog que confirmará se o usuário realmente quer resetar a pontuação
                 AlertDialog.Builder builder = new AlertDialog.Builder(activityc_Perfil.this);
                 builder.setTitle("Resetar pontuação?");
@@ -205,7 +218,7 @@ public class activityc_Perfil extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        try{
+                        try {
 
                             activityc_MenuPrincipal.usuario.setPontuacao(0);
                             activityc_MenuPrincipal.usuario.deleteRespondidas();
@@ -214,18 +227,26 @@ public class activityc_Perfil extends AppCompatActivity {
 
                             Snackbar.make(findViewById(R.id.activity_perfil), "Pontuação resetada", Snackbar.LENGTH_SHORT).show();
                             finish();
-                        } catch (Exception e){
+                        } catch (Exception e) {
                             Snackbar.make(findViewById(R.id.activity_perfil), "Houve uma falha! Tente novamente mais tarde", Snackbar.LENGTH_SHORT).show();
                         }
                     }
                 });
 
-                if(!isFinishing())
+                if (!isFinishing())
                     builder.create().show();
 
             }
         });
 
+    }
+
+    private boolean validaCadastro() {
+
+        if (txtNome.getText().toString().equals(""))
+            return false;
+        else
+            return true;
     }
 
     @Override
@@ -236,10 +257,17 @@ public class activityc_Perfil extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+
+        if (!validaCadastro())
+            Toast.makeText(getApplicationContext(), "Informe o seu nome e atualize o seu cadastro", Toast.LENGTH_SHORT).show();
+        else
+            super.onBackPressed();
+    }
+
+    @Override
     protected void onStop() {
-
         layoutPrincipal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_out_right));
-
         super.onStop();
     }
 }

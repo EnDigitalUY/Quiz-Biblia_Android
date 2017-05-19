@@ -83,34 +83,46 @@
 
                 </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/txtSenha"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/prompt_password"
-                        android:inputType="textPassword"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@color/myWhite"
-                        android:textSize="@dimen/login_size_field_font" />
-
-                </android.support.design.widget.TextInputLayout>
-
-                <Switch
-                    android:id="@+id/sw_KeepConnected"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:paddingStart="@dimen/margin_extra_small"
-                    android:text="@string/action_keep_connected"
-                    android:textColor="@color/myWhite"
-                    android:textColorLink="@color/myColor5"
-                    android:textOff="@string/action_keep_connected"
-                    android:textOn="@string/action_keep_connected"
-                    android:textSize="@dimen/font_size_title_small" />
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="@dimen/login_field_edit"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txtSenha"
+                            android:layout_width="@dimen/login_field_edit"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prompt_password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/myWhite"
+                            android:textSize="@dimen/login_size_field_font" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/login_showpassword"
+                        android:layout_width="@dimen/login_img_icon"
+                        android:layout_height="@dimen/login_img_icon"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:src="@drawable/img_locked" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/login_forget_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_extra_small"
+                    android:text="Esqueceu sua senha?"
+                    android:textColor="@color/myColor3"
+                    android:textSize="@dimen/login_size_field_font"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/progresso"

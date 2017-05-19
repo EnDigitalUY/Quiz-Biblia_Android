@@ -64,9 +64,9 @@
                         android:layout_width="@dimen/profile_edit_icon"
                         android:layout_height="@dimen/profile_edit_icon"
                         android:layout_marginTop="@dimen/margin_extra_small"
-                        android:src="@drawable/img_edit"
                         android:visibility="invisible"
-                        android:contentDescription="Editar e-Mail"/>
+                        android:contentDescription="Editar e-Mail"
+                        android:src="@drawable/img_edit" />
 
                 </LinearLayout>
 
@@ -86,7 +86,7 @@
                 </android.support.design.widget.TextInputLayout>
 
 
-                <LinearLayout
+                <!--<LinearLayout
                     android:id="@+id/perfil_linearLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,11 +113,10 @@
                         android:layout_width="@dimen/profile_edit_icon"
                         android:layout_height="@dimen/profile_edit_icon"
                         android:layout_marginTop="@dimen/margin_extra_small"
-                        android:src="@drawable/img_edit"
-                        android:visibility="invisible"
-                        android:contentDescription="Editar senha"/>
+                        android:contentDescription="Editar senha"
+                        android:src="@drawable/img_edit" />
 
-                </LinearLayout>
+                </LinearLayout> -->
 
                 <ImageView
                     android:layout_width="match_parent"

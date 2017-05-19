@@ -9,11 +9,10 @@ public class Usuario implements Serializable {
     private String email;
     private String nome;
     private String uid;
-    private boolean manterConectado;
     private String linkImagem;
     private ArrayList<Integer> respondidas = new ArrayList<Integer>();
     private int pontuacao;
-    private Date ultimoAcesso = new Date();
+    private Date ultimoJogo = new Date();
     private Date primeiroAcesso = new Date();
 
     private Bonus bonus = new Bonus();
@@ -92,12 +91,10 @@ public class Usuario implements Serializable {
 
     }
 
-    public Usuario(String email, String nome, String uid, boolean manterConectado) {
+    public Usuario(String email, String nome, String uid) {
         this.email = email;
         this.nome = nome;
         this.uid = uid;
-        this.manterConectado = manterConectado;
-
         this.bonus = new Bonus();
         this.preferencias = new Preferencias();
 
@@ -131,14 +128,6 @@ public class Usuario implements Serializable {
         this.uid = uid;
     }
 
-    public boolean isManterConectado() {
-        return manterConectado;
-    }
-
-    public void setManterConectado(boolean manterConectado) {
-        this.manterConectado = manterConectado;
-    }
-
     public String getLinkImagem() {
         return linkImagem;
     }
@@ -167,12 +156,12 @@ public class Usuario implements Serializable {
         this.pontuacao = pontuacao;
     }
 
-    public Date getUltimoAcesso() {
-        return ultimoAcesso;
+    public Date getUltimoJogo() {
+        return ultimoJogo;
     }
 
-    public void setUltimoAcesso(Date ultimoAcesso) {
-        this.ultimoAcesso = ultimoAcesso;
+    public void setUltimoJogo(Date ultimoJogo) {
+        this.ultimoJogo = ultimoJogo;
     }
 
     public Date getPrimeiroAcesso() {

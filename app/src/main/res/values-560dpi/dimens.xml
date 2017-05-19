@@ -25,6 +25,8 @@
     <dimen name="login_margin_sign_buttons">520dp</dimen>
     <dimen name="login_size_buttons">205dp</dimen>
     <dimen name="login_margin_loading">225dp</dimen>
+    <dimen name="login_field_edit">340dp</dimen>
+    <dimen name="login_img_icon">40dp</dimen>
 
     <!-- Tela de perfil -->
     <dimen name="profile_fields">420dp</dimen>

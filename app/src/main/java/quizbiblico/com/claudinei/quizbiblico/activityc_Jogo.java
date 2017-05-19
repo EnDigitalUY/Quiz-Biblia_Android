@@ -78,22 +78,38 @@ public class activityc_Jogo extends AppCompatActivity {
 
     Partida partida = new Partida();
 
-    private class Partida{
-        public int pontuacao;
-        public int tempoRestante;
-        public ArrayList<Integer> acertos = new ArrayList<>();   //[0] - Difícil | [1] - Média   | [2] - Fácil
-        public ArrayList<Integer> erros = new ArrayList<>();     //[0] - Difícil | [1] - Média   | [2] - Fácil
-        public ArrayList<Integer> respostas = new ArrayList<>(); //0 - Erro      | 1 - Fácil     | 2 - Média | 3 - Difícil
+    public class Resposta{
+        private boolean acerto;
+        private int dificuldade; //1 - Fácil     | 2 - Média | 3 - Difícil
+
+        public Resposta(boolean acerto, int dificuldade) {
+            this.acerto = acerto;
+            this.dificuldade = dificuldade;
+        }
+
+        public boolean isAcerto() {
+            return acerto;
+        }
+
+        public int getDificuldade() {
+            return dificuldade;
+        }
 
         @Override
         public String toString() {
-            return "Partida{" +
-                    "pontuacao=" + pontuacao +
-                    ", acertos=" + acertos +
-                    ", erros=" + erros +
-                    ", respostas=" + respostas +
+            return "Resposta{" +
+                    "acerto=" + acerto +
+                    ", dificuldade=" + dificuldade +
                     '}';
         }
+    }
+
+    private class Partida{
+        public int pontuacao;
+        public int tempoRestante;
+        public ArrayList<Resposta> respostas = new ArrayList<>();
+        int acertos;
+        int acertos_dificil;
     }
 
     @Override
@@ -139,7 +155,7 @@ public class activityc_Jogo extends AppCompatActivity {
                         tempoRestanteQuestao--;
                     }
 
-                    if (tempoRestanteQuestao == 0)
+                    if (tempoRestanteQuestao == 0 && executaThread)
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
@@ -278,6 +294,7 @@ public class activityc_Jogo extends AppCompatActivity {
                     alternativaEliminada = random.nextInt(4);
                 }
 
+                botoes.get(alternativaEliminada).startAnimation( AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.fade_out) );
                 botoes.get(alternativaEliminada).setVisibility(View.INVISIBLE);
                 alternativasEliminadas++;
 
@@ -313,68 +330,76 @@ public class activityc_Jogo extends AppCompatActivity {
     private void tentativa(int alternativaUsuario){ // Função acionada no fim da questão ou quando o usuário seleciona a opção
 
         podeExibirNovaQuestao = false;
-        getQuestion(activityc_MenuPrincipal.usuario.getRespondidas());
-
-        // Variável local que exibirá a pontuação obtida com esta questão
-        int pontuacaoTentativa = 0;
-
-        // Para com a thread que decrementa o itemTempo
         executaThread = false;
 
         // Verifica se o usuário acertou
         boolean acertou = alternativaUsuario == question.getAnswer();
 
-        // Cria um AlertDialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        if (acertou)
+            activityc_MenuPrincipal.usuario.addAnswered(question.getIdQuestion());
+
+        getQuestion(activityc_MenuPrincipal.usuario.getRespondidas());
+
+        // Variável local que exibirá a pontuação obtida com esta questão
+        int pontuacaoTentativa = 0;
+
+        partida.respostas.add(new Resposta(acertou, question.getLevelQuestion()));
+
+        reproduzSom(acertou);
+
+        pintaAlternativas(acertou, alternativaUsuario);
 
         if (acertou){
 
-            partida.respostas.add(question.getLevelQuestion());
-
-            activityc_MenuPrincipal.usuario.addAnswered(question.getIdQuestion());
-
-            if (activityc_MenuPrincipal.usuario.getPreferencias().isSons()) {
-                // Reproduz um som de correto
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_correta);
-                mediaPlayer.start();
-                mediaPlayer.setLooping(false);
-            }
+            partida.acertos++;
+            if (question.getLevelQuestion() == 3)
+                partida.acertos_dificil++;
 
             // Pinta de verde a alternativa correta
             botoes.get(alternativaUsuario).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_correta));
 
             // Soma pontuação por dificuldade
-            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ACERTO_DIFICIL :
-                                        (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ACERTO_MEDIO :
-                                                (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ACERTO_FACIL : 0)
-                                        )
-                                );
+            pontuacaoTentativa += (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ACERTO_DIFICIL : (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ACERTO_MEDIO : (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ACERTO_FACIL : 0)));
 
             // Soma pontuação por itemTempo
-            pontuacaoTentativa += (   tempoRestanteQuestao >= 15 ? Parameter.PONTOS_TEMPO_19_15 :
-                                        (tempoRestanteQuestao <= 14 && tempoRestanteQuestao >= 10 ? Parameter.PONTOS_TEMPO_14_10 :
-                                                (tempoRestanteQuestao <= 9 && tempoRestanteQuestao >= 5 ? Parameter.PONTOS_TEMPO_9_5 :
-                                                        (tempoRestanteQuestao <= 4 ? Parameter.PONTOS_TEMPO_4_0 : 0)
-                                                )
-                                        )
-
-                                );
-
-            // Seta o título e o ícone do AlertDialog como corretos
-            builder.setTitle("Parabéns! Você acertou\n" + "+ " + pontuacaoTentativa + " pontos");
-            builder.setIcon(R.drawable.ico_correct);
+            pontuacaoTentativa += (   tempoRestanteQuestao >= 15 ? Parameter.PONTOS_TEMPO_19_15 : (tempoRestanteQuestao <= 14 && tempoRestanteQuestao >= 10 ? Parameter.PONTOS_TEMPO_14_10 : (tempoRestanteQuestao <= 9 && tempoRestanteQuestao >= 5 ? Parameter.PONTOS_TEMPO_9_5 : (tempoRestanteQuestao <= 4 ? Parameter.PONTOS_TEMPO_4_0 : 0))));
 
         }else {
 
-            partida.respostas.add(0);
+            partida.acertos = 0;
+            if (question.getLevelQuestion() == 3)
+                partida.acertos_dificil = 0;
 
-            if (activityc_MenuPrincipal.usuario.getPreferencias().isSons()) {
-                // Reproduz um som de incorreto
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.resposta_incorreta);
-                mediaPlayer.start();
-                mediaPlayer.setLooping(false);
-            }
+            // Decrementa pontuação por erro
+            pontuacaoTentativa += Parameter.PONTOS_ERRO;
 
+            // Decrementa pontuação por dificuldade
+            pontuacaoTentativa +=   (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ERRO_DIFICIL : (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ERRO_MEDIO : (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ERRO_FACIL : 0)));
+
+        }
+
+        exibeMensagemResposta(acertou, pontuacaoTentativa);
+
+        //Bloqueia os controles do usuário
+        congelaTela(true);
+
+        // Soma a pontuação obtida nesta tentativa à pontuação da partida
+        partida.pontuacao += pontuacaoTentativa;
+
+        // Exibe a pontuação da partida no menu
+        itemPontuacao.setTitle("Pontuação: " + String.valueOf(partida.pontuacao));
+
+        verificaSequenciaQuestoes();
+
+        //if(!acertou)
+
+    }
+
+    public void pintaAlternativas(boolean acertou, int alternativaUsuario){
+
+        if (acertou){
+
+        }else{
             if (alternativaUsuario != 5) {
                 // Pinta de vermelho a alternativa incorreta
                 botoes.get(alternativaUsuario).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_incorreta));
@@ -383,17 +408,29 @@ public class activityc_Jogo extends AppCompatActivity {
                     botoes.get(i).setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.quadro_alternativa_incorreta));
                 }
             }
+        }
 
-            // Decrementa pontuação por erro
-            pontuacaoTentativa += Parameter.PONTOS_ERRO;
+    }
 
-            // Decrementa pontuação por dificuldade
-            pontuacaoTentativa +=   (   question.getLevelQuestion() == 3 ? Parameter.PONTOS_ERRO_DIFICIL :
-                                            (question.getLevelQuestion() == 2 ? Parameter.PONTOS_ERRO_MEDIO :
-                                                (question.getLevelQuestion() == 1 ? Parameter.PONTOS_ERRO_FACIL : 0)
-                                            )
-                                    );
+    public void reproduzSom(boolean acertou){
+        if (activityc_MenuPrincipal.usuario.getPreferencias().isSons()) {
+            // Reproduz um som de correto / incorreto
+            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), (acertou ? R.raw.resposta_correta : R.raw.resposta_incorreta));
+            mediaPlayer.start();
+            mediaPlayer.setLooping(false);
+        }
+    }
 
+    public void exibeMensagemResposta(boolean acertou, int pontuacaoTentativa){
+
+        // Cria um AlertDialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        if (acertou){
+            // Seta o título e o ícone do AlertDialog como corretos
+            builder.setTitle("Parabéns! Você acertou\n" + "+ " + pontuacaoTentativa + " pontos");
+            builder.setIcon(R.drawable.ico_correct);
+        }else{
             // Seta o título e o ícone do AlertDialog como incorretos
             builder.setTitle("Que pena! Você errou\n" + "- " + (pontuacaoTentativa * -1) + " pontos");
             builder.setIcon(R.drawable.ico_wrong);
@@ -422,48 +459,20 @@ public class activityc_Jogo extends AppCompatActivity {
         if(!isFinishing())
             builder.create().show();
 
-        //Bloqueia os controles do usuário
-        congelaTela(true);
-
-        // Soma a pontuação obtida nesta tentativa à pontuação da partida
-        partida.pontuacao += pontuacaoTentativa;
-
-        // Exibe a pontuação da partida no menu
-        itemPontuacao.setTitle("Pontuação: " + String.valueOf(partida.pontuacao));
-
-        verificaSequenciaQuestoes();
-
     }
 
     private void verificaSequenciaQuestoes() {
-        //(5 questões seguidas (1 aleatório) 3 difíceis seguidas (1 aleatório))
+        // 10 questões seguidas (1 aleatório)
+        // 5 difíceis seguidas (1 aleatório)
 
-        int acertos_5 = 0;
-        int acertos_3_dificil = 0;
-
-        if (partida.respostas.size() >= 5){
-            for (int i = partida.respostas.size() - 1; i >= partida.respostas.size() - 5; i--){
-
-                //Caso tenha acertado, incrementa o contador que verifica se acertou as ultimas 5
-                if (partida.respostas.get(i) > 0)
-                    acertos_5++;
-
-                //Verifica se está analisando apenas as 3 ultimas
-                if (i >= partida.respostas.size() - 3)
-                    //Caso tenha acertado uma dificil, incrementa o contador que verifica se acertou as ultimas 3
-                    if (partida.respostas.get(i) == 3)
-                        acertos_3_dificil++;
-            }
-        }
-
-        if (acertos_5 == 5) {
+        if (partida.acertos >= Parameter.ACERTOS_POWERUP) {
             ganhouPowerUP();
+            partida.acertos = 0;
         }
-        if (acertos_3_dificil == 3){
+        if (partida.acertos_dificil >= Parameter.ACERTOS_DIFICIL_POWERUP){
             ganhouPowerUP();
+            partida.acertos_dificil = 0;
         }
-
-
     }
 
     private void ganhouPowerUP(){

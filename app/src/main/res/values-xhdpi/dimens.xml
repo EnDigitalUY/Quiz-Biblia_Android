@@ -9,7 +9,7 @@
 
     <!-- Fontes genéricas -->
     <dimen name="font_size_text_small">12sp</dimen>
-    <dimen name="font_size_text_medium">14sp</dimen>
+    <dimen name="font_size_text_medium">16sp</dimen>
     <dimen name="font_size_text_large">18sp</dimen>
 
     <dimen name="font_size_title_extra_small">20sp</dimen>
@@ -25,6 +25,8 @@
     <dimen name="login_size_buttons">180dp</dimen>
     <dimen name="login_margin_loading">240dp</dimen>
     <dimen name="login_margin_sign_buttons">440dp</dimen>
+    <dimen name="login_field_edit">290dp</dimen>
+    <dimen name="login_img_icon">40dp</dimen>
 
     <!-- Tela de perfil -->
     <dimen name="profile_fields">335dp</dimen>

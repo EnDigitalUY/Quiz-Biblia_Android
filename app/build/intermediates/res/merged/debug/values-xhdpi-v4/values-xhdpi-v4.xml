@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="font_size_text_large">18sp</dimen>
-    <dimen name="font_size_text_medium">14sp</dimen>
+    <dimen name="font_size_text_medium">16sp</dimen>
     <dimen name="font_size_text_small">12sp</dimen>
     <dimen name="font_size_title_extra_large">26sp</dimen>
     <dimen name="font_size_title_extra_small">20sp</dimen>
@@ -11,6 +11,8 @@
     <dimen name="game_alternative_size">70dp</dimen>
     <dimen name="game_alternatives_sum_size">310dp</dimen>
     <dimen name="game_question_size">160dp</dimen>
+    <dimen name="login_field_edit">290dp</dimen>
+    <dimen name="login_img_icon">40dp</dimen>
     <dimen name="login_img_logo_height">170dp</dimen>
     <dimen name="login_margin_loading">240dp</dimen>
     <dimen name="login_margin_sign_buttons">440dp</dimen>

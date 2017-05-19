@@ -61,7 +61,7 @@
                 android:cropToPadding="true"
                 android:text="Alternativa A"
                 android:textAllCaps="false"
-                android:textSize="@dimen/font_size_text_large" />
+                android:textSize="@dimen/font_size_text_medium" />
 
             <Button
                 android:id="@+id/btnB"
@@ -73,7 +73,7 @@
                 android:cropToPadding="true"
                 android:text="Alternativa B"
                 android:textAllCaps="false"
-                android:textSize="@dimen/font_size_text_large" />
+                android:textSize="@dimen/font_size_text_medium" />
 
             <Button
                 android:id="@+id/btnC"
@@ -85,7 +85,7 @@
                 android:cropToPadding="true"
                 android:text="Alternativa C"
                 android:textAllCaps="false"
-                android:textSize="@dimen/font_size_text_large" />
+                android:textSize="@dimen/font_size_text_medium" />
 
             <Button
                 android:id="@+id/btnD"
@@ -97,7 +97,7 @@
                 android:cropToPadding="true"
                 android:text="Alternativa D"
                 android:textAllCaps="false"
-                android:textSize="@dimen/font_size_text_large" />
+                android:textSize="@dimen/font_size_text_medium" />
 
         </LinearLayout>
 

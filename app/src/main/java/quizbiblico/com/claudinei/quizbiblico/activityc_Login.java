@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -13,8 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
-
+import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -31,7 +31,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
 import java.util.Arrays;
 
 public class activityc_Login extends AppCompatActivity {
@@ -48,12 +47,15 @@ public class activityc_Login extends AppCompatActivity {
     private Button btnRegister;
     private LoginButton facebookLoginButton;
 
+    //ImageView
+    private ImageView showPassword;
+
     //EditText
     private EditText email;
     private EditText password;
 
-    //Switch
-    private Switch swKeepConnected;
+    //TextView
+    private TextView forgetPassword;
 
     //Usuário
     private Usuario userLogged = null;
@@ -97,7 +99,7 @@ public class activityc_Login extends AppCompatActivity {
 
                 // Verifica se o usuário vindouro da autenticação é diferente   de nulo, ou seja, está autenticado
                 if (user != null){
-                    userLogged = new Usuario(user.getEmail(), user.getDisplayName(), user.getUid().toString(), swKeepConnected.isChecked());
+                    userLogged = new Usuario(user.getEmail(), user.getDisplayName(), user.getUid().toString());
 
                     // Verifica se é a autenticação é vindoura de um cadastro de usuário
                     if (usuarioCadastrado)
@@ -153,15 +155,18 @@ public class activityc_Login extends AppCompatActivity {
         email = (EditText) findViewById(R.id.txtEmail);
         password = (EditText) findViewById(R.id.txtSenha);
 
-        //Switch
-        swKeepConnected = (Switch) findViewById(R.id.sw_KeepConnected);
-
         //Buttons
         btnLogin = (Button) findViewById(R.id.btnLogIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
 
         //Instanciando o botão de activityl_login do Facebook
         facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
+
+        //ImageView
+        showPassword = (ImageView) findViewById(R.id.login_showpassword);
+
+        //TextView
+        forgetPassword = (TextView) findViewById(R.id.login_forget_password);
 
         layoutPrincipal = (CoordinatorLayout) findViewById(R.id.layout_login);
         telaLoading = (RelativeLayout) findViewById(R.id.login_layout_carregando);
@@ -173,8 +178,15 @@ public class activityc_Login extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firebaseLogin(email.getText().toString(), password.getText().toString());
-                telaLoading.setVisibility(View.VISIBLE);
+
+                String returnVerifyFields = verifyFields();
+
+                if (returnVerifyFields.equals("")) {
+                    firebaseLogin(email.getText().toString(), password.getText().toString());
+                    telaLoading.setVisibility(View.VISIBLE);
+                }else{
+                        Snackbar.make(findViewById(R.id.activity_main), returnVerifyFields, Snackbar.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -182,8 +194,55 @@ public class activityc_Login extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firebaseRegister(email.getText().toString(), password.getText().toString());
-                telaLoading.setVisibility(View.VISIBLE);
+
+                String returnVerifyFields = verifyFields();
+
+                if (returnVerifyFields.equals("")) {
+                    firebaseRegister(email.getText().toString(), password.getText().toString());
+                    telaLoading.setVisibility(View.VISIBLE);
+                }else{
+                    Snackbar.make(findViewById(R.id.activity_main), returnVerifyFields, Snackbar.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        //Definindo o botão que ao clicar exibe/esconde a senha
+        showPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (password.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                    password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    showPassword.setImageResource(R.drawable.img_locked);
+                }else {
+                    password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                    showPassword.setImageResource(R.drawable.img_unlocked);
+                }
+            }
+        });
+
+        //Define a ação do botão de esqueci minha senha
+        forgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String returnVerifyFields = verifyFields(false);
+
+                if (returnVerifyFields.equals("")) {
+                    telaLoading.setVisibility(View.VISIBLE);
+                    authentication.sendPasswordResetEmail(email.getText().toString())
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        Snackbar.make(findViewById(R.id.activity_main), "E-mail de redefinição de senha enviado com sucesso", Snackbar.LENGTH_SHORT).show();
+                                        telaLoading.setVisibility(View.INVISIBLE);
+                                    }
+                                }
+                            });
+                }else{
+                    Snackbar.make(findViewById(R.id.activity_main), returnVerifyFields, Snackbar.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -191,6 +250,42 @@ public class activityc_Login extends AppCompatActivity {
                 .load(R.drawable.other_loading)
                 .asGif()
                 .into((ImageView) findViewById(R.id.login_progresso));
+
+    }
+
+    public String verifyFields(){
+        return verifyFields(true);
+    }
+
+    private String verifyFields(boolean verifyPass) {
+        boolean emailFilled = true;
+        boolean passwordFilled = true;
+
+        if (email.getText().toString().equals(""))
+            emailFilled = false;
+        else
+            emailFilled = true;
+
+        if (verifyPass) {
+            if (password.getText().toString().equals(""))
+                passwordFilled = false;
+            else
+                passwordFilled = true;
+        }
+
+        String mensagem = "";
+        if (!emailFilled && !passwordFilled)
+            mensagem = "Por favor, preencha o e-mail e a senha.";
+        else{
+            if (!emailFilled)
+                mensagem = "Por favor, preencha o e-mail.";
+            else{
+                if (!passwordFilled)
+                    mensagem = "Por favor, preencha a senha.";
+            }
+        }
+
+        return mensagem;
 
     }
 
@@ -231,12 +326,6 @@ public class activityc_Login extends AppCompatActivity {
 
         super.onStop();
 
-        if (userLogged != null){
-            if (!userLogged.isManterConectado()) {
-                FirebaseAuth.getInstance().signOut();
-            }
-        }
-
         if (authenticationListener != null) {
             authentication.removeAuthStateListener(authenticationListener);
         }
@@ -251,9 +340,7 @@ public class activityc_Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("activityc_Login.java", "createUserWithEmail:onComplete:" + task.isSuccessful());
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
+
                         if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível criar o usuário", Snackbar.LENGTH_SHORT).show();
                             telaLoading.setVisibility(View.INVISIBLE);
@@ -271,9 +358,6 @@ public class activityc_Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("activityc_Login.java", "signInWithEmail:onComplete:" + task.isSuccessful());
 
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Snackbar.make(findViewById(R.id.activity_main), "Não foi possível conectar o usuário", Snackbar.LENGTH_SHORT).show();
                             telaLoading.setVisibility(View.INVISIBLE);

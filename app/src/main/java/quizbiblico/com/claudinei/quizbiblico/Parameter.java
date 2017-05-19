@@ -56,7 +56,11 @@ public final class Parameter {
     public static final int MAIS_TEMPO = 5;
 
     public static final int POWER_UP_INICIAL = 5;
-    public static final int POWER_UP_DIARIO = 5;
+    public static final int POWER_UP_DIARIO = 3;
+    public static final int POWER_UP_JOGO = 1;
+
+    public static final int ACERTOS_POWERUP = 10;
+    public static final int ACERTOS_DIFICIL_POWERUP = 5;
 
     public static final int TEMPO_QUESTAO = 20;
     public static final int TEMPO_JOGO = 120;
@@ -65,6 +69,7 @@ public final class Parameter {
     private static boolean buscaConcluida = false;
 
     public static long HORA_EM_MILISEGUNDO = 3600000;
+    public static long DIA_EM_MILISEGUNDO = HORA_EM_MILISEGUNDO * 24;
 
     public Parameter(){
 

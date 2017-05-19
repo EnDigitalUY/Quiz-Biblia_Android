@@ -19,12 +19,14 @@
     <dimen name="font_size_title_extra_large">28sp</dimen>
 
     <!-- Tela de login -->
-    <dimen name="login_size_field_font">18sp</dimen> <!-- Default: 18sp -->
-    <dimen name="login_size_button_font">14sp</dimen> <!-- Default: 14sp -->
     <dimen name="login_img_logo_height">150dp</dimen>
     <dimen name="login_margin_sign_buttons">380dp</dimen>
     <dimen name="login_size_buttons">160dp</dimen>
     <dimen name="login_margin_loading">225dp</dimen>
+    <dimen name="login_field_edit">255dp</dimen>
+    <dimen name="login_img_icon">35dp</dimen>
+    <dimen name="login_size_field_font">18sp</dimen>
+    <dimen name="login_size_button_font">14sp</dimen>
 
     <!-- Tela de perfil -->
     <dimen name="profile_fields">280dp</dimen>

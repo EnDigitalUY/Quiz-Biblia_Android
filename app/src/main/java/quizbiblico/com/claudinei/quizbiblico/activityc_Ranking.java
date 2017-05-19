@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -15,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -74,10 +76,11 @@ public class activityc_Ranking extends AppCompatActivity {
             nome.setText( usuario.getNome() == null ? usuario.getEmail() : usuario.getNome());
             pontuacao.setText(String.valueOf(usuario.getPontuacao()));
             posicao.setText(String.valueOf(position + 1) + "º");
-            dataCadastro.setText("Jogador desde " + new SimpleDateFormat("dd/MM/yyyy").format(usuario.getPrimeiroAcesso()));
+            dataCadastro.setText("Jogador desde " + new SimpleDateFormat("dd/MM/yyyy").format(usuario.getPrimeiroAcesso()) + ". Jogou pela última vez há " + ((System.currentTimeMillis() - usuario.getUltimoJogo().getTime()) / Parameter.DIA_EM_MILISEGUNDO) + " dias.");
 
             return view;
         }
+
     }
 
     //RelativeLayout
