@@ -1,0 +1,4 @@
+#Wed May 29 08:08:08 BRT 2019
+base.0=/home/claudinei/Repositories/AppQuizBiblical/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

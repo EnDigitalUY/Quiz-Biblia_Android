@@ -37,6 +37,5 @@
     <string name="com_facebook_share_button_text">Ibahagi</string>
     <string name="com_facebook_tooltip_default">Bago! Ikaw ang may kontrol - piliin kung anong impormasyon ang gusto mong ibahagi sa mga app.</string>
     <string name="messenger_send_button_text">Ipadala</string>
-    <string msgid="146198913615257606" name="search_menu_title">"Maghanap"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

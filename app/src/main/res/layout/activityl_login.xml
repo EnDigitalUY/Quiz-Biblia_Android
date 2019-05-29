@@ -109,7 +109,7 @@
                         android:layout_width="@dimen/login_img_icon"
                         android:layout_height="@dimen/login_img_icon"
                         android:layout_marginTop="@dimen/margin_medium"
-                        android:src="@drawable/img_locked" />
+                         />
 
                 </LinearLayout>
 

@@ -1,326 +1,427 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:2:1-71:12
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+MERGED from [com.google.firebase:firebase-core:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8751a216a15a90c2df8aa2dd5cc0c45a/AndroidManifest.xml:2:1-6:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:21:1-40:12
+MERGED from [com.android.support:cardview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ff7f7a57a385220a08b75dbded8d78a0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0b44d558cb32596b8eb60e2ad850553a/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fedcd04b5156ac9d07fe8f093c5a25dd/AndroidManifest.xml:16:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8153746c6123684ad9e9b830c6e2da47/AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/d67dcc4f51ef15e4d49ac02b8a67ea29/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/354439e286f2fc401d0da5b1a208a1f1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:16:1-42:12
+MERGED from [com.google.firebase:firebase-database-connection:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fe28dd6b5a1362c22355736080e93fcb/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/59df984e3210bd8e9a4d48b1f60e0f6d/AndroidManifest.xml:16:1-22:12
+MERGED from [com.google.firebase:firebase-auth-module:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/5c54b221b93d7552c378f43679354906/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/f2a45c8530715028e7eb910e0f509481/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:16:1-42:12
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:16:1-60:12
+MERGED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/781cc463cc8bc04212043a944e037e15/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:customtabs:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/43357a10101caf28a5ae9a0cdc98503d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:recyclerview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/b45b7451b2934034f7f1ec80fa56d339/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0ec2d7e13c133e7f50026f6248d44a74/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ac6015540514bdb0de627576ebd392fe/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/cefc3089e071d732f57f9390d1a9fb25/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
 	package
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:3:5-52
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:2:11-69
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-uses-sdk
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:23.4.0] C:\Users\Claudinei\.android\build-cache\4a705154385e06e4d39d61171df2e0ad79894fe5\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Claudinei\.android\build-cache\d20a22d0a276263eca5a6b47a6e721ab3eeaa6fb\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-database:9.0.2] C:\Users\Claudinei\.android\build-cache\d73e68a32d174336e8e3dccd5437de75aed9656f\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.0.2] C:\Users\Claudinei\.android\build-cache\9d043eeef1cc1dd809159551d49b3b07d0615cf0\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\6ef565be07d9c91fbf9bea9e010504f06f3d086a\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.0.2] C:\Users\Claudinei\.android\build-cache\c88798d7bfd61f19d652c5910086d86236a0768c\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.0.2] C:\Users\Claudinei\.android\build-cache\b9654ba4bc7e47a16ef585a2e46c27176c44f795\output\AndroidManifest.xml:4:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Claudinei\.android\build-cache\780f17d7f7369f6fa5a79b3eb5ac8191af629257\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Claudinei\.android\build-cache\75eee8f6b47b94331fe1755f2ba332395ad7a8fd\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Claudinei\.android\build-cache\da3270fd76c390df8b5a1ffb39578806a9b71ca5\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:cardview-v7:23.2.0] C:\Users\Claudinei\.android\build-cache\cfa714befcb8ab24804003426672e23cbb736c68\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\Claudinei\.android\build-cache\96847652391c7dfae6adc2677f300a35e871c04d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:9.0.2] C:\Users\Claudinei\.android\build-cache\77b2e809a73b70ffaa4fa5b1b4d5c82e7f6c24b3\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] C:\Users\Claudinei\.android\build-cache\c3e1404ccd441561cdc1a9ea783e581b004e44e9\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Claudinei\.android\build-cache\7353686288487989f963c9f67ca54598dbb31d96\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-core:9.0.2] C:\Users\Claudinei\.android\build-cache\6d8a6b561f035af2aa3ed8e7f964f29c736e4cbd\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Claudinei\.android\build-cache\552928d6baed0e2f4e499d4bffbf183c5cfacbec\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Claudinei\.android\build-cache\eff2deacb602ea9a17ecdb26e6ace0a8eab60db1\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Claudinei\.android\build-cache\2a258d4fd5b76c1dd035b45c9cbce3e9d08b43ef\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Claudinei\.android\build-cache\95576b1d28e17490552974d8e167301f3a00ae39\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Claudinei\.android\build-cache\286648464939b2ed3537f717e54d12f611b0c26e\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Claudinei\.android\build-cache\456687cf97f9f5b6654251e8fdc97d3d2aecd03d\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Claudinei\.android\build-cache\46a311b5f1e0e1f5a7cd78f8978e392e9f198605\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Claudinei\.android\build-cache\76169267d16aa0b124539c3dc53ad63e699861f4\output\AndroidManifest.xml:21:5-23:58
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Claudinei\.android\build-cache\780f17d7f7369f6fa5a79b3eb5ac8191af629257\output\AndroidManifest.xml:23:9-75
-	android:targetSdkVersion
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:7:9-38
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:6:9-35
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:1-67:12
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:9:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:21:5-67
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:10:5-81
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:11:5-75
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:7:5-75
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:11:22-72
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:7:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:12:5-80
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:12:22-77
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:8:22-77
 application
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:14:5-69:19
-MERGED from [com.android.support:design:23.4.0] C:\Users\Claudinei\.android\build-cache\4a705154385e06e4d39d61171df2e0ad79894fe5\output\AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\6ef565be07d9c91fbf9bea9e010504f06f3d086a\output\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.0.2] C:\Users\Claudinei\.android\build-cache\c88798d7bfd61f19d652c5910086d86236a0768c\output\AndroidManifest.xml:20:5-21:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:28:5-38:19
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Claudinei\.android\build-cache\780f17d7f7369f6fa5a79b3eb5ac8191af629257\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Claudinei\.android\build-cache\75eee8f6b47b94331fe1755f2ba332395ad7a8fd\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Claudinei\.android\build-cache\da3270fd76c390df8b5a1ffb39578806a9b71ca5\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:cardview-v7:23.2.0] C:\Users\Claudinei\.android\build-cache\cfa714befcb8ab24804003426672e23cbb736c68\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\Claudinei\.android\build-cache\96847652391c7dfae6adc2677f300a35e871c04d\output\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] C:\Users\Claudinei\.android\build-cache\c3e1404ccd441561cdc1a9ea783e581b004e44e9\output\AndroidManifest.xml:19:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Claudinei\.android\build-cache\7353686288487989f963c9f67ca54598dbb31d96\output\AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-core:9.0.2] C:\Users\Claudinei\.android\build-cache\6d8a6b561f035af2aa3ed8e7f964f29c736e4cbd\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Claudinei\.android\build-cache\552928d6baed0e2f4e499d4bffbf183c5cfacbec\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Claudinei\.android\build-cache\eff2deacb602ea9a17ecdb26e6ace0a8eab60db1\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Claudinei\.android\build-cache\2a258d4fd5b76c1dd035b45c9cbce3e9d08b43ef\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Claudinei\.android\build-cache\95576b1d28e17490552974d8e167301f3a00ae39\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Claudinei\.android\build-cache\286648464939b2ed3537f717e54d12f611b0c26e\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Claudinei\.android\build-cache\456687cf97f9f5b6654251e8fdc97d3d2aecd03d\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Claudinei\.android\build-cache\46a311b5f1e0e1f5a7cd78f8978e392e9f198605\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Claudinei\.android\build-cache\76169267d16aa0b124539c3dc53ad63e699861f4\output\AndroidManifest.xml:25:5-20
-	android:label
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:17:9-41
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:10:5-65:19
+MERGED from [com.google.firebase:firebase-core:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8751a216a15a90c2df8aa2dd5cc0c45a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8751a216a15a90c2df8aa2dd5cc0c45a/AndroidManifest.xml:5:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:28:5-38:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:cardview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ff7f7a57a385220a08b75dbded8d78a0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ff7f7a57a385220a08b75dbded8d78a0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fedcd04b5156ac9d07fe8f093c5a25dd/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fedcd04b5156ac9d07fe8f093c5a25dd/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8153746c6123684ad9e9b830c6e2da47/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8153746c6123684ad9e9b830c6e2da47/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/d67dcc4f51ef15e4d49ac02b8a67ea29/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/d67dcc4f51ef15e4d49ac02b8a67ea29/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/354439e286f2fc401d0da5b1a208a1f1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/354439e286f2fc401d0da5b1a208a1f1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-auth-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/59df984e3210bd8e9a4d48b1f60e0f6d/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/59df984e3210bd8e9a4d48b1f60e0f6d/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/781cc463cc8bc04212043a944e037e15/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/781cc463cc8bc04212043a944e037e15/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:customtabs:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/43357a10101caf28a5ae9a0cdc98503d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/43357a10101caf28a5ae9a0cdc98503d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0ec2d7e13c133e7f50026f6248d44a74/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0ec2d7e13c133e7f50026f6248d44a74/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ac6015540514bdb0de627576ebd392fe/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ac6015540514bdb0de627576ebd392fe/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/cefc3089e071d732f57f9390d1a9fb25/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/cefc3089e071d732f57f9390d1a9fb25/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:18:9-35
-	android:allowBackup
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:13:9-41
 	android:icon
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:16:9-42
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:12:9-42
+	android:allowBackup
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:15:9-40
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:20:9-22:55
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:16:9-18:55
 	android:value
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:22:13-52
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:18:13-52
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:21:13-58
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:17:13-58
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Splash
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:24:9-32:20
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:20:9-28:20
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:22:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:25:13-45
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:27:13-31:29
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:21:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:26:27-74
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_MenuPrincipal
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:34:9-36:52
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:35:13-52
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:31:13-52
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Login
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:38:9-44:20
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:34:9-40:20
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:40:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:36:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:39:13-44
-intent-filter#android.intent.action.MAIN
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:41:13-43:29
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:35:13-44
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:37:13-39:29
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Jogo
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:46:9-48:52
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:42:9-44:52
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:44:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:47:13-43
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:43:13-43
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Help
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:50:9-52:52
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:46:9-48:52
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:51:13-43
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:47:13-43
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Perfil
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:54:9-55:51
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:50:9-51:51
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:55:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:54:19-51
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:50:19-51
 activity#quizbiblico.com.claudinei.quizbiblico.activityc_Ranking
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:57:9-58:51
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:53:9-54:51
 	android:screenOrientation
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:58:13-49
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:54:13-49
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:57:19-52
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:53:19-52
 meta-data#com.google.android.gms.version
-ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:65:9-67:69
-MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Claudinei\.android\build-cache\eff2deacb602ea9a17ecdb26e6ace0a8eab60db1\output\AndroidManifest.xml:21:9-23:69
+ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:61:9-63:69
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:67:13-66
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:63:13-66
 	android:name
-		ADDED from D:\ClaudineiBJr\Estudo\QuizBiblico\Android App\QuizBiblico\app\src\main\AndroidManifest.xml:66:13-58
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml:62:13-58
+uses-sdk
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8751a216a15a90c2df8aa2dd5cc0c45a/AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-core:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8751a216a15a90c2df8aa2dd5cc0c45a/AndroidManifest.xml:4:5-42
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:cardview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ff7f7a57a385220a08b75dbded8d78a0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ff7f7a57a385220a08b75dbded8d78a0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-database:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0b44d558cb32596b8eb60e2ad850553a/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0b44d558cb32596b8eb60e2ad850553a/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fedcd04b5156ac9d07fe8f093c5a25dd/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fedcd04b5156ac9d07fe8f093c5a25dd/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8153746c6123684ad9e9b830c6e2da47/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/8153746c6123684ad9e9b830c6e2da47/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/d67dcc4f51ef15e4d49ac02b8a67ea29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/d67dcc4f51ef15e4d49ac02b8a67ea29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/354439e286f2fc401d0da5b1a208a1f1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/354439e286f2fc401d0da5b1a208a1f1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fe28dd6b5a1362c22355736080e93fcb/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database-connection:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/fe28dd6b5a1362c22355736080e93fcb/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/59df984e3210bd8e9a4d48b1f60e0f6d/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/59df984e3210bd8e9a4d48b1f60e0f6d/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/5c54b221b93d7552c378f43679354906/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/5c54b221b93d7552c378f43679354906/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/f2a45c8530715028e7eb910e0f509481/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/f2a45c8530715028e7eb910e0f509481/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/781cc463cc8bc04212043a944e037e15/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/781cc463cc8bc04212043a944e037e15/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/2358ec8c231ade9bfa465f1434901fc7/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:customtabs:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/43357a10101caf28a5ae9a0cdc98503d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/43357a10101caf28a5ae9a0cdc98503d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/b45b7451b2934034f7f1ec80fa56d339/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/b45b7451b2934034f7f1ec80fa56d339/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0ec2d7e13c133e7f50026f6248d44a74/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/0ec2d7e13c133e7f50026f6248d44a74/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ac6015540514bdb0de627576ebd392fe/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/ac6015540514bdb0de627576ebd392fe/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/cefc3089e071d732f57f9390d1a9fb25/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/cefc3089e071d732f57f9390d1a9fb25/AndroidManifest.xml:20:5-43
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/claudinei/.gradle/caches/transforms-2/files-2.1/6583f9acc1c465d4af077ed957c7eb94/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudinei/Repositories/AppQuizBiblical/app/src/main/AndroidManifest.xml
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:29:9-32:66
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:29:9-32:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:31:13-96
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:31:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:30:13-57
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:30:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:33:9-36:20
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:33:9-36:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:35:13-36
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:34:13-58
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:34:13-58
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:37:9-71
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:37:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] C:\Users\Claudinei\.android\build-cache\f2839ffdee3af8405a006a223627c6565e0f7d23\output\AndroidManifest.xml:37:19-68
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /home/claudinei/.gradle/caches/transforms-2/files-2.1/37870dd150adc0c27709b20c66b6a15d/AndroidManifest.xml:37:19-68
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:21:9-24:46
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:23:19-52
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:24:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:22:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:21:19-68
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:21:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:28:9-31:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:31:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.0.2] C:\Users\Claudinei\.android\build-cache\cfc3c0f3667b9372f16668f8c000e31824596756\output\AndroidManifest.xml:29:13-58
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/4d32f1daa821beafdf0170c2407ff6d3/AndroidManifest.xml:29:13-58
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:20:5-79
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:20:5-79
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:22:22-76
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:22:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:22:5-68
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:22:5-68
+MERGED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:22:5-68
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:24:22-65
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:24:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:28:7-34:18
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:28:7-34:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:30:11-33
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:30:11-33
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:29:11-83
-intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:31:9-33:25
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:29:11-83
+intent-filter#action:name:com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:31:9-33:25
 action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:32:11-77
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:32:11-77
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:32:19-75
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:32:19-75
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Claudinei\.android\build-cache\eaa22afdbee9717bba1e08b059ebcc2d5d6db383\output\AndroidManifest.xml:36:7-39:37
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/36820346a6d7dde53be040f73769722b/AndroidManifest.xml:36:7-39:37
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:38:11-33
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:38:11-33
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:39:11-35
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:39:11-35
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Claudinei\.android\build-cache\4ec41fd57a6f22ffef74a65a33e2ef8452b7cf40\output\AndroidManifest.xml:37:11-82
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/bdbceb07258d59f759e597cbcbcd1d25/AndroidManifest.xml:37:11-82
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Claudinei\.android\build-cache\834250ad57ba75502c4443aa00d75dc02823639e\output\AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/496748587e8503de88bfa5e369c19a61/AndroidManifest.xml:20:19-85
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:23:5-82
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:23:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:23:22-79
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:23:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:25:5-26:47
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:25:5-26:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:26:9-44
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:26:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:25:17-71
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:25:17-71
+permission#quizbiblico.com.claudinei.quizbiblico.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:25:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:28:5-79
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:28:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:28:22-76
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:28:22-76
+uses-permission#quizbiblico.com.claudinei.quizbiblico.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:28:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:32:9-41:20
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:32:9-41:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:34:13-36
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:34:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:35:13-73
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:35:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:33:13-78
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:36:13-40:29
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:33:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:36:13-40:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:quizbiblico.com.claudinei.quizbiblico
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:36:13-40:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:37:17-81
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:37:17-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:37:25-78
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:37:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:38:17-86
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:38:17-86
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:38:25-83
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:38:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:39:17-61
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:39:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:39:27-58
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:39:27-58
+category#quizbiblico.com.claudinei.quizbiblico
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:39:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:45:9-47:40
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:45:9-47:40
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:47:13-37
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:46:13-86
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:46:13-86
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:51:9-57:19
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:51:9-57:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:53:13-36
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:52:13-77
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:54:13-56:29
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:52:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:54:13-56:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:54:28-51
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:54:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:55:17-80
+ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:55:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Claudinei\.android\build-cache\6f86e6a8816a42c6eeca6098a5cf10a652d2cbaf\output\AndroidManifest.xml:55:25-77
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/35366ecab99a80a341fe77be2e0f8c06/AndroidManifest.xml:55:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:7:9-11:39
+ADDED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:7:9-11:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:8:13-72
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:8:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:10:13-37
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:10:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:11:13-36
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:11:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Claudinei\.android\build-cache\43caadde5004aa01d1bc3739f68f8197b2f7962c\output\AndroidManifest.xml:9:13-58
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /home/claudinei/.gradle/caches/transforms-2/files-2.1/3a0859792ef3fdae3b686df1287af027/AndroidManifest.xml:9:13-58

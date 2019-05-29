@@ -212,10 +212,10 @@ public class activityc_Login extends AppCompatActivity {
             public void onClick(View v) {
                 if (password.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
                     password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    showPassword.setImageResource(R.drawable.img_locked);
+                    //showPassword.setImageResource(R.drawable.img_locked);
                 }else {
                     password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                    showPassword.setImageResource(R.drawable.img_unlocked);
+                    //showPassword.setImageResource(R.drawable.img_unlocked);
                 }
             }
         });
